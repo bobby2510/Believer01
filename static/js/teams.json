@@ -1,0 +1,45 @@
+{
+"req_data" : [{
+    "series_name":"National Board of Accreditation",
+    "series_code":"NBA",
+    "number_teams":4,
+    "team_list":["LAC","BOS","BKN","TOR"],
+    "teams":[
+        {
+            "team_name":"LAC",
+            "players_name":["Kawhi Leonard","Paul George","Reggie Jackson","Serge Ibaka","Ivica Zubac","Nicolas Batum","Lou Williams"],            
+            "players_credits":[22,19,6,12,8,12.5,6],
+            "players_role":[2,3,1,5,5,4,2],
+            "players_id":[101,102,103,104,105,106,107],
+            "players_image":[0,0,0,0,0,0,0]
+        },
+        {
+            "team_name":"BOS",
+            "players_name":["Jayson Tatum","Kemba Walker","Daniel Theis","Tristan Thompson","Robert Williams","Grant Williams","Tremont Waters"],
+            "players_credits":[18,14,9.5,10.5,9,6,5.5],
+            "players_role":[4,1,5,5,4,3,1],
+            "players_id":[108,109,110,111,112,113,114],
+            "players_image":[0,0,0,0,0,0,0]
+
+        },
+        {
+            "team_name":"BKN",
+            "players_name":["Kevin Durant","James Harden","Kyrie Irving","DeAndre Jordan","Joe Harris","Jeff Green","Bruce Brown","Timothe Luwawu-Cabarrot"],
+            "players_credits":[23,23,19,9,11.5,6.5,5.5,6.5],
+            "players_role":[4,2,1,5,3,4,3,2],
+            "players_id":[115,116,117,118,119,120,121,122],
+            "players_image":[0,0,0,0,0,0,0,0]
+
+        },
+        {
+            "team_name":"TOR",
+            "players_name":["Fred VanVleet","Pascal Siakam","Kyle Lowry","Norman Powell","Aron Baynes","DeAndre' Bembry","Yuta Watanabe","C Boucher"],
+            "players_credits":[17,17.5,17,8,7,5.5,5.5,13],
+            "players_role":[1,4,2,2,5,3,4,5],
+            "players_id":[123,124,125,126,127,128,129,130],
+            "players_image":[0,0,0,0,0,0,0,0]
+        }
+    ]
+}
+]
+}

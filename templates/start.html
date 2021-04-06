@@ -1,0 +1,1254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dream 11 Team Generator</title>
+    <style type="text/css" media="print">
+      #home_id{
+        display: none;
+      }
+      #vp_panel
+      {
+        display: none;
+      }
+      #footer_vp
+      {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav  style="background-color:#1a0000; color:white;" id="desktop_nav">
+        <div class="container" id="vp_panel">
+           <div class="d-flex align-items-center"> <img src="dream11_images/logo.jpg" class="mt-4" width="130px" height="30px" alt=""><h3 class="mt-4 pt-1 ml-2">- Team Generator</h3></div>
+            <div class="d-flex justify-content-around">
+                <div >
+                    <img  width="326px" height="243px" src="dream11_images/logo.jpg" alt=""> 
+                </div>
+               <div>
+                   <img  width="90px" height="68px" src="dream11_images/dream11_ipl.jpg" alt="">
+                   <div style="text-align: center;">
+                       <br>
+                       <h3>Developed </h3>
+                       <h3>By</h3>
+                        <img src="dream11_images/believer01.jpg" width="160px" height="40px" style="border-radius: 10px;">
+                   </div>
+               </div>
+            </div>
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="text-center mb-4">
+        <img src="dream11_images/logo.jpg" style="width: 200px;" >
+      </div>
+      <ul class="list-group list-group-flush m-2" >
+        <li class="list-group-item"  id="side_bar"><span> <i class="fa fa-home"></i> Home</span></li>
+        <li class="list-group-item" id="side_bar"><span> <i class="fa fa-wrench"></i> How to generate?</span></li>
+        <li class="list-group-item" id="side_bar"> <i class="fa fa-trophy"></i> Best tips</li>
+        <li class="list-group-item" id="side_bar"> <i class="fa fa-whatsapp"></i> contact us</li>
+        <li class="list-group-item" id="side_bar"> <i class="fa fa-youtube-play"></i> follow us on youtube</li>
+        <li class="list-group-item border-bottom" id="side_bar"> <i class="fa fa-info-circle"></i> about us</li>
+      </ul>
+      <div class="text-center m-2 mt-4">
+         <small>developed by</small>
+        <img src="dream11_images/owner.jpg" style="width: 200px;" >
+      </div>
+      <div class="d-flex m-2 mt-4 flex-column justify-content-start align-items-center">
+        <div class="text-center">special thanks to santosh kumar.</div>
+        <span>All Rights Reserved.</span>
+        <span>&copy; believer01</span>
+        <span>Team Generator Ltd</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark" id="mobile_nav">
+      <div class="d-flex align-items-center justify-content-between">
+        <button class="navbar-toggler" type="button" >
+          <span class="navbar-toggler-icon" onclick="openNav()"></span>
+        </button>
+        <img src="dream11_images/logo.jpg" width="130px" height="30px" alt="" style="border-radius: 5px;">
+      </div>
+    </nav>
+   
+      
+    <!-- array csk-1 , rcb - 2 , srh -3 , mi - 4, kxip-5, dc - 6, rr-7, kkr-8-->
+    <div class="d-flex flex-column jusitfy-content-around align-items-center flex-wrap">
+      <div class="d-flex justify-content-between container align-items-center">
+          <span class="btn btn-primary mt-2 btn-sm" id="home_id"><i class="fa fa-home"></i> go to Home</span>
+          <span class="btn btn-danger mt-2 btn-sm" id="refresh_id"><i class="fa fa-youtube-play"></i> subscribe us</span>
+      </div>
+      <div class="container">
+        <!--error part start-->
+        <div class="alert alert-danger text-center mt-4" id="danger_alert" style="display: none;" role="alert">
+          </div>
+        <!--error part end-->
+        <!--success  start-->
+        <div class="alert alert-success text-center mt-4" id="success_alert" style="display: none;" role="alert">
+        </div>
+      <!-- success end-->
+      <!-- Authentication panel start -->
+      <div class="card mt-3 without-size jp" id="auth_panel">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Welcome to Dream 11 Team Generator!</h5>
+          <div class="text-center">
+          <small>This is a premium version, you need to contact whatsapp: 9848579715, to get the login details!</small>
+          </div>
+          <div style="max-width: 500px;" class="ml-auto mr-auto">
+            <h6 class="text-center mt-2" style="color: green;">Login here!</h6>
+          <form>
+            <div class="form-group">
+              <label for="mobile_number">Mobile Number</label>
+              <input type="tel" class="form-control" id="mobile_number"placeholder="Mobile Number">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your ph-no with anyone.</small>
+            </div>
+            <div class="form-group">
+              <label for="secret_code">Secret Code</label>
+              <input type="number" class="form-control" id="secret_code" placeholder="secret code">
+            </div>
+            <span class="btn btn-primary" id="auth_btn">Login</span>
+          </form>
+          </div>
+          
+        </div>
+    </div>
+      <!-- Authentication panel end -->
+       <!-- palyers detail count panel start -->
+       <div class="card mt-2 jp" id="player_count" style="display: none; color:#2C3335; background-color: white;">
+        <div class="p-2">
+          
+          <div class="d-flex justify-content-around align-items-center">
+            <div id="team_one_heads" class="d-flex flex-column justify-content-center align-items-center" >
+              <div>
+              <div class="d-flex align-items-center">
+                <b id="first_team_name"></b>
+                <div id="first_image" style="display: inline;">
+                 
+                </div>
+              </div>
+              </div>
+              <div class="d-flex justify-content-center" id="first_vp_placer" style="font-size: 10px;">
+                
+              </div>
+            </div>
+            <div style="border-left:1px solid grey; height:90px;"></div>
+            <div id = "team_two_heads" class="d-flex flex-column justify-content-center align-items-center">
+              <div>
+               <div class="d-flex align-items-center">
+                <div id="second_image" style="display: inline;">
+                
+                </div>
+               <b id="second_team_name"></b>
+               </div>
+              </div>
+              <div class="d-flex justify-content-center" id="second_vp_placer" style="font-size: 10px;">
+               
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mr-autom ml-auto" id="total_vp_placer" style="font-size: 14px; border-top:1px solid grey;">
+           
+          </div>
+         
+        </div>
+       </div>
+      <!-- palyers detail count panel end -->
+       <!-- custom taking input panel start -->
+       <div class="card mt-2 " id="custom_input" style="display: none; color:#2C3335; background-color: white; height:166.4px;">
+        <div class="p-2 mr-auto ml-auto" style="max-width: 500px;">
+          <div class="d-flex justify-content-around align-items-center mb-2" >
+           <span class="pt-2 pb-2 pl-4 pr-4 border border-grey" id="c_i_team_one_name"> Team one</span>
+           <span class="pt-2 pb-2 pl-4 pr-4 border" id="c_i_team_two_name"> Team two</span>
+          </div>
+           <div>
+            <div style="max-width: 300px;" class="mr-auto ml-auto" >
+              <span class="btn btn-primary mt-4" id="t_1_trigger" style="display: block;"> <i class="fa fa-plus-circle"></i> Add Player in Team one</span>
+            <span class="btn btn-primary mt-4" id="t_2_trigger" style="display: none;"> <i class="fa fa-plus-circle"></i> Add Player in Team two</span>
+            </div>
+           </div>
+          <div style="display: none;" id="ct_1">
+            <div class="d-flex justify-content-center align-items-center mr-autom ml-auto" style="border-top:1px solid grey;">
+              <div class=" d-flex flex-column justify-content-center align-items-center">
+                <input class="form-control m-1" placeholder="Enter player name team one" id="t1_n" type="text">
+                <div class="d-flex justify-content-between align-items-center">
+                  <select id="t1_r" class="form-control">
+                    <option value="1">WK</option>
+                    <option value="2">BAT</option>
+                    <option value="3">AL</option>
+                    <option value="4">BOWL</option>
+                    </select>
+                  <input class="form-control m-1" type="number" placeholder="Credits"  id="t1_c">
+                </div>
+              </div>
+             <div class=" d-flex flex-column justify-content-center m-2">
+              <img src="player_images//0.jpg" style="width: 65px; height:50px;" alt="">
+              <span class="btn btn-primary btn-sm mt-1" id="t1_a">Add</span>
+             </div>
+          </div>
+          </div>
+          <div style="display: none;" id="ct_2">
+            <div class="d-flex justify-content-center align-items-center mr-autom ml-auto" style="border-top:1px solid grey; display:none;">
+              <div class=" d-flex flex-column justify-content-center align-items-center">
+                <input class="form-control m-1" placeholder="Enter player name team two" id="t2_n" type="text">
+                <div class="d-flex justify-content-between align-items-center">
+                  <select id="t2_r" class="form-control">
+                    <option value="1">WK</option>
+                    <option value="2">BAT</option>
+                    <option value="3">AL</option>
+                    <option value="4">BOWL</option>
+                    </select>
+                  <input class="form-control m-1" type="number" placeholder="Credits" id="t2_c" id="">
+                </div>
+              </div>
+             <div class=" d-flex flex-column justify-content-center m-2">
+              <img src="player_images//0.jpg" style="width: 65px; height:50px;" alt="">
+              <span class="btn btn-primary btn-sm mt-1" id="t2_a">Add</span>
+             </div>
+          </div>
+          </div>
+          
+         
+        </div>
+       </div>
+      <!-- custom taking input start -->
+      <!-- sports selection panel start-->
+      <div class="card mt-3 without-size jp" id="sport_panel" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Choose Sport</h5>
+          <div class="container d-flex justify-content-around p-2 flex-wrap align-items-center" style="max-width:500px;">
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+              <img src="dream11_images/cricket.jpg"  class="my-logo-image" alt="">
+              <span class="btn btn-success" id="sport_cricket">continue</span>
+            </div>
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+              <img src="dream11_images/football.jpg"  class="my-logo-image" alt="">
+              <span class="btn btn-success" id="sport_football">continue</span>
+            </div>
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+              <img src="dream11_images/basket.jpg"  class="my-logo-image" alt="">
+              <span class="btn btn-success" id="sport_basketball">continue</span>
+            </div>
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+              <img src="dream11_images/kabaddi.jpg"  class="my-logo-image" alt="">
+              <span class="btn btn-success" id="sport_kabaddi">continue</span>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+      <!-- sports selection panel end-->
+        <!-- intro selecting panel start-->
+        <div class="card mt-3 without-size jp" id="first_panel" style="display: none;">
+            <div class="card-header text-center">
+             Dream 11 Team Generator
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Choose Match or Result of the Previous Match</h5>
+              <div class="container d-flex justify-content-around p-2 flex-wrap align-items-center" style="max-width: 600px;">
+                <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                  <img src="dream11_images/generate.jpg"  class="my-logo-image-big" alt="">
+                  <span class="btn btn-success" id="choose_type">continue</span>
+                </div>
+                <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                  <img src="dream11_images/match_result.jpg"  class="my-logo-image-big" alt="">
+                  <span class="btn btn-success" id="match_result">continue</span>
+                </div>
+                <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                  <img src="dream11_images/edit.jpg"  class="my-logo-image-big" alt="">
+                  <span class="btn btn-success" id="change_player_data">continue</span>
+                </div>
+                <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                  <img src="dream11_images/custom.jpg"  class="my-logo-image-big" alt="">
+                  <span class="btn btn-success" id="custom_match">continue</span>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+        <!-- intro selecting panel end-->
+        <!--secondary first panel start -->
+        <div class="card mt-3 without-size jp" id="secondary_first_panel" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Choose Match Any one Option</h5>
+            <div class="container d-flex justify-content-around p-2 flex-wrap align-items-center" style="max-width: 600px;">
+              <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                <img src="dream11_images/generate.jpg"  class="my-logo-image-big" alt="">
+                <span class="btn btn-success" id="secondary_choose_type">continue</span>
+              </div>
+              <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                <img src="dream11_images/create_series.jpg"  class="my-logo-image-big" alt="">
+                <span class="btn btn-success" id="secondary_create_series">continue</span>
+              </div>
+              <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                <img src="dream11_images/edit_series.jpg"  class="my-logo-image-big" alt="">
+                <span class="btn btn-success" id="secondary_edit_series">continue</span>
+              </div>
+              <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+                <img src="dream11_images/match_result.jpg"  class="my-logo-image-big" alt="">
+                <span class="btn btn-success" id="secondary_match_result">continue</span>
+              </div>
+              
+            </div>
+            
+          </div>
+      </div>
+        <!-- secondary first panel end-->
+      <!-- mode panel start-->
+      <div class="card mt-3 without-size jp" id="mode_panel" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Choose Type of Generation</h5>
+          <div class="container d-flex justify-content-around p-2 flex-wrap align-items-center" style="max-width:350px;">
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+              <img src="dream11_images/sl.jpg"  class="my-logo-image-big" alt="">
+              <span class="btn btn-success" id="mode_id">continue</span>
+            </div>
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+              <img src="dream11_images/gl.jpg"  class="my-logo-image-big" alt="">
+              <span class="btn btn-success" id="mode_id">continue</span>
+            </div>
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
+              <img src="dream11_images/advanced.jpg"  class="my-logo-image-big" alt="">
+              <span class="btn btn-success" id="mode_id">continue</span>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+      <!-- mode panel end-->
+
+        <!-- custom panel start-->
+        <div class="card mt-2 without-size jp" id="custom_panel" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <div style="max-width: 400px; display:block;"  class="mr-auto ml-auto p-2" id="custom_one">
+              <input type="text" class="form-control m-2" id="c_team_one_name" placeholder="Enter team one name">
+              <input type="text" class="form-control m-2" id="c_team_two_name" placeholder="Enter team two name">
+              <div class="text-center">
+                <span class="btn btn-primary" id="custom_one_continue">continue</span>
+              </div>
+            </div>
+            <div id="custom_two" style="display: none;">
+              <h5 class="card-title text-center">Enter atleast 7 players from each side</h5>
+              <div class="d-flex justify-content-around mt-2">
+                <h6 id="custom_team_one_name"></h6>
+                <h6 id="custom_team_two_name"></h6>
+              </div>
+              <div class="d-flex justify-content-around align-items-start">
+                <div class="d-flex justify-content-center align-items-center flex-wrap dp-vp" id="custom_team_one_container" >
+                     
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-wrap dp-vp" id='custom_team_two_container' >
+                     
+                </div>
+               </div>
+               <div class="text-center">
+                   <br>
+                 <span class="btn btn-success" id="custom_two_continue">Continue</span>
+               </div>
+            </div>
+          </div>
+      </div>
+      <!-- custom panel end-->
+      
+      <!-- change palyer start-->
+      <div class="card mt-4 without-size jp" id="change_player" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div>
+          <h5 class="card-title text-center">Change player credits or player role </h5>
+          <h6 class="card-title text-center">player role 1-wk, 2-bat , 3-al , 4 - bowl</h6>
+          <br><br>
+          <div class="d-flex flex-column container justify-content-center align-items-center" id="change_player_placer">
+            
+          </div>
+          <br>
+          <br>
+          <div class="text-center">
+            <span class="btn btn-success" id="change_player_update">Update</span>
+          </div>
+          <br>
+        </div>
+    </div>
+    <!-- change player end-->
+
+      <!-- edit palyer data start-->
+      <div class="card mt-4 without-size jp" id="edit_player_data_panel" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div>
+          <h5 class="card-title text-center">Change player credits or player role </h5>
+          <br><br>
+          <div class="d-flex flex-column container justify-content-center align-items-center" id="edit_player_data_placer">
+            
+          </div>
+          <br>
+          <br>
+          <div class="text-center">
+            <span class="btn btn-success" id="edit_player_data_continue">Update</span>
+          </div>
+          <br>
+        </div>
+    </div>
+    <!-- edit player data end-->
+        <!--Choose series panel start-->
+        <div class="card mt-4 without-size jp" id="choose_series" style="display: none;">
+            <div class="card-header text-center">
+             Dream 11 Team Generator
+            </div>
+            <div id="empty_series" class="mr-auto ml-auto" style="max-width: 400px; margin-top:75px; display:none">
+                  <div class="container text-center text-success">
+                    Currently There is no series running, 
+                    Kindly Create Series Data by clicking on below option!
+                  </div>
+                  <div class="d-flex flex-column justify-content-start my-logo-card m-3">
+                    <div class="text-center">
+                      <img src="dream11_images/create_series.jpg"  class="my-logo-image-big" alt="">
+                    </div>
+                    <span class="btn btn-success" id="empty_secondary_create_series">continue</span>
+                  </div>
+            </div>
+            <div class="card-body" id="full_series" style="display: block;">
+              <h5 class="card-title text-center">Choose Series</h5>
+              <br>
+              <div class="d-flex justify-content-between mr-auto ml-auto align-items-center flex-wrap" style="width:200px;" id="series_placer">
+                   
+              </div>
+              <div class="text-center">
+                  <br><br>
+                <span class="btn btn-success" id="series_continue">Continue</span>
+              </div>
+              <br>
+            </div>
+        </div>
+        <!--Choose series panel end-->
+       
+        <!--Choose series result panel start-->
+        <div class="card mt-4 without-size jp" id="choose_series_result" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Choose Series</h5>
+            <br>
+            <div class="d-flex justify-content-between mr-auto ml-auto align-items-center flex-wrap" style="width: 200px;" id="series_placer_result">
+             
+            </div>
+            <div class="text-center">
+                <br><br>
+              <span class="btn btn-success" id="series_continue_result">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+      <!--Choose series result panel end-->
+      <!--choose fantasy panel start-->
+      <div class="card mt-4 without-size jp" id="fantasy_panel" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Choose Fantasy</h5>
+          <br>
+          <div class="d-flex justify-content-between mr-auto ml-auto align-items-center flex-wrap" style="width: 200px;" id="series_placer_result">
+            <img src="dream11_images/dream11_red_logo.jpg" class="team-image" id="fantasy_logo" alt="">
+            <img src="dream11_images/myteam11.jpg" class="team-image" id="fantasy_logo" alt="">
+            <img src="dream11_images/my11circle.jpg" class="team-image" id="fantasy_logo" alt="">
+            <img src="dream11_images/mpl.jpg" class="team-image" id="fantasy_logo" alt="">
+            <img src="dream11_images/fanfight.jpg" class="team-image" id="fantasy_logo" alt="">
+            <img src="dream11_images/all_fantasy.jpg" class="team-image" id="fantasy_logo" alt="">
+          </div>
+          <div class="text-center">
+              <br><br>
+            <span class="btn btn-success" id="fantasy_continue">Continue</span>
+          </div>
+          <br>
+        </div>
+    </div>
+    <!--choose fantasy panel end-->
+        <!--secondary edit series start-->
+        <div class="card mt-4 without-size jp" id="secondary_edit_series_panel" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Choose Series</h5>
+            <br>
+            <div id="empty_series_secondary" class="mr-auto ml-auto" style="max-width: 400px; margin-top:35px; display:none">
+              <div class="container text-center text-success">
+                Currently There is no series running, 
+                Kindly Create Series Data by clicking on below option!
+              </div>
+              <div class="d-flex flex-column justify-content-start my-logo-card m-3">
+                <div class="text-center">
+                  <img src="dream11_images/create_series.jpg"  class="my-logo-image-big" alt="">
+                </div>
+                <span class="btn btn-success" id="empty_secondary_create_series_two">continue</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mr-auto ml-auto align-items-center flex-wrap" style="width: 200px;" id="secondary_edit_series_placer">
+             
+            </div>
+            <div class="text-center" id="secondary_edit_continue_block" style="display: none;">
+                <br><br>
+              <span class="btn btn-success" id="secondary_edit_series_continue">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+      <!--secondary edit series end-->
+       <!--edit teams data start-->
+       <div class="card mt-4 without-size jp" id="edit_teams_data_panel" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Choose Series</h5>
+          <br>
+          <div class="d-flex justify-content-between mr-auto ml-auto align-items-center flex-wrap" style="width: 200px;" id="edit_teams_data_placer">
+           
+          </div>
+          <div class="text-center">
+              <br><br>
+            <span class="btn btn-success" id="edit_teams_data_continue">Continue</span>
+          </div>
+          <br>
+        </div>
+    </div>
+    <!-- edit teams data end-->
+      <!--Match result series start-->
+      <div class="card mt-4 without-size jp" id="match_result_series" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Choose Series</h5>
+          <br>
+          <div class="d-flex justify-content-between mr-auto ml-auto align-items-center flex-wrap" style="width: 200px;" id="match_result_series_placer">
+           
+          </div>
+          <div class="text-center">
+              <br><br>
+            <span class="btn btn-success" id="match_result_series_continue">Continue</span>
+          </div>
+          <br>
+        </div>
+    </div>
+    <!--Match result series end-->
+      <!-- change player data team start-->
+      <div class="card mt-4 without-size jp" id="change_player_data_panel" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 id="series_name"></h5>
+          <h5 class="card-title text-center">Choose Team</h5>
+          <br>
+          <div class="d-flex justify-content-between mr-auto ml-auto align-items-center flex-wrap" style="width: 200px;" id="change_player_data_placer">
+           
+          </div>
+          <div class="text-center">
+              <br><br>
+            <span class="btn btn-success" id="change_player_data_continue">Continue</span>
+          </div>
+          <br>
+        </div>
+    </div>
+    <!--change player data team end-->
+     <!-- create series start-->
+     <div class="card mt-4 without-size jp" id="create_series_panel" style="display: none;">
+      <div class="card-header text-center">
+       Dream 11 Team Generator
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Create Series</h5>
+       
+        <div  class="mr-auto ml-auto mt-4" id="create_series_input" style="max-width: 500px; display:none;">
+              <input type="text" id="c_series_name" class="form-control mt-2 mb-2" placeholder="Enter Series Name ">
+              <input type="text" id="c_series_code" class="form-control mt-2 mb-2" placeholder="Enter Series Shortcut Name like IPL ">
+              <span class="btn btn-success" id="create_series_continue"><i class="fa fa-plus"></i> Create Series</span>
+        </div>
+        <div id="series_details" class="mr-auto ml-auto" style="max-width: 500px; display:none;">
+            <div class="text-center">
+              <h6 id="series_n">Series Name : Indian Premier league</h6>
+              
+            </div>
+            <div class="text-center">
+              <h6>Current Teams</h6>
+            </div>
+            <div id="current_teams" class="d-flex justify-content-center flex-wrap">
+            
+            </div>
+            <br>
+               <div class="d-flex flex-column justify-content-around align-items-center flex-wrap">
+              <span class="btn btn-primary m-2" id="add_team"><i class="fa fa-plus"></i> Add Team</span>
+              <span class="btn btn-info m-2" id="edit_teams"><i class="fa fa-edit"></i> Edit Teams</span>
+              <span class="btn btn-danger m-2" id="remove_series"><i class="fa fa-remove"></i> Delete Series</span>
+            </div>
+           
+        </div>
+      </div>
+  </div>
+  <!--create sereis end-->
+   <!--create team start-->
+   <div class="card mt-4 without-size jp" id="create_team_panel" style="display: none">
+    <div class="card-header text-center">
+     Dream 11 Team Generator
+    </div>
+    <div class="card-body">
+      <h5 class="card-title text-center">Create Team</h5>
+      <div  class="mr-auto ml-auto" style="max-width: 500px;">
+      <div class="mr-auto ml-auto mt-4" id="create_team_input" style="display:none;">
+        <input type="text" id="team_name" class="form-control mt-2 mb-2" placeholder="Enter Team Shortcut Name like RCB ">
+        <span class="btn btn-success" id="create_team_continue"><i class="fa fa-plus"></i> Create Team</span>
+      </div>
+      <div id="team_details" style="display: none;"> 
+        <div class="text-center">
+          <h6 id="team_n">Team Name : Indian Premier league</h6>
+        </div>
+        
+        <div class="d-flex justify-content-around flex-wrap">
+          <span class="btn-sm btn-success m-2" id="add_player"><i class="fa fa-plus"></i> Add Player</span>
+          <span class="btn-sm btn-primary m-2" id="edit_vp_player"><i class="fa fa-edit"></i>Edit Player</span>
+          <span class="btn-sm btn-warning m-2" id="remove_vp_player"><i class="fa fa-remove"></i>Remove Player</span>
+          <span class="btn-sm btn-danger m-2" id="remove_vp_team"><i class="fa fa-remove"></i> Delete Team</span>
+        </div>
+        <hr>
+        <div id="add_player_data" style="display: none;">
+          <div class="d-flex justify-content-center align-items-center mr-autom ml-auto" style="border-top:1px solid grey;">
+          <div class=" d-flex flex-column justify-content-center align-items-center">
+            <input class="form-control m-1" placeholder="Enter player name " id="player_n" type="text">
+            <div class="d-flex justify-content-between align-items-center">
+              <select id="player_r" class="form-control">
+              
+              </select>
+              <input class="form-control m-1" type="number" placeholder="Credits"  id="player_c">
+            </div>
+          </div>
+          <div class=" d-flex flex-column justify-content-center m-2">
+            <img src="player_images//0.jpg" style="width: 65px; height:50px;" alt="">
+            <span class="btn btn-primary btn-sm mt-1" id="main_add">Add</span>
+          </div>
+        </div>
+        </div>
+        <div class="text-center">
+          <h6>Please Click on Save to Store player data!</h6>
+        </div>
+        <div id="current_players_placer" class="d-flex justify-content-between mt-4 ">
+          <div id="existing_players" style="max-width:250px; border-right:1px solid grey; padding-right:15px;">
+            <h6>Current Players</h6>
+
+          </div>
+          <div id="p_placer" class="text-center">
+            <h6>New Player Data</h6>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <span class="btn btn-success" id="add_player_continue">Save</span>
+      </div>
+      </div>
+      </div>
+      <br>
+    </div>
+</div>
+<!--create team end-->
+         <!--Choose Match panel start-->
+         <div class="card mt-4 without-size jp" id="choose_match" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 id="series_name" class="text-center"></h5>
+            <h5 class="card-title text-center">Choose Teams</h5>
+            <br>
+            <div class="d-flex justify-content-around align-items-center">
+              <div class="d-flex justify-content-center align-items-center flex-wrap" id="left_side_placer" style="width: 200px;">
+                
+           </div>
+           <div><h1>VS</h1></div>
+           <div class="d-flex justify-content-center align-items-center flex-wrap" id="right_side_placer" style="width: 200px;" >
+           </div>
+            </div>
+            <div class="text-center">
+                <br><br>
+              <span class="btn btn-success team-continue">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+      <!--Choose Match panel end-->
+        <!--Choose players panel start-->
+        <div class="mt-2 without-size jp" id="choose_player" style="display: none;">
+          <div class="card-header text-center">
+            Dream 11 Team Generator
+           </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Choose atleast 6 players from each Team</h5>
+           
+            <div class="d-flex justify-content-around aligh-items-start">
+              <div id="team_one_head">
+                
+              </div>
+              <div id = "team_two_head">
+    
+              </div>
+            </div>
+            
+            <div class="d-flex justify-content-around align-items-start">
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id="team_one" >
+                  
+             </div>
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id='team_two' >
+                  
+             </div>
+            </div>
+            <div class="text-center">
+                <br>
+              <span class="btn btn-success team-continue" id="submit_players">Continue</span>
+            </div>
+          </div>
+      </div>
+        <!--Choose Players panel end-->
+        <!--Number of Teams to be Generated start-->
+        <div class="card mt-4 without-size jp" id="generate_panel" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Enter the number of teams you want to Generate</h5>
+            <p class="text-center" id="teams_range_msg">you can only generate teams of  1 - 3333 teams only!</p>
+            <br><br>
+            <div class="container d-flex justify-content-center" width="600px">
+              <input type="text" class="form-control" style="width: 160px;" placeholder="Number Of Teams" id="number_teams">
+              <span class="btn btn-primary" id="team_number">Generate Teams</span>
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--Number of Teams to be Generated end -->
+        <!--fixed players panel start-->
+        <div class="card mt-4 without-size jp" id="fixed_player" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Select Fixed Players in your Teams</h5>
+            <h6 class="card-title text-center">you can select between 0 - 9 players</h6>
+            <br>
+            <div class="d-flex justify-content-around aligh-items-start">
+              <div id="fixed_team_one_head">
+                
+              </div>
+              <div id = "fixed_team_two_head">
+    
+              </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around align-items-start">
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id="fixed_team_one" style="width: 450px;">
+                  
+             </div>
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id='fixed_team_two' style="width: 450px;" >
+                  
+             </div>
+            </div>
+            <div class="text-center">
+                <br><br>
+              <span class="btn btn-success team-continue" id="submit_fixed_players">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+        <!--fixed player panel end-->
+
+         <!--remove player data start-->
+         <div class="card mt-4 without-size jp" id="remove_player_data_panel" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body mr-auto ml-auto" style="max-width: 500px;">
+            <h5 class="card-title text-center">Select The Players You want to Remove</h5>
+            <br>
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id="remove_player_data_placer" >
+                  
+             </div>
+            <div class="text-center">
+               <br>
+              <span class="btn btn-success" id="remove_player_data_continue">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+        <!--remove player data end-->
+
+        <!--captain panel start-->
+        <div class="card mt-4 without-size jp" id="captain_panel" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Select The Players you want consider for Captain </h5>
+            <h6 class="card-title text-center">select atleast 1 players </h6>
+            <br>
+            <div class="d-flex justify-content-around aligh-items-start">
+              <div id="captain_team_one_head">
+                
+              </div>
+              <div id = "captain_team_two_head">
+    
+              </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around align-items-start">
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id="captain_team_one" style="width: 450px;">
+                  
+             </div>
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id='captain_team_two' style="width: 450px;" >
+                  
+             </div>
+            </div>
+            <div class="text-center">
+                <br><br>
+              <span class="btn btn-success team-continue" id="submit_captain_players">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+        <!--captain panel end-->
+        <!--analytic head start-->
+       <div class="card mt-2 jp" id="analytic_head" style="display: none; color:#2C3335; background-color: white; height:166.4px;">
+        <div class="d-flex flex-wrap justify-content-around align-items-center mb-2" style="height: inherit;" >
+          <span class="pt-2 pb-2 pl-4 pr-4 m-1 border border-grey" id="table_data">Selected data</span>
+          <span class="pt-2 pb-2 pl-4 pr-4 m-1 border" id="table_data">Captain data</span>
+          <span class="pt-2 pb-2 pl-4 pr-4 m-1 border" id="table_data">vice_cap data</span>
+          <span class="pt-2 pb-2 pl-4 pr-4 m-1 border" id="table_data">Strategy data</span>
+         </div>
+       </div>
+        <!--analytic head end-->
+        <!-- analytic panel start-->
+        <div class="card mt-2 with-size jp" id="analytic_body" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body" id="table_placer">
+           
+
+          </div>  
+      </div>
+        <!--analytic panel end-->
+        <!--vice captain panel start-->
+        <div class="card mt-4 without-size jp" id="vice_captain_panel" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Select The Players you want consider for Vice Captain </h5>
+            <h6 class="card-title text-center">select atleast 1 players </h6>
+            <br>
+            <div class="d-flex justify-content-around aligh-items-start">
+              <div id="vice_captain_team_one_head">
+                
+              </div>
+              <div id = "vice_captain_team_two_head">
+    
+              </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around align-items-start">
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id="vice_captain_team_one" style="width: 450px;">
+                  
+             </div>
+             <div class="d-flex justify-content-center align-items-center flex-wrap" id='vice_captain_team_two' style="width: 450px;" >
+                  
+             </div>
+            </div>
+            <div class="text-center">
+                <br><br>
+              <span class="btn btn-success team-continue" id="submit_vice_captain_players">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+        <!-- vice captain panel end-->
+        <!--Credit Range start-->
+        <div class="card mt-4 without-size jp" id="credit_range" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Enter Credit Range</h5>
+            <h6 class="card-title text-center">credits for the generated teams</h6>
+            <h6 class="card-title text-center">for example start : 97 & end : 100</h6>
+            <br>
+            <div class="container d-flex justify-content-center" >
+              <input type="number" class="form-control range-style"  placeholder="start" id="credit_start_value">
+              <input type="number" class="form-control range-style"  placeholder="end" id="credit_end_value">
+              <span class="btn btn-primary" id="credit_range_continue">Continue</span>
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--Credit Range end  -->
+        <!--team side number start-->
+        <div class="card mt-4 without-size jp" id="team_side" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Team Partision Strategy</h5>
+            <h6 class="card-title text-center">Select Atleast one strategy</h6>
+            <h6 class="card-title text-center" id="team_one_label"></h6>
+            <h6 class="card-title text-center" id="team_two_label"></h6>
+            <br>
+            <div class="container d-flex justify-content-around flex-wrap" id="team_side_placer">
+             
+            </div>
+            <br>
+            <div class="text-center">
+              <span class="btn btn-primary" id="team_side_continue">Continue</span>
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--team side number end  -->
+        <!--captain selection start-->
+        <div class="card mt-4 without-size jp" id="captain_selection" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">From What Credits You want to consider Captain & Vice Captain?</h5>
+            <h6 class="card-title text-center">ideal values will be 7,8,8.5,9 </h6>
+           
+            <br>
+            <div class="container d-flex justify-content-center" width="600px">
+              <input type="text" class="form-control" style="width: 300px;" placeholder="Enter Minimum Credits" id="captain_selection_value">
+              <span class="btn btn-primary" id="captain_selection_continue">Continue</span>
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--captain selection end  -->
+        <!--Strategy panel start-->
+        <div class="card mt-4 without-size jp" id="strategy" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Select Atleast one Strategy</h5>
+            <h6 class="card-title text-center">strategies of your teams</h6>
+
+            <br>
+            <div class="d-flex justify-content-around container align-items-center flex-wrap p-4 mr-auto ml-auto" id="strategy_placer">
+              
+            </div>
+            <br>
+            <div class="text-center">
+              <span class="btn btn-success" id="strategy_continue">Continue</span>
+            </div>
+            <br>
+          </div>
+      </div>
+        <!--Strategy panel end  -->
+        
+        <!--Match Number start-->
+        <div class="card mt-4 without-size jp" id="match_number" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Enter Match Number</h5>
+            <br>
+            <div class="container d-flex justify-content-center" width="600px">
+              <input type="number" class="form-control" style="width: 300px;" placeholder="Enter Match Number" id="match_number_value">
+              <span class="btn btn-primary" id="match_number_continue">Continue</span>
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--Match Number end  -->
+        <!--Show Generated Teams start-->
+        <div class="card mt-4 jp" id="teams_vp" style="display: none;" >
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Generated Teams</h5>
+            <div class="d-flex justify-content-around align-items-center">
+              <span class="btn btn-primary btn-sm" onclick="window.print()">print</span>
+              <span class="btn btn-success btn-sm ml-2" style="display: block;" id="shortcut_print">shortcut print</span>
+              <span class="btn btn-danger btn-sm ml-2" style="display: block;" id="analytic">see Analytics</span>
+            </div>
+            <br>
+            <div class="container d-flex justify-content-around flex-wrap" id="team_placer" width="600px">
+             
+            </div>
+            <br>
+          </div>
+      </div>
+        <!--Show Generated Teams  end  -->
+        <!--Show shortcut Teams start-->
+        <div class="card mt-4 jp" id="teams_shortcut" style="display: none;" >
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-around align-items-center">
+              <h5 class="card-title text-center">Shortcut Teams</h5>
+              <span class="btn btn-primary btn-sm" onclick="window.print()">print</span>
+            </div>
+            <br>
+            <div class="container d-flex justify-content-around flex-wrap" id="team_shortcut_placer" style="max-width: 800px;">
+                  
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--Show Shortcut Teams  end  -->
+        <!--Show results start-->
+        <div class="card mt-4 jp" id="results_vp" style="display: none;" >
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Results of Your Generation</h5>
+            <div class="text-center">
+              <span class="btn btn-primary btn-sm" onclick="window.print()">print</span>
+            </div>
+            <br>
+            <div class="container d-flex justify-content-around flex-wrap" id="team_result_placer" width="600px">
+             
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--Show results  end  -->
+
+      <!--how to generate start-->
+      <div class="card mt-4 without-size jp" id="how_to_generate" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">How to Generate</h5>
+          <br>
+         <ul>
+           <li>Inorder to Generate Teams first you have to click on <b>Generate Teams</b> option</li>
+           <li>After that you have to choose series and select any of the three generation mode</li>
+           <li>Generation mode includes <b>1) Quick Small league</b> , <b>2)Quick Grand League</b> and <b>3)Advanced League generation</b></li>
+           <li>you have to choose any one of it and generate teams</li>
+           <li>comming to the <b>Advanced Generation</b>
+           </li>
+           <li>Advanced Generation is a very powerful technique and you should have to be very keep while generating</li>
+           <li>In Fix player section, the players you have selected will always be there in the final generated team</li>
+           <li>like wise captain and vice-captain, those player are only be considered for captain and vice-captain selection</li>
+           <li>credit range is very very important aspect and have to given with close observation</li>
+           <li>finally select perfect strategy or strategies you want and generate teams</li>
+           <li>incase you are getting <b>software short of combinations</b> error that is the result of less teams in that combination so try chaning credit range or some other aspects.</li>
+         </ul>
+          <br>
+        </div>
+    </div>
+      <!--how to generate end  -->
+      <!--best tips start-->
+      <div class="card mt-4 without-size jp" id="best_tips" style="display: none;">
+        <div class="card-header text-center">
+         Dream 11 Team Generator
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Best Tips</h5>
+          <br>
+          <div>
+            <ul>
+              <li>Our Software always generate Best combinations and all teams are filtered heavyly</li>
+              <li>I have personally developed a seperate section of knowing the results of your generation</li>
+              <li>we have <b>Match Result</b> option where you can check the results by placing player points points from the fantacy app you are using for ex: <b>Dream 11</b></li>
+              <li>using that Match Result option is very important and have to be experienced by every one.</li>
+              <li>alway check the result of your generation and compare it with real time match result and estimate the efficiency of your generation</li>
+              <li>also we have analytic option that will be appeared after generating teams where you can check the statistics of your generation</li>
+              <li>by following above tips you can easily crack the dream11 mystery</li>
+            </ul>
+
+          </div>
+          <br>
+        </div>
+    </div>
+      <!--best tips end  -->
+    <!--contact us start-->
+    <div class="card mt-4 without-size jp" id="contact_us" style="display: none;">
+      <div class="card-header text-center">
+       Dream 11 Team Generator
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Contact us</h5>
+        <br>
+        <div>
+          <ul>
+            <li>This Software is completely Associated with <b>Believer 01</b> youtube channel</li>
+            <li>This is a life time validity software and this is a premium software which will not contain any ads and other time consumming stuff</li>
+            <li>we charge only once and all futher updates are completely free</li>
+            <li>our <b>whatsapp number : 9848579715</b></li>
+            <li>our <b>gmail id : believer01.official@gmail.com</b></li>
+            <li>Thanks for contacting us in advance.</li>
+          </ul>
+        </div>
+        <br>
+      </div>
+  </div>
+    <!--contact us end  -->
+  <!--about us start-->
+  <div class="card mt-4 without-size jp" id="about_us" style="display: none;">
+    <div class="card-header text-center">
+     Dream 11 Team Generator
+    </div>
+    <div class="card-body">
+      <h5 class="card-title text-center">About us</h5>
+      <br>
+     <div>
+       <div class="text-center">
+         <img src="dream11_images/author.jpg" style="width: 75px; height:75px; border-radius: 50%;" alt="">
+       </div>
+       <br>
+       <ul>
+         <li>My Name is <b>koluboyina varaprasad</b>, and my nick name is <b>coder_bobby</b>.</li>
+         <li>I am a <b>Professional Programmer</b> and also gym lover, who tries to develop my self in every point of time.</li>
+         <li>I am a Final year Engineering student in Andra Pradesh.</li>
+         <li>our Head Office is located in Kirlampudi. which is a great city in Andra Pradesh and known for great personalities.</li>
+         <li>please do not try to use our software code any where. because i have worked really hard to make this available for you.</li>
+         <li>Thank you. <b>stay hard</b>, coder_bobby.</li>
+       </ul>
+     </div>
+      <br>
+    </div>
+</div>
+  <!--about us end  -->
+
+         <!--Match Number - Match result start-->
+         <div class="card mt-4 without-size jp" id="match_result_number" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Enter Match Number</h5>
+            <br>
+            <div class="container d-flex justify-content-center" width="600px">
+              <input type="number" class="form-control" style="width: 300px;" placeholder="Enter Match Number" id="match_result_number_value">
+              <span class="btn btn-primary" id="match_result_number_continue">Continue</span>
+            </div>
+            <br>
+            <br>
+          </div>
+      </div>
+        <!--Match Number Match result end  -->
+        <!--Match Number Details start-->
+        <div class="card mt-4 without-size jp" id="match_detail" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body d-flex flex-column align-items-center" id="match_detail_container">
+            <h5 class="card-title text-center"> Match Details</h5>
+            <br>
+            <div class="d-flex container justify-content-around aligh-items-start">
+              <div id="team_one_vp_head">
+                
+              </div>
+              <h3>vs</h3>
+              <div id = "team_two_vp_head">
+    
+              </div>
+            </div>
+            <br>
+          </div>
+      </div>
+        <!--Match Number Details end -->
+        <!--update player points start-->
+        <div class="card mt-4 without-size jp" id="player_points" style="display: none;">
+          <div class="card-header text-center">
+           Dream 11 Team Generator
+          </div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title text-center"> Update Player Points </h5>
+            <br>
+            <div class="d-flex container justify-content-around aligh-items-start">
+              <div id="team_one_kvp_head">
+                
+              </div>
+              <h3>vs</h3>
+              <div id = "team_two_kvp_head">
+    
+              </div>
+            </div>
+            <br>
+            <div class="d-flex container justify-content-between align-items-start" >
+              <div id="team_one_points" class="d-flex justify-content-around align-items-start flex-wrap" style="width: 450px;">
+                
+              </div>
+              <div id = "team_two_points" class="d-flex justify-content-around align-items-start flex-wrap" style="width: 450px;">
+               
+              </div>
+            </div>
+            <br>
+            <div class="text-center">
+              <span class="btn btn-success" id="update_points_continue">Update Points</span>
+            </div>
+            <br>
+          </div>
+      </div>
+        <!--update palyer points end -->
+        </div>
+    </div>
+   <div class="my-footer d-flex flex-column justify-content-start text-center bg-dark"  style="visibility:initial;" id="footer_vp">
+     <strong>&copy; Believer 01</strong>
+     <span>All rights reserved</span>
+     <span>Developed by coder bobby</span>
+   </div>
+    <br><br>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/error.js" defer ></script>
+    <script src="js/create_series.js" defer ></script>
+    <script src="js/update_player_count.js" defer ></script>
+    <script src="js/cricket.js" defer ></script>
+    <script src="js/dynamic_team.js" defer ></script>
+    <script src="js/mode.js" defer ></script>
+    <script src="js/custom_match.js" defer ></script>
+    <script src="js/analytic.js" defer ></script>
+    <script src="js/shortcut_print.js" defer ></script>
+    <script src="js/fixed_player.js" defer ></script>
+    <script src="js/captain.js" defer ></script>
+    <script src="js/vice_captain.js" defer ></script>
+    <script src="js/change_data.js" defer></script>
+    <script src="js/team_generation_helper.js" defer ></script>
+    <script src="js/team_generation.js" defer ></script>
+    <script src="js/helper_script_one.js" defer ></script>
+    <script src="js/match_result.js" defer ></script>
+    <script src="js/team_player.js" defer ></script>
+    <script src="js/script.js" defer ></script>
+</body>
+</html>

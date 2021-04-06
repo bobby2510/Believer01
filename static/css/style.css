@@ -1,0 +1,444 @@
+.team-image
+{
+    width:50px;
+    height:50px;
+    margin:15px;
+    border-radius: 5px;;
+}
+.dp-vp
+{
+    max-width: 500px;
+}
+.my-logo-image
+{
+    width: 150px;
+    height: 45px;
+}
+.my-logo-image-big
+{
+    width: 180px;
+    height: 50px;
+}
+.my-logo-card
+{
+    padding:3px;
+    box-shadow: 0px 0px  7px black;
+    border-radius: 5px;
+}
+.my-footer
+{
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    font-size: 14px;
+    color:white;
+    padding:5px;
+}
+.without-size
+{
+    height: 550px;
+    overflow-y:scroll;
+
+}
+.with-size{
+    height:405px;
+    overflow-y:scroll;
+}
+.my-team-image
+{
+    width:35px;
+    height:35px;
+    margin:10px;
+    border-radius: 50%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.input-change-size
+{
+    width:60px;
+}
+.active-team
+{
+    box-shadow: 0px 0px  10px black;
+}
+.my-team
+{
+    box-shadow: 0px 0px  7px black;
+}
+.border-grey
+{
+    box-shadow: 0px 0px 5px black;
+    padding:5px;
+}
+.cricket-bg-style
+{
+    background-size: 350px 600px;
+    width: 350px;
+    height: 600px;
+}
+.final_kvp
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+.layout-style
+{
+    width: 350px;
+}
+.border-red
+{
+    box-shadow: 0px 0px 5px red;
+    padding:5px;
+}
+.border-green
+{
+    box-shadow:0px 0px 10px green;
+    background-color:rgb(197, 245, 245);
+    padding:5px;
+}
+.border-pink
+{
+    box-shadow:0px 0px 10px rgb(70, 77, 70);
+    background-color:pink;
+    padding:5px;
+}
+.border-orange
+{
+    box-shadow:0px 0px 10px green;
+    background-color: rgba(255, 166, 0, 0.507);
+    padding:5px;
+}
+.border-purple
+{
+    box-shadow:0px 0px 10px green;
+    background-color:rgba(255, 144, 255, 0.548);
+    padding:5px;
+}
+.player-image
+{
+    width: 40px;
+    height: 40px;
+}
+
+.player-name
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    width:65px; 
+    font-size:12px;
+    height:20px;
+    line-height: 20px;
+     background-color: #fff;
+      color:#282828; 
+      border-radius:2px; 
+      text-align:center;
+      padding:0 4px;
+}
+.selected-player-image
+{
+    width:30px;
+    height: 30px;
+    margin-right:10px;
+}
+.selected-player-inner-div
+{
+    width:140px;
+    font-size:14px;
+}
+.selected-player-outer-div
+{
+    width:200px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.player-name-black
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    width:65px; 
+    font-size:12px;
+    height:20px;
+    line-height: 20px;
+     background-color:#282828;
+      color: #fff; 
+      border-radius:2px; 
+      text-align:center;
+      padding:0 4px;
+}
+#side_bar
+{
+    cursor: pointer;
+}
+#side_bar:hover{
+    background-color: #f1f1f1;
+}
+.captain
+{
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    color:white;
+    position: absolute;
+    right:2px;
+    top:2px;
+    text-align: center;
+    line-height: 13px;
+    border-radius: 50%;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 0px 0px 5px black;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+ 
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+.vice-captain
+{
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    color:white;
+    position: absolute;
+    right:2px;
+    top:2px;
+    text-align: center;
+    line-height: 13px;
+    border-radius: 50%;
+}
+.shortcut-team
+{
+    font-size: 9px;
+}
+.border-lime
+{
+    box-shadow:0px 0px 10px grey;
+    background-color:rgba(0, 255, 0, 0.253);
+    padding:5px;
+}
+.mystrat
+{
+    border:1px solid grey;
+    margin:10px;
+}
+.mystrat tr td{
+    padding: 5px;
+}
+.strategy-style
+{
+    width: 120px;
+}
+#mobile_nav
+{
+    display:block;
+}
+#team_one
+{
+    width: 450px;
+}
+#team_two
+{
+    width: 450px;
+}
+.range-style
+{
+    width: 180px;
+}
+#desktop_nav
+    {
+        display:none;
+    }
+@media only screen and (max-width: 450px) {
+    #footer_content
+    {
+        display:none;
+    }
+    #desktop_nav
+    {
+        display:none;
+    }
+    #mobile_nav
+    {
+        display:block;
+    }
+    #update_btn
+    {
+        display: none;
+    }
+    .selected-player-image
+    {
+        width:25px;
+        height:25px;
+        margin-right:6px;
+    }
+    .input-size
+    {
+        width:190px;
+    }
+    .final_kvp{
+        margin-left:2px;
+        margin-right:2px;
+    }
+    .player-point
+    {
+        width:190px;
+    }
+    .input-change-size
+    {
+        width:50px;
+    }
+    .selected-player-inner-div
+    {
+        width:90px;
+        font-size:9px;
+    }
+    .selected-player-outer-div
+    {
+        width:120px;
+        margin-top:8px;
+        margin-bottom:8px;
+        margin-right:8px;
+        margin-left:8px;
+    }
+    .range-style{
+        width: 75px;
+    }
+    .strategy-style{
+        width: 70px;
+        font-size:10px;
+    }
+    .cricket-bg-style
+    {
+        background-size: 300px 500px;
+        width: 300px;
+        height: 500px;
+    }
+    .my-footer
+    {
+        position: fixed;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        font-size: 10px;
+        color:white;
+        padding:3px;
+    }
+    .layout-style
+    {
+        width: 300px;
+    }
+    .player-image
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .player-name
+    {
+        font-family: sans-serif;
+    font-weight: bold;
+    width:55px; 
+    font-size:11px;
+    height:20px;
+    line-height: 20px;
+     background-color: #fff;
+      color:#282828; 
+      border-radius:2px; 
+      text-align:center;
+      padding:0 4px;
+    }
+    .player-name-black
+    {
+        font-family: sans-serif;
+        font-weight: bold;
+        width:55px; 
+        font-size:11px;
+        height:20px;
+        line-height: 20px;
+         background-color: #282828;
+          color:#fff; 
+          border-radius:2px; 
+          text-align:center;
+          padding:0 4px;
+    }
+    .dp-vp
+    {
+        max-width: 200px;
+    }
+    .input-size
+    {
+        width:100px;
+    }
+    .player-point
+    {
+        width:100px;
+    }
+    .without-size
+    {
+      height: 465px;
+        overflow-y:scroll;
+
+    }
+    .with-size{
+        height:310px;
+        overflow-y:scroll;
+    }
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
