@@ -50,7 +50,7 @@ json_data={
                      "players_role": [1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4], "players_credits": [9.5, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.5, 10.0, 9.0, 9.0, 8.5, 9.5, 8.5, 8.5, 9.0, 8.5, 8.5], "players_image": [8822, 8823, 8824, 8825, 8826, 8827, 0, 8829, 8830, 8831, 8832, 0, 8834, 8835, 8836, 8837, 8838, 8839], "players_id": [8822, 8823, 8824, 8825, 8826, 8827, 8828, 8829, 8830, 8831, 8832, 8833, 8834, 8835, 8836, 8837, 8838, 8839]}]},
   {
     "series_name": "IPL 2021 LEAGUE",
-     "series_code": "IPL2021",
+     "series_code": "IPL21",
       "number_teams": 8,
        "team_list": ["RCB2021", "MI2021","KKR2021","SRH2021","CSK2021","PK2021","RR2021","DC2021"],
         "teams": [
@@ -84,12 +84,12 @@ json_data={
                 "players_image": [], 
                 "players_id": []
                 },
-          {"team_name": "CSK2021",
-               "players_name":[],
-                "players_role": [], 
-                "players_credits": [], 
-                "players_image": [], 
-                "players_id": []
+           {"team_name": "CSK2021",
+               "players_name":["N Jagadeesan","M Dhoni","C Pujara","C H Nishanth","R Uthappa","R Gaikwad","A Rajudu","S Raina","F d Plessis","B Varma","M Santner","K Gowtham","M Ali","R Jadeja","S Curran","K Sharama","J Behrendorff","R S Kishore","K Asif","H Reddy","D Bravo","I Tahir","D Chahar","S Thakur","L Ngidi"],
+                "players_role": [1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4], 
+                "players_credits": [8,9,8,8,8.5,8.5,9,9.5,9.5,7.5,8,8,8.5,9,9,8,8,8,8,8,8.5,8.5,8.5,8.5,8.5], 
+                "players_image":[9050,9051,9052,9053,9054,9055,9056,9057,9058,9059,9060,9061,9062,9063,9064,9065,9066,9067,9068,9069,9070,9071,9072,9073,9074], 
+                "players_id": [9050,9051,9052,9053,9054,9055,9056,9057,9058,9059,9060,9061,9062,9063,9064,9065,9066,9067,9068,9069,9070,9071,9072,9073,9074]
                 },
           {"team_name": "PK2021",
                "players_name":[],
@@ -106,11 +106,11 @@ json_data={
                 "players_id": []
                 },
           {"team_name": "DC2021",
-               "players_name":[],
-                "players_role": [], 
-                "players_credits": [], 
-                "players_image": [], 
-                "players_id": []
+               "players_name":["S Billings","R Pant","V Vinod","R Patel","A Rahane","S Hetmyer","P Shaw","S Smith","S Dhawan","L Yadav","C Woaks","A Patel","M Stoinis","M Siddharth","A Khan","T Curran","P Dubey","L Meriwala","I Sharma","A Mishra","R Ashwin","U Yadav","K Rabada","A Nortje"],
+                "players_role":[1,1,2,2,2,2,2,2,2,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4], 
+                "players_credits": [8.5,9.5,8,8,8.5,8.5,8.5,9,10,8,8.5,8.5,9,7.5,8,8,8,8,8.5,8.5,8.5,8.5,9,9], 
+                "players_image": [9075,9076,9077,9078,9079,9080,9081,9082,9083,9084,9085,9086,9087,9088,9089,9090,9091,9092,9093,9094,9095,9096,9097,9098], 
+                "players_id":[9075,9076,9077,9078,9079,9080,9081,9082,9083,9084,9085,9086,9087,9088,9089,9090,9091,9092,9093,9094,9095,9096,9097,9098]
                 }
         ]
 }
