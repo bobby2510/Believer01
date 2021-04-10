@@ -433,13 +433,13 @@ let team_generator_helper_two = function(one_arr,fp_one_arr,strategy,toi,tti,nt,
    let dp=0
    let selected_tsd_cnt=selected_tsd.length
    let split_arr = []
-    captain_arr_id=[] // add
-   captain_arr_index=[] //add
-    c1_players.forEach((p)=>{captain_arr_id.push(p.player_id)}) //add
-   c2_players.forEach((p)=>{captain_arr_id.push(p.player_id)})  // add
-   for(let i=0;i<captain_arr_id.length;i++)  //add
-      captain_arr_index.push(parseInt(nt/captain_arr_id.length))  //add
-   captain_arr_index[0]=captain_arr_index[0]+parseInt(nt%captain_arr_id.length) //add
+   // captain_arr_id=[] // add
+  // captain_arr_index=[] //add
+   // c1_players.forEach((p)=>{captain_arr_id.push(p.player_id)}) //add
+  // c2_players.forEach((p)=>{captain_arr_id.push(p.player_id)})  // add
+  // for(let i=0;i<captain_arr_id.length;i++)  //add
+    //  captain_arr_index.push(parseInt(nt/captain_arr_id.length))  //add
+  // captain_arr_index[0]=captain_arr_index[0]+parseInt(nt%captain_arr_id.length) //add
    for(let i=0;i<selected_tsd_cnt;i++)
       split_arr.push(parseInt(nt/selected_tsd_cnt))
    console.log(selected_tsd)
@@ -522,11 +522,11 @@ let team_generator_helper_two = function(one_arr,fp_one_arr,strategy,toi,tti,nt,
                {
                  let flag_c = get_rand_value(final_c.length)
                   let temp_c = final_c[flag_c] //add
-                  if(captain_arr_index[captain_arr_id.indexOf(temp_c)]>0) //add
-                  {
-                     captain_arr_index[captain_arr_id.indexOf(temp_c)]--; //add
+                //  if(captain_arr_index[captain_arr_id.indexOf(temp_c)]>0) //add
+                //  {
+                  //   captain_arr_index[captain_arr_id.indexOf(temp_c)]--; //add
                      captain_id=temp_c //add
-                  } //add
+                //  } //add
                }
                else
                {
@@ -537,14 +537,14 @@ let team_generator_helper_two = function(one_arr,fp_one_arr,strategy,toi,tti,nt,
                      break;
                   }
                }  
-                 dp_vp++; //add
-               if(dp_vp>100) //add
-               { //add
-                  vp_flag=0; //add
-                  break; //add
-               } //add
+               //  dp_vp++; //add
+             //  if(dp_vp>100) //add
+              // { //add
+               //   vp_flag=0; //add
+               //   break; //add
+               //} //add
             }
-              if(vp_flag==0){dp++; continue; } //add
+             // if(vp_flag==0){dp++; continue; } //add
             //console.log(team)
             // till now we have found the complete team
             let hash_value = get_hash_value(team,captain_id,vice_captain_id)
