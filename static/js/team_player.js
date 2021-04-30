@@ -57,16 +57,16 @@ json_data={
             {
                 "team_name": "RCB2021",
                  "players_name": ["M Azharuddeen", "K Srikar-Bharat", "AB Villiers", "P Deshpande", "S Baby", "S Prabhudessai", "D Padikkal", "F Allen", "R Patidar", "V Kohli", "W Sundar", "S Ahmed", "D Sams", "G Maxwell", "D Christian", "K Jamieson", "M Siraj", "N Saini", "A Zampa", "H Patel", "K Richardson", "Y Chahal"],
-                  "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4], 
-                  "players_credits": [8.0, 8.0, 10.0, 8.0, 8.0, 8.0, 9.0, 8.0, 8.0, 10.5, 8.5, 7.5, 8.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.5, 8.0, 8.5, 9.0], 
+                  "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 3, 4, 4, 4, 4, 4, 4, 4], 
+                  "players_credits": [8,8,10,8,8,8,9,8,8,10.5,8,8,8,9.5,8,8.5,8.5,8,8.5,9,8.5,8.5], 
                   "players_image": [9025, 9026, 9027, 9028, 9029, 9030, 9031, 9032, 9033, 9034, 9035, 9036, 9037, 9038, 9039, 9040, 9041, 9042, 9043, 9044, 9045, 9046], 
                   "players_id": [9025, 9026, 9027, 9028, 9029, 9030, 9031, 9032, 9033, 9034, 9035, 9036, 9037, 9038, 9039, 9040, 9041, 9042, 9043, 9044, 9045, 9046]
                   },
                   {
                     "team_name": "MI2021",
                     "players_name": ["Q Kock", "I Kishan", "A Tare", "S Tiwary", "R Sharma", "S Yadav", "C Lynn", "A Singh", "K Pollard", "K Pandya", "H Pandya", "A Roy", "J Neesham", "A Tendulkar", "M Jansen", "R Chahar", "M Khan", "Y Singh", "J Yadav", "J Bumrah", "N Coulter-Nile", "T Boult", "A Milne", "D Kulkarni", "P Chawla"], 
-                   "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-                    "players_credits": [9.5, 8.5, 8.0, 8.0, 10.0, 9.0, 8.5, 8.0, 9.0, 8.0, 9.0, 8.0, 8.5, 7.5, 8.0, 8.5, 8.0, 8.0, 8.0, 9.0, 8.0, 9.0, 8.0, 8.0, 8.0],
+                   "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+                    "players_credits": [9.5,8.5,8,8,10.5,9.5,8.5,8,8.5,8.5,8.5,8,8.5,7.5,8,8.5,8,8,8,9,8,9,8,8,8],
                      "players_image": [9000, 9001, 9002, 9003, 9004, 9005, 9006, 9007, 9008, 9009, 9010, 9011, 9012, 9013, 9014, 9015, 9016, 0, 9018, 9019, 9020, 9021, 9022, 9023, 9024], 
                      "players_id": [9000, 9001, 9002, 9003, 9004, 9005, 9006, 9007, 9008, 9009, 9010, 9011, 9012, 9013, 9014, 9015, 9016, 9017, 9018, 9019, 9020, 9021, 9022, 9023, 9024]
                    },
@@ -74,43 +74,43 @@ json_data={
                          "team_name": "KKR2021",
                           "players_name": ["S Jackson", "E Morgan", "K Nair", "N Rana", "R Tripathi", "S Gill", "A Russell", "B Cutting", "S Al Hasan", "S Narine", "V Iyer", "D Karthik", "G Singh Mann", "T Seifert", "H Singh", "K Nagarkoti", "K Yadav", "L Ferguson", "P Cummins", "P Negi", "P Krishna", "S Warrier", "S Mavi", "V Arora", "V Chakaravarthy"], 
                           "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 1, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-                           "players_credits": [8,9.5,8,8.5,8,9,10,8.5,9,9,8,8.5,8,8,8,8,8.5,8.5,9,8,8.5,8,8,7.5,8.5], 
+                           "players_credits": [8,9,8,9,8,8.5,10,8.5,9,9,8,8.5,8,8,8,8,8.5,8.5,9,8,8.5,8,8,7.5,8.5], 
                            "players_image": [9150, 9151, 9152, 9153, 9154, 9155, 9156, 9157, 9158, 9159, 9160, 9161, 9162, 9163, 9164, 9165, 9166, 9167, 9168, 9169, 9170, 9171, 9172, 9173, 9174],
                             "players_id": [9150, 9151, 9152, 9153, 9154, 9155, 9156, 9157, 9158, 9159, 9160, 9161, 9162, 9163, 9164, 9165, 9166, 9167, 9168, 9169, 9170, 9171, 9172, 9173, 9174]
                             },
            {"team_name": "SRH2021",
                 "players_name": ["J Bairstow", "A Samad", "J Roy", "K Williamson", "M Pandey", "P Garg", "V Singh", "A Sharma", "J Holder", "K Jadhav", "M Nabi", "V Shankar", "D Warner", "S Goswami", "W Saha", "B Thampi", "B Kumar", "J Suchith", "K Ahmed", "M Ur Rahman", "R Khan", "S Sharma", "S Nadeem", "S Kaul", "T Natarajan"],
                  "players_role": [1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 2, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], 
-                 "players_credits": [9,8,9,9,9,8,8,8,9,8,8.5,8.5,10.5,7.5,8.5,8,9,8,8,8.5,9.5,8.5,8,8,8.5],
+                 "players_credits": [10,8,9,9,9,8,8,8,9,8,8.5,8.5,10.5,7.5,8.5,8,9,8,8,8.5,9.5,8.5,8,8,8.5],
                   "players_image": [9100, 9101, 9102, 9103, 9104, 9105, 9106, 9107, 9108, 9109, 9110, 9111, 9112, 9113, 9114, 9115, 9116, 9117, 9118, 9119, 9120, 9121, 9122, 9123, 9124],
                    "players_id": [9100, 9101, 9102, 9103, 9104, 9105, 9106, 9107, 9108, 9109, 9110, 9111, 9112, 9113, 9114, 9115, 9116, 9117, 9118, 9119, 9120, 9121, 9122, 9123, 9124]
                    },
            {"team_name": "CSK2021",
                "players_name":["N Jagadeesan","M Dhoni","C Pujara","C H Nishanth","R Uthappa","R Gaikwad","A Rajudu","S Raina","F d Plessis","B Varma","M Santner","K Gowtham","M Ali","R Jadeja","S Curran","K Sharama","J Behrendorff","R S Kishore","K Asif","H Reddy","D Bravo","I Tahir","D Chahar","S Thakur","L Ngidi"],
                 "players_role": [1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4], 
-                "players_credits": [8,9,8,8,8.5,8.5,9,9.5,9.5,7.5,8,8,8.5,9,9,8,8,8,8,8,8.5,8.5,8.5,8.5,8.5], 
+                "players_credits": [8,8.5,8,8,8.5,8,8.5,9,10,7.5,8,8,9.5,9.5,9,8,8,8,8,8,8.5,8.5,8.5,8.5,8.5], 
                 "players_image":[9050,9051,9052,9053,9054,9055,9056,9057,9058,9059,9060,9061,9062,9063,9064,9065,9066,9067,9068,9069,9070,9071,9072,9073,9074], 
                 "players_id": [9050,9051,9052,9053,9054,9055,9056,9057,9058,9059,9060,9061,9062,9063,9064,9065,9066,9067,9068,9069,9070,9071,9072,9073,9074]
                 },
           {
                 "team_name": "PK2021", 
                 "players_name": ["N Pooran", "C Gayle", "D Hooda", "M Singh", "M Agarwal", "S Khan", "S Khan", "F Allen", "J Saxena", "M Henriques", "U Singh", "K Rahul", "D Malan", "P Singh", "A Singh", "C Jordan", "D Nalkande", "H Brar", "I Porel", "J Richardson", "M Shami", "M Ashwin", "R Bishnoi", "R Meredith", "S Kumar"],
-                 "players_role": [1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 1, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], 
-                 "players_credits": [9,9.5,8,8.5,9,8,8,8,8,8.5,8,10.5,8.5,8,8,8.5,8,8,8,8.5,9,8.5,8.5,8.5,8],
+                 "players_role": [1, 2, 3, 2, 2, 2, 2, 3, 3, 3, 3, 1, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], 
+                 "players_credits": [8.5,9,8.5,8.5,9,8,8,8,8,8.5,8,10.5,8.5,8,8.5,8.5,8,8,8,8.5,9,8.5,8.5,8.5,9],
                   "players_image": [9250, 9251, 9252, 9253, 9254, 9255, 9256, 9257, 9258, 9259, 0, 9261, 9262, 9263, 9264, 9265, 9266, 9267, 9268, 9269, 9270, 9271, 9272, 9273, 9274], 
                   "players_id": [9250, 9251, 9252, 9253, 9254, 9255, 9256, 9257, 9258, 9259, 9260, 9261, 9262, 9263, 9264, 9265, 9266, 9267, 9268, 9269, 9270, 9271, 9272, 9273, 9274]
                   },
          {"team_name": "RR2021", 
           "players_name": ["J Buttler", "D Miller", "M Vohra", "R Parag", "Y Jaiswal", "B Stokes", "C Morris", "M Lomror", "R Tewatia", "S Dube", "S Gopal", "A Rawat", "L Livingstone", "S Samson", "A Singh", "A Tye", "C Sakariya", "J Unadkat", "J Archer", "K Tyagi", "K Cariappa", "K Yadav", "M Markande", "M Rahman"], 
           "players_role": [1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 1, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], 
-          "players_credits":[9.5,8.5,8,8,8,10.5,9,8,9,8.5,8.5,8,8.5,9,8,8,8,8.5,9,8,8,7.5,8,8.5], 
+          "players_credits":[9.5,9,8,8.5,8,10.5,9.5,8,9,8.5,8.5,8,8.5,9.5,8,8,8.5,8.5,9,8,8,7.5,8,8.5], 
           "players_image": [9200, 9201, 9202, 9203, 9204, 9205, 9206, 9207, 9208, 9209, 9210, 0, 9212, 9213, 9214, 9215, 9216, 9217, 9218, 9219, 9220, 9221, 9222, 9223], 
           "players_id": [9200, 9201, 9202, 9203, 9204, 9205, 9206, 9207, 9208, 9209, 9210, 9211, 9212, 9213, 9214, 9215, 9216, 9217, 9218, 9219, 9220, 9221, 9222, 9223]
      },
           {"team_name": "DC2021",
                "players_name":["S Billings","R Pant","V Vinod","R Patel","A Rahane","S Hetmyer","P Shaw","S Smith","S Dhawan","L Yadav","C Woaks","A Patel","M Stoinis","M Siddharth","A Khan","T Curran","P Dubey","L Meriwala","I Sharma","A Mishra","R Ashwin","U Yadav","K Rabada","A Nortje"],
                 "players_role":[1,1,2,2,2,2,2,2,2,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4], 
-                "players_credits": [8.5,9.5,8,8,8.5,8.5,8.5,9,10,8,8.5,8.5,9,7.5,8,8,8,8,8.5,8.5,8.5,8.5,9,9], 
+                "players_credits": [8.5,10,8,8,8.5,8.5,8.5,9,10.5,8,8.5,8.5,8.5,7.5,8.5,8,8,8,8.5,8.5,8.5,8.5,9,9], 
                 "players_image": [9075,9076,9077,9078,9079,9080,9081,9082,9083,9084,9085,9086,9087,9088,9089,9090,9091,9092,9093,9094,9095,9096,9097,9098], 
                 "players_id":[9075,9076,9077,9078,9079,9080,9081,9082,9083,9084,9085,9086,9087,9088,9089,9090,9091,9092,9093,9094,9095,9096,9097,9098]
                 }
