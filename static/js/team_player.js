@@ -116,7 +116,47 @@ json_data={
                 }
         ]
 }
-
+,
+    {
+     "series_name": "DREAM 11 ST LUSIA T10 BLAST", 
+     "series_code": "SLT10",
+      "number_teams": 4,
+       "team_list": ["SSCS", "VFSS","LBR", "ME"], 
+       "teams": [
+            {
+                 "team_name": "SSCS", 
+                 "players_name": ["S Mesmain", "A Hippoltye", "K Prospere", "X Emmanuel", "B Tisson", "D Monrose", "K Gassie", "D Didier", "J Sylvester", "T Hipppoltye", "J Charles", "K Prospere", "Q Mesmain", "W Prospere"], 
+                 "players_role": [3, 2, 2, 2, 3, 3, 3, 2, 1, 1, 4, 4, 4, 4], 
+                 "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], 
+                 "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                  "players_id": [1100, 1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112, 1113]
+               },
+               {
+                    "team_name": "VFSS",
+                     "players_name": ["J Baptiste", "D Taylor", "H Philip", "J Isidore", "J Dugaillard", "K Martial", "K Constantine", "S St rose", "D Rampal", "E Dupres", "R Baptiste", "S Montia", "K Laure", "R Robert", "D Martial", "J Harding", "K St Hill", "R Joseph"],
+                      "players_role": [3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 3, 1, 1, 4, 4, 4, 4],
+                       "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
+                        "players_image": [1150, 1151, 1152, 0, 1154, 1155, 1156, 1157, 0, 1159, 1160, 1161, 0, 0, 1164, 0, 1166, 1167], 
+                        "players_id": [1150, 1151, 1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167]
+                        },
+                        {
+                         "team_name": "LBR", 
+                         "players_name": ["S Pamphile", "A Edward", "J Emmanuel", "N Andrew", "Q St. Rose", "R Moses", "C Stanislaus", "S George", "D Anthony", "D Jn. Pierre", "M Francois", "R Ramroach", "T Theodore"], 
+                         "players_role": [3, 2, 2, 2, 3, 3, 2, 3, 1, 4, 4, 4, 4],
+                          "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
+                           "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+                           "players_id": [1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1211, 1212]
+                        }, 
+                           {
+                                "team_name": "ME",
+                                 "players_name": ["M Sammy", "D Sammy Jr.", "M Wells", "Ryon\tCharles", "T Edward", "T Mathurin", "W Felix", "Z Bideau", "B Calix", "B Bicar", "D Sammy", "G Mitchel", "G Serieux Sr.", "E Henery", "Ryan\tLangillier", "S Paul", "S Charles", "G Serieux Jr.", "E Frederick", "E Lubin", "K Maximin", "Kern\tXavier", "K Jules", "L Sammy", "M Charlery", "T Gifford"],
+                                  "players_role": [3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 2, 3, 3, 3, 1, 4, 4, 4, 4, 4, 4, 4, 4], 
+                                  "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], 
+                                  "players_image": [0, 0, 1252, 0, 0, 0, 0, 0, 0, 0, 1260, 0, 0, 0, 0, 0, 1266, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                                   "players_id": [1250, 1251, 1252, 1253, 1254, 1255, 1256, 1257, 1258, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275]
+                                  }
+                        ]
+                    }
 
 
 
