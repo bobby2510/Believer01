@@ -119,7 +119,7 @@ json_data={
 ,
     {
      "series_name": "DREAM 11 ST LUSIA T10 BLAST", 
-     "series_code": "SLT10",
+     "series_code": "VPSLT10",
       "number_teams": 12,
        "team_list": ["SSCS", "VFSS","LBR", "ME","VFNR","CCMH","CCP", "GICB","SCL","MVC","BLS","MRS"], 
        "teams": [
