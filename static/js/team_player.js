@@ -117,78 +117,19 @@ json_data={
         ]
 }
 ,
-    {
-     "series_name": "DREAM 11 ST LUSIA T10 BLAST", 
-     "series_code": "VPSLT10",
-      "number_teams": 12,
-       "team_list": ["SSCS", "VFSS","LBR", "ME","VFNR","CCMH","CCP", "GICB","SCL","MVC","BLS","MRS"], 
-       "teams": [
-            {
-                 "team_name": "SSCS", 
-                 "players_name": ["S Mesmain", "A Hippoltye", "K Prospere", "X Emmanuel", "B Tisson", "D Monrose", "K Gassie", "D Didier", "J Sylvester", "T Hipppoltye", "J Charles", "K Prospere", "Q Mesmain", "W Prospere"], 
-                 "players_role": [3, 2, 2, 2, 3, 3, 3, 2, 1, 1, 4, 4, 4, 4], 
-                 "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], 
-                 "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                  "players_id": [1100, 1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112, 1113]
-               },
-               {
-                    "team_name": "VFSS",
-                     "players_name": ["J Baptiste", "D Taylor", "H Philip", "J Isidore", "J Dugaillard", "K Martial", "K Constantine", "S St rose", "D Rampal", "E Dupres", "R Baptiste", "S Montia", "K Laure", "R Robert", "D Martial", "J Harding", "K St Hill", "R Joseph"],
-                      "players_role": [3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 3, 1, 1, 4, 4, 4, 4],
-                       "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
-                        "players_image": [1150, 1151, 1152, 0, 1154, 1155, 1156, 1157, 0, 1159, 1160, 1161, 0, 0, 1164, 0, 1166, 1167], 
-                        "players_id": [1150, 1151, 1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167]
-                        },
-                        {
-                         "team_name": "LBR", 
-                         "players_name": ["S Pamphile", "A Edward", "J Emmanuel", "N Andrew", "Q St. Rose", "R Moses", "C Stanislaus", "S George", "D Anthony", "D Jn. Pierre", "M Francois", "R Ramroach", "T Theodore"], 
-                         "players_role": [3, 2, 2, 2, 3, 3, 2, 3, 1, 4, 4, 4, 4],
-                          "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
-                           "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                           "players_id": [1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1211, 1212]
-                        }, 
-                           {
-                                "team_name": "ME",
-                                 "players_name": ["M Sammy", "D Sammy Jr.", "M Wells", "Ryon\tCharles", "T Edward", "T Mathurin", "W Felix", "Z Bideau", "B Calix", "B Bicar", "D Sammy", "G Mitchel", "G Serieux Sr.", "E Henery", "Ryan\tLangillier", "S Paul", "S Charles", "G Serieux Jr.", "E Frederick", "E Lubin", "K Maximin", "Kern\tXavier", "K Jules", "L Sammy", "M Charlery", "T Gifford"],
-                                  "players_role": [3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 2, 3, 3, 3, 1, 4, 4, 4, 4, 4, 4, 4, 4], 
-                                  "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], 
-                                  "players_image": [0, 0, 1252, 0, 0, 0, 0, 0, 0, 0, 1260, 0, 0, 0, 0, 0, 1266, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                                   "players_id": [1250, 1251, 1252, 1253, 1254, 1255, 1256, 1257, 1258, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275]
-                                  },
-                  {"team_name": "VFNR", "players_name": ["S Naitram", "G Prospere", "J Elibox", "A Prospere", "D Thomas", "T Sookwa", "E Charles", "M Kenny Clarke", "J Mauricette", "S Hayle", "D John", "K Arnold", "K Adonis", "R Joseph"], "players_role": [1, 1, 3, 3, 2, 3, 2, 2, 4, 4, 4, 4, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [1300, 1301, 1302, 0, 0, 1305, 0, 0, 0, 0, 1310, 1311, 0, 0], "players_id": [1300, 1301, 1302, 1303, 1304, 1305, 1306, 1307, 1308, 1309, 1310, 1311, 1312, 1313]},
-            {"team_name": "CCMH", "players_name": ["T Gabriel", "C Pamphile", "J Peter", "A Prince", "K Edward", "J Williams", "C Johnny", "S Auguste", "D Naitram", "E Sexius", "J Mann", "S Saltibus", "C Fanis", "S Straker", "R Hippolyte"], "players_role": [2, 2, 1, 3, 3, 4, 4, 2, 4, 3, 3, 3, 1, 2, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [1350, 1351, 1352, 1353, 1354, 1355, 1356, 1357, 1358, 1359, 1360, 1361, 1362, 1363, 1364]},
- {"team_name": "CCP", "players_name": ["J Simon", "J Henry", "A Alexander", "V Smith", "A Simon", "C Richardson", "V St. Ange", "T Norbal", "B Bess", "S Theophane", "C St. Rose", "N Joseph", "S Lafeuillee"], "players_role": [1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 2, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [1400, 1401, 1402, 1403, 1404, 1405, 1406, 1407, 1408, 1409, 1410, 1411, 1412]}, 
-     {"team_name": "GICB", "players_name": ["V Gabriel", "K Elcock", "L Solomon", "K Melius", "J Goodman", "U Preville", "L Edwards", "R Paul", "T Chicot", "K Sexius", "D Edward", "J Cyril", "R Goodman", "D Polius", "Z Arthur", "V Crandon", "B Sayers"], "players_role": [1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 3, 3, 3, 2, 1, 2], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 0, 0, 1453, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [1450, 1451, 1452, 1453, 1454, 1455, 1456, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 1465, 1466]},
-
-{"team_name": "SCL", "players_name": ["N Leo", "J Charles", "N Edmund", "W Clovis", "W Inglis", "C Callendar", "K Charles", "S Leo", "D Jn Baptiste", "A Joseph", "X Gabriel", "R Simmons", "A Callendar"], "players_role": [1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 2], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [1500, 1501, 0, 0, 0, 0, 1506, 0, 1508, 0, 0, 0, 0], "players_id": [1500, 1501, 1502, 1503, 1504, 1505, 1506, 1507, 1508, 1509, 1510, 1511, 1512]},
-
-{"team_name": "MVC", "players_name": ["Z Edmund", "D Smith", "N Deterville", "O Changoo", "C Polius", "R Smith", "L Polius", "M Louisy", "C Ange", "L Modeste", "M Stanislaus", "M Shoulette", "S Severin"], "players_role": [3, 2, 2, 2, 3, 3, 2, 1, 4, 4, 4, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]},
-{"team_name": "BLS", "players_name": ["S Abraham", "C Thomas", "S Joseph", "Z Antoine", "A Joseph", "A Lafeuille", "Q Henry", "N Wilfred", "S Calderon", "N Rosemond", "J Charles", "T Pierre", "I Wilfred", "E Devon", "M Vern Remy"], "players_role": [1, 3, 3, 3, 2, 2, 1, 3, 4, 4, 4, 2, 2, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 101, 102, 103, 0, 105, 106, 107, 0, 109, 110, 111, 0, 0, 0], "players_id": [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]},
- {"team_name": "MRS", "players_name": ["S Emmanuel", "C Charlery", "R Lesmond", "C Emmanuel", "K Augustin", "S Descartes", "E Emmanuel", "D Henry", "H Charlery", "J Lesmond", "K Gaston", "K Henry", "S Edward"], "players_role": [1, 2, 2, 3, 3, 3, 2, 4, 4, 4, 4, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 201, 202, 203, 204, 205, 0, 207, 208, 0, 210, 0, 0], "players_id": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212]}
-
-                        ]
-                    },
-    
-    {"series_name": "FANCODE ESC PRAGUE T10", "series_code": "FBRT10", "number_teams": 9, 
-
-"team_list": ["PBV", "UCC","PCR","PSV","BCC","PCK","VCC","PSM","BRD"],
-
- "teams": [{"team_name": "PBV", "players_name": ["P Bagauly", "S Joshi", "A Pangarkar", "N Pandit", "C Sharma", "M Nawab", "R Magare", "A Singh", "A Sharma", "P Baghel", "R Khanna", "R Bomishetti", "A Deshpande", "S Kumar", "M Parikh", "V Shankar", "G Kumar", "C Parchure", "K Deshmukh", "M Singh", "S Awati", "S Raizada"], "players_role": [3, 2, 1, 3, 1, 4, 2, 1, 3, 3, 3, 3, 2, 2, 2, 2, 1, 4, 4, 2, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [300, 301, 302, 303, 0, 305, 306, 307, 308, 309, 310, 0, 0, 0, 314, 0, 316, 0, 318, 0, 320, 0], "players_id": [300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321]}, {"team_name": "UCC", "players_name": ["D Singh", "S Davizi", "P Gangappa", "S Madhireddy", "Y Salian", "A Rai", "P Kumar", "S Grover", "U Gali", "M Vandrasi", "A Sim", "B Samad", "P Karthik", "P Pundir", "V Krishna", "J Stooman", "K Bhatnagar", "S Pokhriyal", "R Sangam", "J Hoque"], "players_role": [1, 2, 1, 4, 2, 4, 4, 1, 2, 3, 3, 4, 2, 3, 3, 4, 4, 3, 4, 2], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 0, 363, 364, 365, 366, 367, 368, 369], "players_id": [350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369]},
- {"team_name": "PCR", "players_name": ["R Deshmoyni", "J Panilet", "K Gopalakrishnan", "K Viswanathan", "N Padmaraju", "J Shah", "N Gunasekaran", "C Tebb", "A Pal", "A Kumar", "K Singh", "D Vincent", "S Gopalakrishnan", "M Krishna", "D Casey", "J Wani", "D Patel", "M Sahijwani", "S Malik", "V Suthar"], "players_role": [3, 2, 2, 1, 2, 1, 4, 3, 3, 4, 4, 3, 1, 3, 4, 4, 2, 4, 2, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [400, 401, 402, 403, 404, 0, 406, 0, 0, 409, 0, 411, 412, 0, 0, 0, 0, 417, 0, 419], "players_id": [400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419]},
-     {"team_name": "PSV", "players_name": ["N Tyagi", "F Abdullah", "S Ravi", "V Mehta", "D Thakur", "V Kumar", "V Jagannivasan", "A Bhuiyan", "S Sengupta", "S Bhatia", "K Venkataswamy", "K Ekambaram", "A Arya", "P Bhalodiya", "S Kumar", "S Wani"], "players_role": [3, 4, 4, 1, 2, 4, 2, 2, 3, 1, 2, 3, 3, 2, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [450, 451, 0, 453, 0, 455, 456, 457, 458, 459, 460, 461, 462, 463, 0, 465], "players_id": [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465]},
- {"team_name": "BCC", "players_name": ["J Iqbal", "R Singh Bist", "S Mukhtar", "Z Mahmood", "M Nabeel", "M Zubair", "P Jagtap", "A Waqar", "W Khan", "S Kakaria", "M Usman", "G Hasanat", "A Hossain", "P Katon", "I ul-Haq", "A Farhad", "S Bhuiyan", "A Javed", "E MD Mohiuddin", "W ur-Rehman", "S Aktaruzzaman"], "players_role": [3, 3, 2, 2, 1, 1, 1, 4, 4, 4, 2, 1, 2, 2, 2, 4, 3, 4, 2, 4, 3], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 501, 502, 0, 504, 0, 0, 507, 508, 509, 0, 0, 0, 0, 0, 515, 516, 517, 0, 519, 0], "players_id": [500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520]},
-          {"team_name": "PCK", "players_name": ["A Ashokan", "S Ramakrishnan", "P Sadasivan", "S Gladson", "S Udugala", "K Mehta", "S Wickramasekara", "S Maduranga", "S Patel", "K Mendon", "L Selvan", "S Rengarajan", "H Ahmad", "A Sittar", "C Croucher", "S Gnanatheeswaran", "A Parmar"], "players_role": [2, 2, 2, 1, 4, 3, 2, 4, 3, 3, 3, 3, 1, 4, 4, 4, 2], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [550, 551, 552, 553, 554, 555, 556, 557, 0, 559, 560, 561, 562, 563, 564, 565, 566], "players_id": [550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566]},
-{"team_name": "VCC", "players_name": ["S Goud", "C Pearce", "R Tomar", "F Heydenrych", "N Kumar", "S Chaudhary", "V Margasahayam", "B Boulton-Smith", "Y Patel", "V Godara", "S Bhowmick", "A Sirisena", "V Hasa", "A McGlynn", "A Ali", "A Hayat", "K Gilham", "L Fencl", "M Stary", "M Londesborough", "J Corness"], "players_role": [1, 1, 3, 2, 1, 4, 4, 2, 4, 2, 2, 4, 2, 3, 3, 3, 4, 4, 2, 2, 3], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [600, 601, 602, 0, 604, 605, 0, 607, 0, 0, 0, 611, 0, 0, 0, 615, 616, 617, 618, 619, 620], "players_id": [600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620]},
-     {"team_name": "PSM", "players_name": ["S Kuramboyina", "A Somireddy", "N Purandhar", "S Sharma", "S Md Sahadat Hossain", "V Kansara", "A Natarajan", "V Naukudkar", "A Konda", "G Namburi", "A Mahmud", "V Mahajan", "M Paduru", "S Reddy", "K Kumar", "P Ramachandran", "S Bhatta", "V Karthikeyan"], "players_role": [4, 4, 2, 2, 2, 1, 1, 3, 1, 4, 3, 2, 2, 3, 4, 4, 1, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 0, 661, 662, 663, 664, 665, 666, 667], "players_id": [650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667]},
-{
-          "team_name": "BRD", "players_name": ["A Vasudevan", "A Dhamdhere", "A Francis Jayaraj", "A Matta", "C Kheradiya", 
-     "H Krishna Pitta", "N Joseph", "P Prasad", "S Sadiq", "A Husain", "A Vyas", "C Sundaram", "D Vadher", "P Tripathi", "M Ansar", "S Nagaraj", "J Singh Rathore", "K Mishra", "R Singh", "S Roy", "S Ramarao"], "players_role": [3, 2, 2, 2, 2, 2, 
-     2, 2, 2, 3, 2, 3, 3, 3, 1, 1, 4, 4, 4, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 701, 0, 703, 704, 0, 0, 707, 708, 709, 710, 0, 0, 713, 714, 715, 716, 0, 718, 719, 720], 
-     "players_id": [700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 
-     713, 714, 715, 716, 717, 718, 719, 720]}
-
-]}
-
+   {
+     "series_name": "Dream11 Vincy Premier League",
+      "series_code": "VT10",
+       "number_teams": 6,
+       "team_list": ["SPBN", "GRD","FCS", "LSH","DVE", "BGR"],
+        "teams": [
+             {"team_name": "SPBN", "players_name": ["S Sween", "R Walker", "S Hooper", "S Ambris", "T Pope", "D Hoyte", "D Johnson", "J Layne", "J Haywood", "J Samuel", "O Williams", "K Joseph", "A Thomas"], "players_role": [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 1, 2, 2], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [17200, 17201, 17202, 17203, 17204, 17205, 17206, 17207, 17208, 17209, 17210, 17211, 17212], "players_id": [17200, 17201, 17202, 17203, 17204, 17205, 17206, 17207, 17208, 17209, 17210, 17211, 17212]}, 
+             {"team_name": "GRD", "players_name": ["R Grant", "K Nedd", "S Browne", "T Harry", "A Hooper", "K Abraham", "R Richards", "R Browne", "B Browne", "K Dalzell", "D Barnum", "J Williams", "W Strough"], "players_role": [1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 2, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [17250, 17251, 17252, 17253, 17254, 17255, 17256, 17257, 17258, 17259, 17260, 0, 17262], "players_id": [17250, 17251, 17252, 17253, 17254, 17255, 17256, 17257, 17258, 17259, 17260, 17261, 17262]},
+             {"team_name": "FCS", "players_name": ["C Hackshaw", "G Pope", "M Bascombe", "L Lewis", "K Lavia", "C Stowe", "S Williams", "R Jordan", "R Fredericks", "S Browne", "G Whyllie", "K Peters", "N Small"], "players_role": [1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 2, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [17000, 17001, 17002, 17003, 17004, 17005, 17006, 17007, 0, 0, 17010, 17011, 17012], "players_id": [17000, 17001, 17002, 17003, 17004, 17005, 17006, 17007, 17008, 17009, 17010, 17011, 17012]},
+             {"team_name": "LSH", "players_name": ["A Latchman", "S Browne", "D Douglas", "D Maloney", "C Cain", "B Stapleton", "S Spencer", "O Matthews", "J Harry", "O Lewis", "K Strough", "A Browne", "R Bibby"], "players_role": [1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 2, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [17050, 17051, 17052, 17053, 17054, 17055, 17056, 17057, 17058, 17059, 17060, 17061, 17062], "players_id": [17050, 17051, 17052, 17053, 17054, 17055, 17056, 17057, 17058, 17059, 17060, 17061, 17062]},
+             {"team_name": "DVE", "players_name": ["L James", "K Horne", "R Pierre", "D Toney", "D Greaves", "D Browne", "S Hooper", "J Matthews", "S Williams", "R Williams", "L Wilson", "D Martin", "A Samuel"], "players_role": [1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 2], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [17100, 17101, 17102, 17103, 17104, 17105, 17106, 17107, 17108, 17109, 0, 17111, 17112], "players_id": [17100, 17101, 17102, 17103, 17104, 17105, 17106, 17107, 17108, 17109, 17110, 17111, 17112]},
+             {"team_name": "BGR", "players_name": ["J Walters", "U Thomas", "W Harper", "K Cottoy", "W Samuel", "D Cottle", "D Delpleche", "K Williams", "K Williams", "Z Providence", "M Williams", "E Gibson", "R Lewis", "M Joseph", "J Samuel"], "players_role": [2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 2, 1, 4, 1], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": [0, 17151, 17152, 17153, 17154, 0, 0, 17157, 17158, 0, 0, 0, 0, 0, 17164], "players_id": [17150, 17151, 17152, 17153, 17154, 17155, 17156, 17157, 17158, 17159, 17160, 17161, 17162, 17163, 17164]}
+             ]}
 
 
   ]
