@@ -3,7 +3,7 @@ json_data={
      
     {
       "series_name": "Pakistan Super League",
-       "series_code": "VPPSL",
+       "series_code": "VPSL",
         "number_teams": 6 ,
         "team_list": ["PES", "LAH","MUL","ISL","QUE","KAR"], 
         "teams": [
@@ -17,13 +17,13 @@ json_data={
              "team_name": "LAH", 
              "players_name": ["S Prasanna", "C Ferguson", "M Faizan", "S Akhtar", "T David", "A Salman", "J Faulkner", "M Hafeez", "M Zaid", "F Zaman", "B Dunk", "Z Ashraf", "A Daniyal", "D Hussain", "H Rauf", "M Khan", "R Khan", "S Afridi", "S Ahmed"], 
              "players_role": [3, 2, 2, 2, 2, 3, 3, 3, 3, 2, 1, 1, 4, 4, 4, 4, 4, 4, 4],
-              "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
+              "players_credits": [8.5,8.5,8,8.5,8.5,8,8.5,10,8,9.5,9,8,8,8,8.5,8.5,9.5,9.5,8],
                "players_image": [19700, 19701, 0, 0, 19704, 19705, 19706, 19707, 0, 19709, 19710, 0, 0, 19713, 19714, 0, 19716, 19717, 0], "players_id": [19700, 19701, 19702, 19703, 19704, 19705, 19706, 19707, 19708, 19709, 19710, 19711, 19712, 19713, 19714, 19715, 19716, 19717, 19718]},
               {"team_name": "MUL", "players_name": ["M Rizwan", "R Rossouw", "C Lynn", "K Shah", "J Vince", "S Maqsood", "S Masood", "S Afridi", "A Lyth", "C Brathwaite", "S Khan", "S Dahani", "M Umar", "I Khan", "Sohaibullah", "U Qadir", "I Tahir", "S Tanvir"], "players_role": [1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [9.5, 8.5, 10.0, 8.5, 9.5, 8.5, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.5, 8.0, 8.5, 9.0, 8.5], "players_image": [3050, 3051, 3052, 3053, 3054, 3055, 3056, 3057, 3058, 3059, 3060, 0, 0, 3063, 0, 3065, 3066, 3067], "players_id": [3050, 3051, 3052, 3053, 3054, 3055, 3056, 3057, 3058, 3059, 3060, 3061, 3062, 3063, 3064, 3065, 3066, 3067]}, 
          {"team_name": "ISL", 
                     "players_name": ["R Nazir", "A Ali", "C Munro", "U Amin", "U Khawaja", "F Ashraf", "H Talat", "I Ahmed", "S Khan", "M Akhlaq", "B King", "A Safi Abdullah", "A Javed", "A Khan", "F Ahmed", "H Ali", "M Wasim", "M Musa", "Z Gohar", "Z Zameer"],
                      "players_role": [1, 2, 2, 2, 2, 3, 3, 3, 3, 1, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-                      "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
+                      "players_credits":[8.5,8.5,9.5,8.5,9.5,9,8.5,8.5,9.5,8,8.5,8,8.5,8.5,8.5,9,8,8,8.5,8],
                        "players_image": [19750, 19751, 19752, 19753, 19754, 19755, 19756, 19757, 19758, 0, 19760, 0, 0, 19763, 19764, 19765, 0, 19767, 19768, 0],
                         "players_id": [19750, 19751, 19752, 19753, 19754, 19755, 19756, 19757, 19758, 19759, 19760, 19761, 19762, 19763, 19764, 19765, 19766, 19767, 19768, 19769]
                     },
