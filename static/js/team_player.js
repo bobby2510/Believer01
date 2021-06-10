@@ -3,16 +3,11 @@ json_data={
      
     {
       "series_name": "Pakistan Super League",
-       "series_code": "VPPSL",
+       "series_code": "KVPPSL",
         "number_teams": 6 ,
         "team_list": ["PES", "LAH","MUL","ISL","QUE","KAR"], 
         "teams": [
-            {"team_name": "PES",
-               "players_name": ["K Akmal", "S Rutherford", "D Miller", "Imam-ul-Haq", "TK Cadmore", "H Ali", "Amad-Butt", "S Malik", "U Asif", "R Bopara", "MA Khan", "M Imran", "W Salamkhel", "W Riaz", "M Imran", "MU Rahman", "M Irfan", "A Ahmed", "S Mahmood"],
-                "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4], 
-                "players_credits": [9.0, 8.5, 9.0, 8.5, 8.5, 9.0, 9.0, 9.5, 8.5, 9.5, 8.0, 8.0, 8.0, 9.0, 8.0, 9.0, 8.5, 8.0, 8.5], 
-                "players_image": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 0, 3009, 0, 0, 0, 3013, 0, 3015, 3016, 0, 3018], 
-                "players_id": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 3009, 3010, 3011, 3012, 3013, 3014, 3015, 3016, 3017, 3018]},
+          {"team_name": "PES", "players_name": ["B Khan", "D Miller", "H Zazai", "Imam-ul-Haq", "R Powell", "S Rutherford", "A Butt", "F Allen", "M Imran Randhawa", "S Malik", "H Ali", "K Akmal", "A Ahmed", "F Edwards", "M Amir Khan", "M Irfan", "M Imran", "U Asif", "W Riaz", "W Salamkheil"], "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits":[8.5,9,8.5,9,8.5,9,9,8.5,8,9.5,8.5,9.5,8,8.5,8.5,8.5,8,8.5,9,8.5], "players_image": [0, 19901, 19902, 19903, 19904, 19905, 19906, 19907, 0, 19909, 19910, 19911, 0, 19913, 0, 19915, 0, 0, 19918, 19919], "players_id": [19900, 19901, 19902, 19903, 19904, 19905, 19906, 19907, 19908, 19909, 19910, 19911, 19912, 19913, 19914, 19915, 19916, 19917, 19918, 19919]},
                 {
              "team_name": "LAH", 
              "players_name": ["S Prasanna", "C Ferguson", "M Faizan", "S Akhtar", "T David", "A Salman", "J Faulkner", "M Hafeez", "M Zaid", "F Zaman", "B Dunk", "Z Ashraf", "A Daniyal", "D Hussain", "H Rauf", "M Khan", "R Khan", "S Afridi", "S Ahmed"], 
@@ -27,7 +22,7 @@ json_data={
                        "players_image": [19750, 19751, 19752, 19753, 19754, 19755, 19756, 19757, 19758, 0, 19760, 0, 0, 19763, 19764, 19765, 0, 19767, 19768, 0],
                         "players_id": [19750, 19751, 19752, 19753, 19754, 19755, 19756, 19757, 19758, 19759, 19760, 19761, 19762, 19763, 19764, 19765, 19766, 19767, 19768, 19769]
                     },
-              {"team_name": "QUE", "players_name": ["A Khan", "S Ahmed", "C Gayle", "U Khan", "S Ayub", "T Banton", "C Delport", "B Cutting", "A Nasir", "M Nawaz", "D Steyn", "Z Mehmood", "AA Khan", "Anwar-Ali", "Naseem-Shah", "M Hasnain", "Q Ahmad", "H Khan", "U Khan-Shinwari"], "players_role": [1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [41.2, 29.4, 70.6, 0.0, 0.0, 82.4, 29.4, 76.5, 0.0, 23.5, 0.0, 5.9, 0.0, 11.8, 17.6, 64.7, 35.3, 0.0, 11.8], "players_image": [0, 30121, 30122, 0, 0, 30125, 30126, 30127, 0, 30129, 30130, 0, 0, 30133, 30134, 30135, 30136, 30137, 30138], "players_id": [30120, 30121, 30122, 30123, 30124, 30125, 30126, 30127, 30128, 30129, 30130, 30131, 30132, 30133, 30134, 30135, 30136, 30137, 30138]}, 
+              {"team_name": "QUE", "players_name": ["S Ahmed", "C Delport", "J Weatherald", "S Ayub", "U Khan", "A Nasir", "A Russell", "J Wildermuth", "M Nawaz", "A Khan", "F du Plessis", "A Ali", "A Ali Khan", "H Khan", "K Shahzad", "M Hasnain", "N Shah", "U Shinwari", "Z Mahmood", "Z Khan"], "players_role": [1, 2, 2, 2, 2, 3, 3, 3, 3, 1, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [9,9,8.5,8,8.5,8,10,8.5,9,8.5,10,8.5,8,8,8,8.5,8.5,8.5,8,8.5], "players_image": [20050, 20051, 20052, 0, 20054, 0, 20056, 20057, 20058, 0, 20060, 20061, 0, 20063, 0, 20065, 20066, 20067, 0, 20069], "players_id": [20050, 20051, 20052, 20053, 20054, 20055, 20056, 20057, 20058, 20059, 20060, 20061, 20062, 20063, 20064, 20065, 20066, 20067, 20068, 20069]}, 
                  {"team_name": "KAR", "players_name": ["Q Akram", "B Azam", "M Haris", "N Zadran", "S Khan", "Z Malik", "A Yamin", "D Aziz", "I Wasim", "M Guptill", "T Perera", "C Walton", "A Afridi", "A Iqbal", "M Amir", "M Ilyas", "N Ahmad", "W Maqsood"], "players_role": [3, 2, 2, 2, 2, 2, 3, 3, 3, 2, 3, 1, 4, 4, 4, 4, 4, 4], "players_credits": [8,11,8,8.5,9,8,8.5,8.5,8.5,9.5,8.5,8.5,8,8.5,9,8,8.5,8.5], "players_image": [0, 19851, 0, 19853, 0, 0, 19856, 0, 19858, 19859, 19860, 19861, 0, 0, 19864, 0, 19866, 0], "players_id": [19850, 19851, 19852, 19853, 19854, 19855, 19856, 19857, 19858, 19859, 19860, 19861, 19862, 19863, 19864, 19865, 19866, 19867]}
 
         ]
