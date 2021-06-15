@@ -138,8 +138,14 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
         {
             img = document.createElement('img')
             img.src="dream11_images/"+data+".jpg"
+            v_span = document.createElement('span')
+            v_span.textContent = data
             img.classList.add('team-left','team-image')
-            lsp.appendChild(img)
+            my_div = document.createElement('div')
+            my_div.style.alignText = "center"
+            my_div.appendChild(img)
+            my_div.appendChild(v_span)
+            lsp.appendChild(my_div)
         }
         else
         {
@@ -161,8 +167,14 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
         {
         img = document.createElement('img')
         img.src="dream11_images/"+data+".jpg"
+        v_span = document.createElement('span')
+        v_span.textContent = data
         img.classList.add('team-right','team-image')
-        rsp.appendChild(img)
+             my_div = document.createElement('div')
+            my_div.style.alignText = "center"
+            my_div.appendChild(img)
+            my_div.appendChild(v_span)
+        rsp.appendChild(my_div)
         }
         else
         {
