@@ -142,7 +142,8 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
             v_span.textContent = data
             img.classList.add('team-left','team-image')
             my_div = document.createElement('div')
-            my_div.style.alignText = "center"
+            
+            my_div.classList.add('d-flex','flex-column','justify-content-center','align-items-center')
             my_div.appendChild(img)
             my_div.appendChild(v_span)
             lsp.appendChild(my_div)
@@ -171,7 +172,7 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
         v_span.textContent = data
         img.classList.add('team-right','team-image')
              my_div = document.createElement('div')
-            my_div.style.alignText = "center"
+           my_div.classList.add('d-flex','flex-column','justify-content-center','align-items-center')
             my_div.appendChild(img)
             my_div.appendChild(v_span)
         rsp.appendChild(my_div)
