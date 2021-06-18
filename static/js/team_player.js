@@ -124,8 +124,23 @@ json_data={
 {"team_name": "GOZ", "players_name": ["Aji Wilson", "Jerin Jacob", "Leonard Nijan", "Saikumar Nellikkunnu", "Siljo Varkey", "Rajeesh Jawaharlal", "Sandeep Sasikumar", "Shibil Palakkalappil", "Ajeesh Antony", "Ajin Jose", "Basil Scaria", "Janak Bhandari", "Sethil Raj", "Tanu Babu", "Milton Devasia", "Renju Ravi"], "players_role": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], "players_credits": [9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9], "players_image": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], "players_id":[100001,100002,100003,100004,100005,100006,100007,100008,100009,100010,100011,100012,100013,100014,100015,100016]
 }
 
-
-]}
+]},
+    {"series_name": "WTC FINAL", "series_code": "WTC", "number_teams": 2, 
+    "team_list": ["IND", "NZ"], "teams": [{"team_name": "IND",
+         "players_name": ["R Jadeja", "A Rahane", "H Vihari", "R Sharma", "S Gill", "V Kohli", "R Ashwin", "C Pujara", "R Pant", "W Saha", "I Sharma", "J Bumrah", "M Shami", "M Siraj", "U Yadav"], 
+         "players_role": [3, 2, 2, 2, 2, 2, 3, 2, 1, 1, 4, 4, 4, 4, 4],
+          "players_credits": [9,8.5,8.5,9,8.5,10,9,9.5,9,8,8.5,9,8.5,8,8],
+           "players_image": [21600, 21601, 21602, 21603, 21604, 21605, 21606, 21607, 21608, 21609, 21610, 21611, 21612, 21613, 21614], 
+           "players_id": [21600, 21601, 21602, 21603, 21604, 21605, 21606, 21607, 21608, 21609, 21610, 21611, 21612, 21613, 21614]},
+            {
+                "team_name": "NZ", 
+                "players_name": ["T Blundell", "D Conway", "K Williamson", "R Taylor", "W Young", "C de Grandhomme", "B Watling", "H Nicholls", "T Latham", "A Patel", "K Jamieson", "M Henry", "N Wagner", "T Southee", "T Boult"],
+                 "players_role": [1, 2, 2, 2, 2, 3, 1, 2, 1, 4, 4, 4, 4, 4, 4],
+                  "players_credits": [8,8.5,10,9,8,8,8.5,9,9,8.5,8.5,8.5,9,9], 
+                  "players_image": [21650, 21651, 21652, 21653, 21654, 21655, 21656, 21657, 21658, 21659, 21660, 21661, 21662, 21663, 21664], 
+                  "players_id": [21650, 21651, 21652, 21653, 21654, 21655, 21656, 21657, 21658, 21659, 21660, 21661, 21662, 21663, 21664]}
+                  ]
+                }
     
   ]
 }
