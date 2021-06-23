@@ -24,9 +24,6 @@ json_data={
          
   },
   
-
- 
-,
   {"series_name": "T20 BLAST", "series_code": "TBLAST", "number_teams": 18, 
     "team_list": ["LEI", "DUR", "WOR", "LAN", "DER", "WAS", "GLA", "ESS", "NOR", "NOT","SUS", "SOM", "SUR", "HAM", "KET", "GLO", "YOR", "MID"],
      "teams": [{"team_name": "LEI", "players_name": ["J Inglis", "H Dearden", "M Harris", "N Welch", "R Patel", "S Evans", "A Lilley", "B Mike", "C Ackermann", "G Rhodes", "S Steel", "H Swindells", "H Azad", "L Hill", "L Kimber", "S Bates", "A Evans", "C Parkinson", "C Wright", "D Klein", "E Barnes", "G Griffiths", "N Bowley", "Naveen-ul-Haq", "W Davis"], "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 1, 2, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9], "players_image": 
