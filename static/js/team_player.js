@@ -7,9 +7,20 @@ json_data={
         "number_teams": 2 ,
         "team_list": ["PES", "MUL"], 
         "teams": [
-          {"team_name": "PES", "players_name": ["B Khan", "D Miller", "H Zazai", "Imam-ul-Haq", "R Powell", "S Rutherford", "A Butt", "F Allen", "M Imran Randhawa", "S Malik", "H Ali", "K Akmal", "A Ahmed", "F Edwards", "M Amir Khan", "M Irfan", "M Imran", "U Asif", "W Riaz", "W Salamkheil","S Gul"], "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4,4], "players_credits":[8.5,9,8.5,9,8.5,9,9,8.5,8,9.5,8.5,9.5,8,8.5,8.5,8.5,8,8.5,9,8.5,8.5], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0], "players_id": [19900, 19901, 19902, 19903, 19904, 19905, 19906, 19907, 19908, 19909, 19910, 19911, 19912, 19913, 19914, 19915, 19916, 19917, 19918, 19919,19920]},
+          {
+            "team_name": "PES",
+            "players_name": ["B Khan", "D Miller", "H Zazai", "Imam-ul-Haq", "R Powell", "S Rutherford", "A Butt", "F Allen", "M Imran Randhawa", "S Malik", "H Ali", "K Akmal", "A Ahmed", "F Edwards", "M Amir Khan", "M Irfan", "M Imran", "U Asif", "W Riaz", "W Salamkheil","S Gul"], 
+            "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4,4], 
+            "players_credits":[8.5,9,8.5,9,8.5,9,9,8.5,8,9.5,8.5,9.5,8,8.5,8.5,8.5,8,8.5,9,8.5,8.5],
+            "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0], 
+            "players_id": [19900, 19901, 19902, 19903, 19904, 19905, 19906, 19907, 19908, 19909, 19910, 19911, 19912, 19913, 19914, 19915, 19916, 19917, 19918, 19919,19920]},
                
-  {"team_name": "MUL", "players_name": ["R Gurbaz", "J Charles", "R Rossouw", "S Masood", "S Hetmyer", "S Maqsood", "W Muhammad", "A Afridi", "H Azam", "M Rizwan", "K Shah", "B Muzarabani", "I Khan", "I Tahir", "M Umar", "S Dhani", "Sohaibullah", "S Khan", "S Tanvir", "U Qadir"], "players_role": [1, 2, 2, 2, 2, 2, 2, 3, 3, 1, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [8.5,8.5,9,8.5,9,9,8,8,8.5,10.5,8.5,8,8,9,8,8.5,8,8.5,8.5,8.5], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [19800, 19801, 19802, 19803, 19804, 19805, 19806, 19807, 19808, 19809, 19810, 19811, 19812, 19813, 19814, 19815, 19816, 19817, 19818, 19819]},      
+         {"team_name": "MUL",
+          "players_name": ["R Gurbaz", "J Charles", "R Rossouw", "S Masood", "S Hetmyer", "S Maqsood", "W Muhammad", "A Afridi", "H Azam", "M Rizwan", "K Shah", "B Muzarabani", "I Khan", "I Tahir", "M Umar", "S Dhani", "Sohaibullah", "S Khan", "S Tanvir", "U Qadir"],
+          "players_role": [1, 2, 2, 2, 2, 2, 2, 3, 3, 1, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+          "players_credits": [8.5,8.5,9,8.5,9,9,8,8,8.5,10.5,8.5,8,8,9,8,8.5,8,8.5,8.5,8.5],
+          "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+          "players_id": [19800, 19801, 19802, 19803, 19804, 19805, 19806, 19807, 19808, 19809, 19810, 19811, 19812, 19813, 19814, 19815, 19816, 19817, 19818, 19819]}      
          
   },
   
