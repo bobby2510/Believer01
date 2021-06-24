@@ -3,7 +3,7 @@ json_data={
      
     {
       "series_name": "Pakistan Super League",
-       "series_code": "PPSL",
+       "series_code": "PSL",
         "number_teams": 2 ,
         "team_list": ["PES", "MUL"], 
         "teams": [
