@@ -1,28 +1,7 @@
 json_data={
   "req_data" :[
      
-    {
-      "series_name": "Pakistan Super League",
-       "series_code": "PSL",
-        "number_teams": 2 ,
-        "team_list": ["PES", "MUL"], 
-        "teams": [
-          {
-            "team_name": "PES",
-            "players_name": ["J Wells","K Usman","B Khan", "D Miller", "H Zazai", "Imam-ul-Haq", "R Powell", "S Rutherford", "A Butt", "F Allen", "M Imran Randhawa", "S Malik", "H Ali", "K Akmal", "A Ahmed", "F Edwards", "M Amir Khan", "M Irfan", "M Imran", "U Asif", "W Riaz", "W Salamkheil","S Gul"], 
-            "players_role": [2,3,1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4,4], 
-            "players_credits":[8.5,9,8.5,9,8.5,9,8.5,9,9,8.5,8,9.5,8.5,9.5,8,8.5,8.5,8.5,8,8.5,9,8.5,8.5],
-            "players_image": [0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0], 
-            "players_id": [19898,19899,19900, 19901, 19902, 19903, 19904, 19905, 19906, 19907, 19908, 19909, 19910, 19911, 19912, 19913, 19914, 19915, 19916, 19917, 19918, 19919,19920]},
-               
-         {"team_name": "MUL",
-          "players_name": ["R Gurbaz", "J Charles", "R Rossouw", "S Masood", "S Hetmyer", "S Maqsood", "W Muhammad", "A Afridi", "H Azam", "M Rizwan", "K Shah", "B Muzarabani", "I Khan", "I Tahir", "M Umar", "S Dhani", "Sohaibullah", "S Khan", "S Tanvir", "U Qadir"],
-          "players_role": [1, 2, 2, 2, 2, 2, 2, 3, 3, 1, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-          "players_credits": [8.5,8.5,9,8.5,9,9,8,8,8.5,10.5,8.5,8,8,9,8,8.5,8,8.5,8.5,8.5],
-          "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
-          "players_id": [19800, 19801, 19802, 19803, 19804, 19805, 19806, 19807, 19808, 19809, 19810, 19811, 19812, 19813, 19814, 19815, 19816, 19817, 19818, 19819]}    ]  
-         
-  },
+  
   
   {"series_name": "T20 BLAST", "series_code": "TBLAST", "number_teams": 18, 
     "team_list": ["LEI", "DUR", "WOR", "LAN", "DER", "WAS", "GLA", "ESS", "NOR", "NOT","SUS", "SOM", "SUR", "HAM", "KET", "GLO", "YOR", "MID"],
@@ -91,7 +70,28 @@ json_data={
            "players_image": [22350, 22351, 22352, 22353, 22354, 22355, 22356, 0, 22358, 22359, 22360, 0, 22362, 0, 22364, 22365, 22366, 22367, 22368, 0, 0, 0, 0, 0], 
            "players_id": [22350, 22351, 22352, 22353, 22354, 22355, 22356, 22357, 22358, 22359, 22360, 22361, 22362, 22363, 22364, 22365, 22366, 22367, 22368, 22369, 22370, 22371, 22372, 22373
             ]}
-            ]}
+            ]},
+    {
+  "series_name": "WI VS SA T20",
+   "series_code": "WVST20", 
+   "number_teams": 2, 
+   "team_list": ["WI", "SA"], 
+   "teams": [
+     {
+       "team_name": "WI",
+        "players_name": ["N Pooran", "A Fletcher", "C Gayle", "S Hetmyer", "E Lewis", "L Simmons", "A Russell", "K Pollard", "J Holder", "F Allen", "S Cottrell", "O Thomas", "F Edwards", "D Bravo", "K Sinclair", "H Walsh", "O McCoy", "A Hosein"],
+         "players_role": [1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4],
+          "players_credits": [9.0, 8.0, 9.5, 9.0, 9.0, 8.5, 9.5, 9.5, 8.5, 8.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 8.0],
+           "players_image": [22400, 22401, 22402, 22403, 22404, 22405, 22406, 22407, 22408, 22409, 22410, 22411, 22412, 22413, 22414, 22415, 22416, 22417],
+            "players_id": [22400, 22401, 22402, 22403, 22404, 22405, 22406, 22407, 22408, 22409, 22410, 22411, 22412, 22413, 22414, 22415, 22416, 22417]},
+      {
+        "team_name": "SA", 
+        "players_name": ["Q d Kock", "H Klaasen", "K Verreynne", "R v der-Dussen", "D Miller", "A Markram", "T Bavuma", "R Hendricks", "J Malan", "A Phehlukwayo", "G Linde", "D Pretorius", "W Mulder", "A Nortje", "K Rabada", "L Ngidi", "T Shamsi", "B Hendricks", "B Fortuin", "S Magala", "L Williams"],
+         "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4], 
+         "players_credits": [10.0, 8.5, 8.0, 9.0, 9.0, 8.5, 8.5, 8.5, 8.0, 9.0, 8.5, 8.5, 8.0, 9.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0],
+          "players_image": [22450, 22451, 0, 22453, 22454, 22455, 22456, 22457, 0, 22459, 0, 22461, 0, 22463, 22464, 22465, 22466, 22467, 0, 0, 0],
+           "players_id": [22450, 22451, 22452, 22453, 22454, 22455, 22456, 22457, 22458, 22459, 22460, 22461, 22462, 22463, 22464, 22465, 22466, 22467, 22468, 22469, 22470]}
+           ]}
     
   ]
 }
