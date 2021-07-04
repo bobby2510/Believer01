@@ -47,17 +47,17 @@ json_data={
     
     {
   "series_name": "Eng vs SL T20",
-   "series_code": "ODIEVS", 
+   "series_code": "T20EVS", 
    "number_teams": 2,
     "team_list": ["ENG", "SL"], 
     "teams": [
       {
         "team_name": "ENG", 
-        "players_name": ["Joe Root","J Bairstow", "J Buttler", "D Malan", "J Roy", "E Morgan", "L Livingstone", "S Billings", "S Curran", "M Ali", "L Dawson", "A Rashid", "T Curran", "M Wood", "C Jordan", "C Woakes", "D Willey"], 
-        "players_role": [2,1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 4],
-         "players_credits": [10,10.0, 10.0, 9.5, 9.0, 9.0, 8.0, 8.0, 9.0, 8.5, 8.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0], 
-         "players_image": [0,22300, 22301, 22302, 22303, 22304, 22305, 22306, 22307, 22308, 22309, 22310, 22311, 22312, 22313, 22314, 22315], 
-         "players_id": [22299,22300, 22301, 22302, 22303, 22304, 22305, 22306, 22307, 22308, 22309, 22310, 22311, 22312, 22313, 22314, 22315]
+        "players_name": ["G Garton","Joe Root","J Bairstow", "J Buttler", "D Malan", "J Roy", "E Morgan", "L Livingstone", "S Billings", "S Curran", "M Ali", "L Dawson", "A Rashid", "T Curran", "M Wood", "C Jordan", "C Woakes", "D Willey"], 
+        "players_role": [4,2,1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 4],
+         "players_credits": [8,10,10.0, 10.0, 9.5, 9.0, 9.0, 8.0, 8.0, 9.0, 8.5, 8.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0], 
+         "players_image": [0,0,22300, 22301, 22302, 22303, 22304, 22305, 22306, 22307, 22308, 22309, 22310, 22311, 22312, 22313, 22314, 22315], 
+         "players_id": [22998,22299,22300, 22301, 22302, 22303, 22304, 22305, 22306, 22307, 22308, 22309, 22310, 22311, 22312, 22313, 22314, 22315]
         }, 
          {
            "team_name": "SL", 
