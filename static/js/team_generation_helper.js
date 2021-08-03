@@ -60,7 +60,9 @@ let get_11_memebers = function(team,toi,tti,series_index,sport_id)
 { 
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
     role_value = all_value[sport_id]
     //----
@@ -97,11 +99,13 @@ let final_team_creation = function(one_arr,captain,vice_captain,team_number,cred
 {
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
 
     all_special=[
-        ['c','vc'],['c','vc'],['sp','pp']
+        ['c','vc'],['c','vc'],['sp','pp'],['c','vc'],['c','vc']
     ]
     p_credits = 0
     one_arr.forEach((arr)=>
@@ -135,12 +139,15 @@ let final_team_creation = function(one_arr,captain,vice_captain,team_number,cred
     }
     outer_div = document.createElement('div')
     outer_div.classList.add('mb-4','cricket-bg-style','d-flex','flex-column','justify-content-around')
-    if(sport_id==0)
+    if(sport_id==0 || sport_id == 3)
         outer_div.style.backgroundImage="url('dream11_images/ground.jpg')"
     else if(sport_id==1)
         outer_div.style.backgroundImage="url('dream11_images/f_ground.jpg')"
-    else
+    else if(sport_id == 2)
         outer_div.style.backgroundImage="url('dream11_images/b_ground.jpg')"
+    else
+        outer_div.style.backgroundImage="url('dream11_images/k_ground.jpg')"
+    
 
     for(let i=1;i<role_value.length;i++)
     {
