@@ -25,7 +25,18 @@ let authenticate = function()
             {
                 b_data = {"req_data":[]}
                  localStorage.setItem('basketball',JSON.stringify(b_data))
-            }                                       
+            }     
+            if(localStorage.getItem('mycricket')==null)
+            {
+                b_data = {"req_data":[]}
+                 localStorage.setItem('mycricket',JSON.stringify(b_data))
+            }   
+            if(localStorage.getItem('kabaddi')==null)
+            {
+                b_data = {"req_data":[]}
+                 localStorage.setItem('kabaddi',JSON.stringify(b_data))
+            } 
+
             localStorage.setItem('date',temp)
         
     }
