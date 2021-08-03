@@ -78,15 +78,21 @@ team_two_data.forEach((obj)=>
 // here
 all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
 all_limit=[
     [-1,1,3,1,3],
     [-1,1,3,3,1],
-    [-1,1,1,1,1,1]
+    [-1,1,1,1,1,1],
+    [-1,1,3,1,3],
+    [-1,2,1,1]
 ]
 side_all_limit=[
     [7,7],
+    [7,7],
+    [5,5],
     [7,7],
     [5,5]
 ]
@@ -146,6 +152,8 @@ submit_players.addEventListener('click',()=>
     sfp = document.getElementById('submit_fixed_players')
     all_fixed=[
         [9,7],
+        [9,7],
+        [5,4],
         [9,7],
         [5,4]
     ]
@@ -262,7 +270,9 @@ submit_players.addEventListener('click',()=>
                     let all_vp_list=[
                         [[4,7],[5,6],[6,5],[7,4]],
                         [[4,7],[5,6],[6,5],[7,4]],
-                        [[3,5],[4,4],[5,3]]
+                        [[3,5],[4,4],[5,3]],
+                        [[4,7],[5,6],[6,5],[7,4]],
+                        [[2,5],[3,4],[4,3],[5,2]]
                     ]
                     let vp_list=all_vp_list[sport_id]
                     vp_one_cnt=fixed_team_one_players.length
