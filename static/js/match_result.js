@@ -153,7 +153,9 @@ let get_result_teams = function(obj,attempt_index,series_index,sport_id)
 {
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
     role_value = all_value[sport_id]
     attempt =null
@@ -216,7 +218,10 @@ let get_team_score = function(obj,team,attempt,series_index,sport_id)
 {
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
+    
     ]
     role_value = all_value[sport_id]
     teams_data_obj = sd.req_data[series_index]
