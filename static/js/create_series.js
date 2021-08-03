@@ -1,4 +1,4 @@
-// sport_id => cricket - 0, football - 1, basketball - 2, kabaddi - 3.
+// sport_id => cricket - 0, football - 1, basketball - 2, kabaddi - 4, MYCRICKET - 3.
 let sport_type = function(sport_id,fantasy)
 {
     
@@ -31,13 +31,14 @@ let sport_type = function(sport_id,fantasy)
         secondary_edit_series(sport_id)
     })
     //--------------------
-    choose_type = document.querySelector('#choose_type')
-    choose_type.addEventListener('click',()=>
+    //---------------------
+    
+    secondary_choose_type = document.querySelector('#secondary_choose_type')
+    secondary_choose_type.addEventListener('click',()=>
     {
         console.log(sd)
-        fp= document.getElementById('first_panel')
+        fp= document.getElementById('secondary_first_panel')
         fp.style.display="none"
-        //-------
         fantasy_p = document.querySelector('#fantasy_panel')
         fantasy_p.style.display="block"
         fl = document.querySelectorAll('#fantasy_logo')
@@ -65,23 +66,6 @@ let sport_type = function(sport_id,fantasy)
                 }
             })
         })
-        //------
-    })
-    secondary_choose_type = document.querySelector('#secondary_choose_type')
-    secondary_choose_type.addEventListener('click',()=>
-    {
-        console.log(sd)
-        fp= document.getElementById('secondary_first_panel')
-        fp.style.display="none"
-        SuccessMsg('Always Check player credits and role before generating!')
-        generate_random_series(sport_id,fantasy)
-    })
-    mr= document.getElementById('match_result')
-    mr.addEventListener('click',()=>
-    {
-        fp = document.getElementById('first_panel')
-        fp.style.display="none"
-        generate_match_result_series(sport_id)
     })
     secondary_mr= document.getElementById('secondary_match_result')
     secondary_mr.addEventListener('click',()=>
@@ -122,11 +106,25 @@ let secondary_create_series = function(sport_id,flag)
             localStorage.setItem('football',JSON.stringify(data))
             SuccessMsg('Series Created Successfully!')
         }
-        else
+        else if(sport_id == 2)
         {
             data = JSON.parse(localStorage.getItem('basketball'))
             data.req_data.push(new Series(c_series_code,c_series_name,[],[]))
             localStorage.setItem('basketball',JSON.stringify(data))
+            SuccessMsg('Series Created Successfully!')
+        }
+        else if(sport_id == 3)
+        {
+            data = JSON.parse(localStorage.getItem('mycricket'))
+            data.req_data.push(new Series(c_series_code,c_series_name,[],[]))
+            localStorage.setItem('mycricket',JSON.stringify(data))
+            SuccessMsg('Series Created Successfully!')
+        }
+        else 
+        {
+            data = JSON.parse(localStorage.getItem('kabaddi'))
+            data.req_data.push(new Series(c_series_code,c_series_name,[],[]))
+            localStorage.setItem('kabaddi',JSON.stringify(data))
             SuccessMsg('Series Created Successfully!')
         }
         csi.style.display="none"
@@ -142,7 +140,9 @@ let helper = function(sport_id,series_index)
 {
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
     role_value = all_value[sport_id]
     data = null
@@ -150,9 +150,14 @@ let helper = function(sport_id,series_index)
     {
         data = JSON.parse(localStorage.getItem('football'))
     }
-    else{
+    else if(sport_id == 2) {
         data = JSON.parse(localStorage.getItem('basketball'))
     }
+    else if(sport_id == 3)
+        data = JSON.parse(localStorage.getItem('mycricket'))
+    else
+        data = JSON.parse(localStorage.getItem('kabaddi'))
+    //------
     sd = document.querySelector('#series_details')
         sd.style.display="block"
         series_n = document.querySelector('#series_n')
@@ -248,8 +253,13 @@ let helper = function(sport_id,series_index)
             data.req_data=current_data
             if(sport_id==1)
                 localStorage.setItem('football',JSON.stringify(data))
-            else
+            else if(sport_id == 2)
                 localStorage.setItem('basketball',JSON.stringify(data))
+            else if(sport_id == 3)
+                localStorage.setItem('mycricket',JSON.stringify(data))
+            else 
+                localStorage.setItem('kabaddi',JSON.stringify(data))
+
             location.reload()
         })
 }
@@ -286,8 +296,13 @@ let helper_two = function(sport_id,series_index,vp_dp)
         //-----
         if(sport_id==1)
         localStorage.setItem('football',JSON.stringify(data))
-        else
+        else if(sport_id == 2)
         localStorage.setItem('basketball',JSON.stringify(data))
+        else if(sport_id == 3)
+        localStorage.setItem('mycricket',JSON.stringify(data))
+        else
+        localStorage.setItem('kabaddi',JSON.stringify(data))
+
     SuccessMsg('Team Created Successfully!')
         helper_three(sport_id,series_index,team_index)
     })
@@ -300,13 +315,19 @@ let helper_two = function(sport_id,series_index,vp_dp)
 let helper_three = function(sport_id,series_index,team_index)
 {
         data = null
+        console.log(sport_id)
         if(sport_id==1)
         {
             data = JSON.parse(localStorage.getItem('football'))
         }
-        else{
+        else if(sport_id == 2) {
             data = JSON.parse(localStorage.getItem('basketball'))
         }
+        else if(sport_id == 3)
+            data = JSON.parse(localStorage.getItem('mycricket'))
+        else 
+            data = JSON.parse(localStorage.getItem('kabaddi'))
+
         tm = document.querySelector('#team_details')
         tm.style.display="block"
         edit_vp_player = document.querySelector('#edit_vp_player')
@@ -334,8 +355,13 @@ let helper_three = function(sport_id,series_index,team_index)
             data.req_data[series_index].teams_list= curr_two
             if(sport_id==1)
             localStorage.setItem('football',JSON.stringify(data))
-            else
+            else if(sport_id == 2)
             localStorage.setItem('basketball',JSON.stringify(data))
+            else if(sport_id == 3)
+            localStorage.setItem('mycricket',JSON.stringify(data))
+            else 
+            localStorage.setItem('kabaddi',JSON.stringify(data))
+
             location.reload()
         })
         team_n = document.querySelector('#team_n')
@@ -465,8 +491,13 @@ let helper_three = function(sport_id,series_index,team_index)
                 localStorage.setItem('counter',`${cnt}`)
                 if(sport_id==1)
                     localStorage.setItem('football',JSON.stringify(data))
-                else
+                else if(sport_id == 2)
                     localStorage.setItem('basketball',JSON.stringify(data))
+                else if(sport_id == 3)
+                localStorage.setItem('mycricket',JSON.stringify(data))
+                else 
+                localStorage.setItem('kabaddi',JSON.stringify(data))
+
                 location.reload()
         })
 }
@@ -480,14 +511,21 @@ let remove_player_data = function(sport_id,series_index,team_index)
         rpdp = document.querySelector('#remove_player_data_placer')
         all_value = [['','WK','BAT','AL','BOWL'],
         ['','GK','DEF','MID','ST'],
-        ['','PG','SG','SF','PF','CE']
+        ['','PG','SG','SF','PF','CE'],
+        ['','WK','BAT','AL','BOWL'],
+        ['','DEF','ALL','RAI']
+
         ]
         role_value = all_value[sport_id]
         data = null
         if(sport_id==1)
             data = JSON.parse(localStorage.getItem('football'))
-        else 
+        else if (sport_id == 2)
             data = JSON.parse(localStorage.getItem('basketball'))
+        else if(sport_id == 3)
+            data = JSON.parse(localStorage.getItem('mycricket'))
+        else
+            data = JSON.parse(localStorage.getItem('kabaddi'))
 
         if(data.req_data[series_index].teams[team_index].players.length==0)
         {
@@ -572,8 +610,12 @@ let remove_player_data = function(sport_id,series_index,team_index)
         data.req_data[series_index].teams[team_index].players=curr_data
         if(sport_id==1)
             localStorage.setItem('football',JSON.stringify(data))
-        else
+        else if(sport_id == 2)
             localStorage.setItem('basketball',JSON.stringify(data))
+        else if(sport_id == 3)
+            localStorage.setItem('mycricket',JSON.stringify(data))
+        else 
+            localStorage.setItem('kabaddi',JSON.stringify(data))
         location.reload()       
     })
     }
@@ -587,14 +629,21 @@ let edit_player_data = function(sport_id,series_index,team_index)
     epdp = document.querySelector('#edit_player_data_placer')
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
+
     ]
     role_value = all_value[sport_id]
     data = null
     if(sport_id==1)
         data = JSON.parse(localStorage.getItem('football'))
-    else 
+    else if(sport_id == 2)
         data = JSON.parse(localStorage.getItem('basketball'))
+    else if(sport_id == 3)
+        data = JSON.parse(localStorage.getItem('mycricket'))
+    else 
+        data = JSON.parse(localStorage.getItem('kabaddi'))
     //console.log(data)
     if(data.req_data[series_index].teams[team_index].players.length==0)
     {
@@ -675,8 +724,12 @@ let edit_player_data = function(sport_id,series_index,team_index)
          })
          if(sport_id==1)
             localStorage.setItem('football',JSON.stringify(data))
-        else
+        else if(sport_id == 2)
             localStorage.setItem('basketball',JSON.stringify(data))
+        else if(sport_id == 3)
+            localStorage.setItem('mycricket',JSON.stringify(data))
+        else 
+            localStorage.setItem('kabaddi',JSON.stringify(data))
          SuccessMsg('Player data updated Successfully!')
          location.reload()
     })
@@ -685,11 +738,16 @@ let edit_player_data = function(sport_id,series_index,team_index)
 
 let secondary_edit_series = function(sport_id)
 {
+    console.log(sport_id)
     data = null
     if(sport_id==1)
     data = JSON.parse(localStorage.getItem('football'))
-    else 
+    else if(sport_id == 2)
     data = JSON.parse(localStorage.getItem('basketball'))
+    else if(sport_id == 3)
+    data = JSON.parse(localStorage.getItem('mycricket'))
+    else 
+    data = JSON.parse(localStorage.getItem('kabaddi'))
     sesp = document.querySelector('#secondary_edit_series_placer')
     if(data.req_data.length==0)
     {
