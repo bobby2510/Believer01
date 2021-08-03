@@ -48,11 +48,13 @@ let get_shortcut_team = function(selected_players,team_number,captain,vice_capta
 {
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
     role_value = all_value[sport_id]
     all_special=[
-        ['c','vc'],['c','vc'],['sp','pp']
+        ['c','vc'],['c','vc'],['sp','pp'],['c','vc'],['c','vc']
     ]
     req_special=all_special[sport_id]
     div = document.createElement('div')
