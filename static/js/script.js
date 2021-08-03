@@ -28,6 +28,7 @@ function openNav() {
 cpd = document.getElementById('change_player_data')
 cpd.addEventListener('click',()=>
 {
+    sd = get_sd_value(0)
     fp = document.getElementById('first_panel')
     fp.style.display="none"
     generate_random_series_results()
@@ -95,15 +96,76 @@ sport_cric.addEventListener('click',()=>
     sp_new.style.display="none"
     fp = document.querySelector('#first_panel')
     fp.style.display="block"
-    SuccessMsg('Always Check player credits and role before generating!')
-    sd = get_sd_value(0)
-    sport_type(0,-1)
+
+  //---
+  mr= document.getElementById('match_result')
+  mr.addEventListener('click',()=>
+  {
+        sd = get_sd_value(0)
+        sport_type(0,-1)
+      fp = document.getElementById('first_panel')
+      fp.style.display="none"
+      generate_match_result_series(0)
+  })
+  //-----
+    choose_type = document.querySelector('#choose_type')
+    choose_type.addEventListener('click',()=>
+    {
+        SuccessMsg('Always Check player credits and role before generating!')
+        sd = get_sd_value(0)
+        sport_type(0,-1)
+        console.log(sd)
+        fp= document.getElementById('first_panel')
+        fp.style.display="none"
+        //-------
+        fantasy_p = document.querySelector('#fantasy_panel')
+        fantasy_p.style.display="block"
+        fl = document.querySelectorAll('#fantasy_logo')
+            fl.forEach((obj)=>
+            {
+                obj.addEventListener('click',()=>
+                {
+                    fl.forEach((v_obj)=>
+                    {
+                        v_obj.classList.remove('border-grey')
+                    })
+                    obj.classList.add('border-grey')
+                })
+            })
+        fantasy_c = document.querySelector('#fantasy_continue')
+        fantasy_c.addEventListener('click',()=>
+        {
+            fantasy_logo = document.querySelectorAll('#fantasy_logo')
+            fantasy_logo.forEach((obj,index)=>
+            {
+                if(Array.from(obj.classList).includes('border-grey'))
+                {
+                    fantasy_p.style.display="none"
+                    generate_random_series(0,index)
+                }
+            })
+        })
+        //------
+    })
+  //----
+  cm = document.querySelector('#custom_match')
+  cm.addEventListener('click',()=>
+  {
+      fp = document.querySelector('#first_panel')
+      fp.style.display="none"
+      SuccessMsg('Always Check player credits and role before generating!')
+      sfp = document.querySelector('#secondary_first_panel')
+      sfp.style.display = "block"
+      sd = get_sd_value(3)
+      sport_type(3,-1)
+  })
 })
 sport_foot.addEventListener('click',()=>
 {
     sp_new.style.display="none"
     fp = document.querySelector('#secondary_first_panel')
     fp.style.display="block"
+    SuccessMsg('Always Check player credits and role before generating!')
     sd=get_sd_value(1)
     sport_type(1,-1)
 })
@@ -112,6 +174,7 @@ sport_basket.addEventListener('click',()=>
     sp_new.style.display="none"
     fp = document.querySelector('#secondary_first_panel')
     fp.style.display="block"
+    SuccessMsg('Always Check player credits and role before generating!')
     sd= get_sd_value(2)
     sport_type(2,-1)
 //     raiseError('Currently Basketball is still under developement!')
@@ -119,17 +182,17 @@ sport_basket.addEventListener('click',()=>
 })
 sport_kabaddi.addEventListener('click',()=>
 {
-    raiseError('Currently Kabaddi is still under developement!')
-    return;
+    sp_new.style.display="none"
+    fp = document.querySelector('#secondary_first_panel')
+    fp.style.display="block"
+    SuccessMsg('Always Check player credits and role before generating!')
+    sd=get_sd_value(4)
+    sport_type(4,-1)
 })
 
-cm = document.getElementById('custom_match')
-cm.addEventListener("click",()=>{
-    cp=document.getElementById('custom_panel')
-    fp = document.getElementById('first_panel')
-    fp.style.display="none"
-    cp.style.display="block"
-})
+
+
+
 let match_number_control = function(team1,team2,series_index,mode,sport_id,fantasy)
 {
     mnc= document.getElementById('match_number_continue')
@@ -168,7 +231,9 @@ let displayTeams = function(team1_data,team2_data,team1,team2,mn,series_index,mo
 {
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
     role_value = all_value[sport_id]
     let team_list=sd.req_data[series_index].teams_list
