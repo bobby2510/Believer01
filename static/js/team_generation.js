@@ -56,22 +56,77 @@ let all_comb = [[
    [2,1,1,1,2],[2,1,1,1,3],[2,1,1,2,2],[2,1,1,3,1],[2,1,2,1,2],[2,1,2,2,1],[2,1,3,1,1],[2,2,1,1,2],[2,2,1,2,1],[2,2,2,1,1],[2,3,1,1,1],
    [3,1,1,1,2],[3,1,1,2,1],[3,1,2,1,1],[3,2,1,1,1],
    [4,1,1,1,1]
-]
+],
+[
+   //dream11
+   [
+      [1,3,2,5],[1,3,3,4],[1,4,3,3],[1,4,2,4],[1,4,1,5],[1,5,2,3],[1,5,1,4],[1,6,1,3],[1,3,1,6],[1,3,4,3],
+      [2,3,3,3],[2,3,2,4],[2,3,1,5],[2,4,2,3],[2,4,1,4],[2,5,1,3],
+      [3,3,2,3],[3,4,1,3],[3,3,1,4],
+      [4,3,1,3]
+   ],
+   //myteam11
+   [
+     [1,3,2,5],[1,3,3,4],[1,4,3,3],[1,4,2,4],[1,4,1,5],[1,5,2,3],[1,5,1,4],[1,6,1,3],[1,3,1,6],[1,3,4,3],
+      [2,3,3,3],[2,3,2,4],[2,3,1,5],[2,4,2,3],[2,4,1,4],[2,5,1,3],
+      [3,3,2,3],[3,4,1,3],[3,3,1,4],
+      [4,3,1,3],[1,2,2,6],[1,2,3,5],[1,2,4,4],[1,2,5,3],[1,2,6,2],
+      [1,6,2,2],[1,5,3,2],[1,4,4,2],[1,3,5,2],
+      [2,5,2,2],[2,6,1,2],[3,4,2,2],[4,3,2,2],
+      [3,5,1,2],[4,4,1,2],[2,2,2,5],[3,2,1,5],[3,2,2,4]
+   ],
+   //my11circle
+   [
+      [1,3,2,5],[1,3,3,4],[1,4,3,3],[1,4,2,4],[1,5,2,3],[1,3,4,3],
+      [2,3,3,3],[2,3,2,4],[2,4,2,3],
+      [3,3,2,3],
+      [1,2,2,6],[1,2,3,5],[1,2,4,4],[1,2,5,3],[1,2,6,2],
+      [1,6,2,2],[1,5,3,2],[1,4,4,2],[1,3,5,2],
+      [2,5,2,2],[3,4,2,2],[4,3,2,2],
+      [2,2,2,5],[3,2,2,4]
+   ],
+   //mpl
+   [
+      [1,3,2,5],[1,3,3,4],[1,4,3,3],[1,4,2,4],[1,4,1,5],[1,5,2,3],[1,5,1,4],[1,6,1,3],[1,3,1,6],[1,3,4,3],
+      [2,3,3,3],[2,3,2,4],[2,3,1,5],[2,4,2,3],[2,4,1,4],[2,5,1,3],
+      [3,3,2,3],[3,4,1,3],[3,3,1,4],
+      [4,3,1,3]
+   ],
+   //fan fight
+   [
+      [1,3,2,5],[1,3,3,4],[1,4,3,3],[1,4,2,4],[1,4,1,5],[1,5,2,3],[1,5,1,4],[1,6,1,3],[1,3,1,6],[1,3,4,3],
+      [2,3,3,3],[2,3,2,4],[2,3,1,5],[2,4,2,3],[2,4,1,4],[2,5,1,3],
+      [3,3,2,3],[3,4,1,3],[3,3,1,4],
+      [4,3,1,3]
+   ],
+   //all other
+   [
+      [1,3,2,5],[1,3,3,4],[1,4,3,3],[1,4,2,4],[1,4,1,5],[1,5,2,3],[1,5,1,4],[1,6,1,3],[1,3,1,6],[1,3,4,3],
+      [2,3,3,3],[2,3,2,4],[2,3,1,5],[2,4,2,3],[2,4,1,4],[2,5,1,3],
+      [3,3,2,3],[3,4,1,3],[3,3,1,4],
+      [4,3,1,3]
+   ]
+],
+[[2,2,3],[3,2,2],[3,1,3],[4,1,2],[4,2,1]]
 ]
 let all_vp_list=[
    [[4,7],[5,6],[6,5],[7,4]],
    [[4,7],[5,6],[6,5],[7,4]],
-   [[3,5],[4,4],[5,3]]
+   [[3,5],[4,4],[5,3]],
+   [[4,7],[5,6],[6,5],[7,4]],
+   [[2,5],[3,4],[4,3],[5,2]]
 ]
  all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
 let team_generator = function(team_one,team_two,team_one_index,team_two_index,mn,csv,cev,fixed_one,fixed_two,captain_one,captain_two,vice_captain_one,vice_captain_two,selected_tsd,series_index,mode,sport_id,fantasy)
 {
    console.log(fantasy)
    diff_comb=all_comb[sport_id]
-   if(sport_id==0)
+   if(sport_id==0 || sport_id == 3)
    {
       diff_comb=diff_comb[fantasy]
    }
@@ -145,7 +200,7 @@ let team_generator = function(team_one,team_two,team_one_index,team_two_index,mn
 let custom_strategy = function(one_arr_cnt,selected_team_one,selected_team_two,team_one_index,team_two_index,mn,csv,cev,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,selected_tsd,series_index,mode,sport_id,fantasy)
 {
    diff_comb=all_comb[sport_id]
-   if(sport_id==0)
+   if(sport_id==0 || sport_id == 3)
       diff_comb=diff_comb[fantasy]
    console.log(diff_comb)
    team_side_list=all_vp_list[sport_id]
@@ -165,7 +220,9 @@ let custom_strategy = function(one_arr_cnt,selected_team_one,selected_team_two,t
    all_f_limit=[
       [4,6,4,6],
       [1,5,5,3],
-      [4,4,4,4,4]
+      [4,4,4,4,4],
+      [4,6,4,6],
+      [4,2,3]
    ]
    f_limit=all_f_limit[sport_id]
    v_flag=false;
@@ -313,7 +370,7 @@ let custom_strategy = function(one_arr_cnt,selected_team_one,selected_team_two,t
 let team_generator_helper_one = function(st_one,st_two,toi,tti,nt,mn,csv,cev,strategy,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,f_one_arr_cnt,selected_tsd,series_index,sport_id,fantasy)
 {
    diff_comb=all_comb[sport_id]
-   if(sport_id==0)
+   if(sport_id==0 || sport_id == 3)
       diff_comb=diff_comb[fantasy]
    team_side_list=all_vp_list[sport_id]
    role_value = all_value[sport_id]
@@ -347,7 +404,7 @@ let team_generator_helper_one = function(st_one,st_two,toi,tti,nt,mn,csv,cev,str
 }
 let validation_one = function(team,toi,tti,sport_id)
 {
-   all_limit=[4,4,3]
+   all_limit=[4,4,3,4,2]
    limit=all_limit[sport_id]
    let team_one_cnt=0
    let team_two_cnt=0
@@ -406,7 +463,7 @@ let is_valid_team_side_count = function(team,tso_value,tst_value,toi,tti)
 let team_generator_helper_two = function(one_arr,fp_one_arr,strategy,toi,tti,nt,mn,csv,cev,c1_players,c2_players,vc1_players,vc2_players,f_one_arr_cnt,selected_tsd,series_index,is_custom,sport_id,fantasy)
 {
    diff_comb=all_comb[sport_id]
-   if(sport_id==0)
+   if(sport_id==0 || sport_id == 3)
       diff_comb=diff_comb[fantasy]
    team_side_list=all_vp_list[sport_id]
    role_value = all_value[sport_id]
@@ -650,7 +707,7 @@ let create_team = function(team,toi,tti,captain_id,vice_captain_id,team_number,c
 let get_team = function(one_arr,fp_one_arr,strategy,f_one_arr_cnt,sport_id,fantasy)
 {
    diff_comb=all_comb[sport_id]
-   if(sport_id==0)
+   if(sport_id==0 || sport_id == 3)
    {
       diff_comb=diff_comb[fantasy]
    }
