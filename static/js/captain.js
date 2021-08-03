@@ -19,7 +19,9 @@ let get_captain_players = function(team1,team2,index_one_list,index_two_list,ser
     })
     all_value = [['','WK','BAT','AL','BOWL'],
     ['','GK','DEF','MID','ST'],
-    ['','PG','SG','SF','PF','CE']
+    ['','PG','SG','SF','PF','CE'],
+    ['','WK','BAT','AL','BOWL'],
+    ['','DEF','ALL','RAI']
     ]
     role_value = all_value[sport_id]
 let team_list=sd.req_data[series_index].teams_list
