@@ -5,8 +5,12 @@ let get_sd_value = function(sport_id)
         return JSON.parse(localStorage.getItem('series_data'))
     else if(sport_id==1)
         return JSON.parse(localStorage.getItem('football'))
-    else
+    else if(sport_id == 2)
         return JSON.parse(localStorage.getItem('basketball'))
+    else if(sport_id == 3)
+        return JSON.parse(localStorage.getItem('mycricket'))
+    else 
+        return JSON.parse(localStorage.getItem('kabaddi'))
 }
 console.log(sd)
 console.log(screen.height)
