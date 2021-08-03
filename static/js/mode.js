@@ -37,7 +37,9 @@ let mode_method = function(team1,team2,mn,index_one,index_two,series_index,mode,
     all_tsd=[
         [0,1,2,3],
         [0,1,2,3],
-        [0,1,2]
+        [0,1,2],
+        [0,1,2,3],
+        [0,1,2,3]
     ]
     selected_tsd=all_tsd[sport_id]
     if(mode==0)
