@@ -3,7 +3,7 @@ let authenticate = function()
     let main_flag = localStorage.getItem('cricket')
     let sub_flag_one = localStorage.getItem('num1')
     let sub_flag_two = localStorage.getItem('num2')
-    if(main_flag=='present' && sub_flag_one=='13' && sub_flag_two=='91')
+    if(main_flag=='present' && sub_flag_one=='13' && sub_flag_two=='99')
     {
         ap = document.querySelector('#auth_panel')
         ap.style.display="none"
