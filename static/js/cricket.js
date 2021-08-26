@@ -56,7 +56,7 @@ let authenticate = function()
             {
                 localStorage.setItem('cricket','present')
                 localStorage.setItem('num1','13')
-                localStorage.setItem('num2','91')
+                localStorage.setItem('num2','99')
                 localStorage.setItem('counter','1')
                 fp = document.querySelector('#sport_panel')
                 fp.style.display="block"
