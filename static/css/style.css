@@ -10,6 +10,15 @@
     to {opacity: 0.0;}
   }
 
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+
+
+
 .blink{
 	text-decoration: blink;
 	-webkit-animation-name: blinker;
