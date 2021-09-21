@@ -10,7 +10,7 @@ short_p.addEventListener('click',()=>
 let display_shortcut_teams = function(mn,attempt_id,series_index,sport_id)
 {
     console.log(mn,attempt_id,series_index)
-    let data = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${mn}`))
+    let data = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`))
     data.attempts.forEach((attempt)=>
     {
         if(attempt.team_list_id==attempt_id)
