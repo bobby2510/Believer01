@@ -1,6 +1,6 @@
 let display_teams = function(mn,attempt_index,toi,tti,series_index,attempt_id,sport_id)
 {
-    let temp = localStorage.getItem(`WA_${sport_id}_${series_index}_${mn}`)
+    let temp = localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`)
     if(temp==null)
     {
         raiseError('No Match Found with given match number!')
