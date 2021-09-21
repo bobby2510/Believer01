@@ -1,6 +1,11 @@
 let select_players = function(team1,team2,mn,series_index,mode,sport_id,fantasy)
 {
     console.log(fantasy)
+
+
+
+
+    
 team_list = sd.req_data[series_index].teams_list
 team_one_data = document.querySelectorAll('.team_one_data')
 team_two_data = document.querySelectorAll('.team_two_data')
@@ -146,7 +151,7 @@ submit_players.addEventListener('click',()=>
     pc.style.display="none"
     cp = document.querySelector('#choose_player')
     cp.style.display="none"
-    if(mode==2)
+    if(mode==3)
     {
     get_fixed_players(team1,team2,index_one,index_two,series_index,sport_id)
     sfp = document.getElementById('submit_fixed_players')
@@ -364,7 +369,7 @@ submit_players.addEventListener('click',()=>
                             if(csv=='' || cev=='' || Number(cev)-Number(csv)<0 || Number(cev)>100) {raiseError('Invalid Credit Range');return}
                             cr.style.display="none"
                             console.log(selected_tsd)
-                            team_generator(index_one,index_two,team1,team2,mn,csv,cev,fixed_team_one_players,fixed_team_two_players,captain_team_one_players,captain_team_two_players,vice_captain_team_one_players,vice_captain_team_two_players,selected_tsd,series_index,mode,sport_id,fantasy)
+                            team_generator(index_one,index_two,team1,team2,mn,csv,cev,fixed_team_one_players,fixed_team_two_players,captain_team_one_players,captain_team_two_players,vice_captain_team_one_players,vice_captain_team_two_players,selected_tsd,series_index,mode,sport_id,fantasy,{})
                         })
                     })
                 })
