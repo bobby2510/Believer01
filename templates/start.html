@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Dream 11 Team Generator</title>
     <style type="text/css" media="print">
@@ -48,6 +48,7 @@
       </div>
       <ul class="list-group list-group-flush m-2" >
         <li class="list-group-item"  id="side_bar"><span> <i class="fa fa-home"></i> Home</span></li>
+        <li class="list-group-item"  id="side_bar"><span> <i class="fa fa-check-circle"></i> Results</span></li>
         <li class="list-group-item" id="side_bar"><span> <i class="fa fa-wrench"></i> How to generate?</span></li>
         <li class="list-group-item" id="side_bar"> <i class="fa fa-trophy"></i> Best tips</li>
         <li class="list-group-item" id="side_bar"> <i class="fa fa-whatsapp"></i> contact us</li>
@@ -313,6 +314,67 @@
           </div>
       </div>
         <!-- secondary first panel end-->
+      <!-- smart panelstart -->
+      <div class="card mt-3 without-size jp" id="smart_panel" style="display: none;">
+        <div class="card-header text-center">
+          Smart Generation Section
+        </div>
+        <div class="card-body">
+          <!--style="max-width:350px;" -->
+          <div id="smart-container">
+            <!--section for pitch report-->
+            <div id="pitch_report_panel"  style="max-width:350px; margin:25px auto;">
+              <h5 class="pb-3">Pitch Details:</h5>
+              <div class="d-flex justify-content-around">
+                <div class="pitch_report border-grey"><img  class="vp-icon" src="dream11_images/batting.jpg">Batting</div>
+                <div class="pitch_report border-grey"><img  class="vp-icon" src="dream11_images/bowling.jpg">Bowling</div>
+                <div class="pitch_report border-grey"><i class="fa fa-balance-scale"></i>Balanced</div>
+              </div>
+            </div>
+            <!--strong tema panel-->
+            <div id="strong_team_panel" style="max-width:350px; margin:25px auto;">
+              <h5 class="pb-3">Strong Team?</h5>
+              <div id="strong_team_placer" class="d-flex justify-content-around">
+
+              </div>
+            </div>
+            <!--toss panel-->
+          
+            <div id="vp_spinner" style="display: none;text-align:center;">
+              <div class="spinner-border mt-4"></div>
+            </div>
+            <div id="toss_panel" style="max-width:350px; margin:25px auto;">
+              <!-- first toss panel -->
+              <div id="first_toss_panel" style="display: block;">
+                <h5 class="pb-3">Toss Completed?</h5>
+                <div id="first_toss_panel" class="d-flex justify-content-around">
+                    <div class="toss_report_yes border-grey"><i class="fa fa-check"></i>Yes</div>
+                    <div class="toss_report_no border-grey"><i class="fa fa-times"></i>No</div>
+                </div> 
+              </div>
+              <!--second panel-->
+              <div id="second_toss_panel" style="display: none;">
+                <h5 class="pb-3">Who won the toss?</h5>
+                <div id="second_toss_placer" class="d-flex justify-content-around">
+
+                </div>
+              </div>
+              <!-- third toss panel -->
+              <div id="third_toss_panel" style="display: none;">
+                <h5 class="pb-3" id="third_toss_header"></h5>
+                <div id="third_toss_placer" class="d-flex justify-content-around">
+                  <div class="toss_result_batting border-grey"><img  class="vp-icon" src="dream11_images/batting.jpg">Batting</div>
+                  <div class="toss_result_bowling border-grey"><img  class="vp-icon" src="dream11_images/bowling.jpg">Bowling</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <div class="btn btn-success" id="smart_continue" style="max-width:350px; width:100px; margin:55px auto; display:none;">Continue</div>
+          
+        </div>
+    </div>
+      <!-- smart panel end -->
       <!-- mode panel start-->
       <div class="card mt-3 without-size jp" id="mode_panel" style="display: none;">
         <div class="card-header text-center">
@@ -321,6 +383,13 @@
         <div class="card-body">
           <h5 class="card-title text-center">Choose Type of Generation</h5>
           <div class="container d-flex justify-content-around p-2 flex-wrap align-items-center" style="max-width:350px;">
+            <div class="d-flex flex-column justify-content-start border my-logo-card m-3 position-relative">
+              <img src="dream11_images/smart.jpg"  class="my-logo-image-big" alt="">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger blink" style="color:white; box-shadow:0px 0px 5px red; right:0;">
+                New
+              </span>
+              <span class="btn btn-success" id="mode_id">continue</span>
+            </div>
             <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
               <img src="dream11_images/sl.jpg"  class="my-logo-image-big" alt="">
               <span class="btn btn-success" id="mode_id">continue</span>
@@ -1267,6 +1336,7 @@
     <script src="js/create_series.js" defer ></script>
     <script src="js/update_player_count.js" defer ></script>
     <script src="js/cricket.js" defer ></script>
+    <script src="js/smart.js" defer></script>
     <script src="js/dynamic_team.js" defer ></script>
     <script src="js/mode.js" defer ></script>
     <script src="js/custom_match.js" defer ></script>
