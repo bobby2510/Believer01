@@ -122,7 +122,7 @@ let all_vp_list=[
     ['','WK','BAT','AL','BOWL'],
     ['','DEF','ALL','RAI']
     ]
-let team_generator = function(team_one,team_two,team_one_index,team_two_index,mn,csv,cev,fixed_one,fixed_two,captain_one,captain_two,vice_captain_one,vice_captain_two,selected_tsd,series_index,mode,sport_id,fantasy)
+let team_generator = function(team_one,team_two,team_one_index,team_two_index,mn,csv,cev,fixed_one,fixed_two,captain_one,captain_two,vice_captain_one,vice_captain_two,selected_tsd,series_index,mode,sport_id,fantasy,bobby_obj)
 {
    console.log(fantasy)
    diff_comb=all_comb[sport_id]
@@ -195,17 +195,27 @@ let team_generator = function(team_one,team_two,team_one_index,team_two_index,mn
       console.log(f1_players)
       console.log(f2_players)
       console.log(one_arr_cnt)
-   custom_strategy(one_arr_cnt,selected_team_one,selected_team_two,team_one_index,team_two_index,mn,csv,cev,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,selected_tsd,series_index,mode,sport_id,fantasy)
+   custom_strategy(one_arr_cnt,selected_team_one,selected_team_two,team_one_index,team_two_index,mn,csv,cev,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,selected_tsd,series_index,mode,sport_id,fantasy,bobby_obj)
 }
-let custom_strategy = function(one_arr_cnt,selected_team_one,selected_team_two,team_one_index,team_two_index,mn,csv,cev,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,selected_tsd,series_index,mode,sport_id,fantasy)
+let is_present = function(comb,list_comb)
+{
+  
+   for(let i=0;i<list_comb.length;i++){
+      temp = list_comb[i]
+      if(temp[0]==comb[0] && temp[1]==comb[1] && temp[2] == comb[2] && comb[3] == temp[3])
+      return true 
+   }
+   return false 
+}
+let custom_strategy = function(one_arr_cnt,selected_team_one,selected_team_two,team_one_index,team_two_index,mn,csv,cev,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,selected_tsd,series_index,mode,sport_id,fantasy,bobby_obj)
 {
    diff_comb=all_comb[sport_id]
    if(sport_id==0 || sport_id == 3)
       diff_comb=diff_comb[fantasy]
-   console.log(diff_comb)
+
    team_side_list=all_vp_list[sport_id]
    role_value = all_value[sport_id]
-   c_strategy=[]
+   var c_strategy=[]
    f_one_arr_cnt=[]
    for(let i =0;i<role_value.length;i++)
       f_one_arr_cnt.push(0)
@@ -260,9 +270,66 @@ let custom_strategy = function(one_arr_cnt,selected_team_one,selected_team_two,t
       if(v_cnt==role_value.length-1)
          c_strategy.push(comb)
    })
+   
+   if(mode==0 && (sport_id == 0 || sport_id == 3))
+   {
+      if(bobby_obj.toss == true)
+      {
+         if(bobby_obj.strong_team_value == 0 && bobby_obj.toss_result == 0)
+         selected_tsd = [3,] 
+         else if(bobby_obj.strong_team_value == 0 && bobby_obj.toss_result == 1)
+         selected_tsd =[3,2]
+         else if(bobby_obj.strong_team_value == 1 && bobby_obj.toss_result == 0)
+         selected_tsd = [0,1]
+         else if(bobby_obj.strong_team_value == 1 && bobby_obj.toss_result == 1)
+         selected_tsd = [0]
+         else 
+         selected_tsd = [0,1,2,3]
+      }
+      else 
+      {
+         if(bobby_obj.strong_team_value==0)
+         selected_tsd = [2,3]
+         else if(bobby_obj.strong_team_value == 1)
+         selected_tsd = [0,1]
+         else 
+         selected_tsd = [0,1,2,3]
+      }
+      smart_strategy = vp_obj.strategy[bobby_obj.pitch_value]
+      console.log(smart_strategy)
+      console.log(c_strategy)
+      vp_dp_jp = []
+      smart_strategy.forEach((comb)=>{
+         if(is_present(comb,c_strategy))
+         vp_dp_jp.push(comb)
+      })
+      console.log(vp_dp_jp)
+      c_strategy = vp_dp_jp 
+
+      cr = vp_obj.credit_range[bobby_obj.pitch_value]
+      csv = cr.start
+      cev = cr.end
+      console.log(csv)
+      console.log(cev)
+      console.log(selected_tsd)
+      console.log(c_strategy)
+   }
    // actual drama 
-  
-   if(mode==0)
+   if(mode==0 && (sport_id==0 || sport_id==3))
+   {
+      number_panel = document.querySelector('#generate_panel')
+      number_panel.style.display="block"
+      trm = document.querySelector('#teams_range_msg')
+      trm.textContent="you can only generate teams of  1 - 6000 teams only!"
+      team_number = document.getElementById('team_number')
+      team_number.addEventListener('click',()=>
+      {
+      nt =  Number(document.querySelector('#number_teams').value)
+      if(nt<1 || nt>6000){raiseError('Numbers of teams should be 1 - 6000 range'); return}
+      team_generator_helper_one(selected_team_one,selected_team_two,team_one_index,team_two_index,nt,mn,csv,cev,c_strategy,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,f_one_arr_cnt,selected_tsd,series_index,sport_id,fantasy)
+      })
+   }
+   else if(mode==0 || mode==1)
    {
       number_panel = document.querySelector('#generate_panel')
       number_panel.style.display="block"
@@ -496,29 +563,17 @@ let team_generator_helper_two = function(one_arr,fp_one_arr,strategy,toi,tti,nt,
   // c2_players.forEach((p)=>{captain_arr_id.push(p.player_id)})  // add
   // for(let i=0;i<captain_arr_id.length;i++)  //add
     //  captain_arr_index.push(parseInt(nt/captain_arr_id.length))  //add
-  // captain_arr_index[0]=captain_arr_index[0]+parseInt(nt%captain_arr_id.length) //add
-   for(let i=0;i<selected_tsd_cnt;i++)
-      split_arr.push(parseInt(nt/selected_tsd_cnt))
-   console.log(selected_tsd)
-   console.log(split_arr)
-   split_arr[0]=split_arr[0]+(nt%selected_tsd_cnt)
+  // captain_arr_index[0]=captain_arr_index[0]+parseInt(nt%captain_arr_id.length) //add 
    let map_cnt=0;
-   console.log(split_arr)
    //selected_tsd.forEach((data,index)=>
-   for(let index=0;index<selected_tsd.length;index++)
-   {
-       temp_nt = split_arr[index]
-       console.log(temp_nt)
        cnt=0
      // console.log(data)
      
-      let tso_value = team_side_list[selected_tsd[index]][0]
-      let tst_value = team_side_list[selected_tsd[index]][1]
-      console.log(tso_value,tst_value)
-      // console.log(tso_value)
-      //console.log(tst_value)
-      while(cnt<temp_nt)
+      while(cnt<nt)
       {
+         index = get_rand_value(selected_tsd.length)
+         let tso_value = team_side_list[selected_tsd[index]][0]
+         let tst_value = team_side_list[selected_tsd[index]][1]
          if(dp>100000){raiseError('Software is short of Combinations!'); return }
          strategy_index =get_rand_value(strategy_len)
        // console.log(strategy_index)
@@ -627,7 +682,7 @@ let team_generator_helper_two = function(one_arr,fp_one_arr,strategy,toi,tti,nt,
          }
          dp++
       }
-   }
+   
    console.log(dp)
   // console.log(map_cnt)
    // all teams are stored
@@ -675,18 +730,19 @@ let team_generator_helper_two = function(one_arr,fp_one_arr,strategy,toi,tti,nt,
 
 let create_or_update_match = function(attempt,mn,toi,tti,series_index,sport_id)
 {
-   let flag = localStorage.getItem(`WA_${sport_id}_${series_index}_${mn}`)
+   let flag = localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`)
    if(flag==null)
    {
-      match =new Match(mn,toi,tti)
+      match =new Match(mn,toi,tti,sd.req_data[series_index].code)
       match.attempts.push(attempt)
-      localStorage.setItem(`WA_${sport_id}_${series_index}_${mn}`,JSON.stringify(match))
+
+      localStorage.setItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`,JSON.stringify(match))
       return 0
    }
    else{
       match_obj = JSON.parse(flag)
       match_obj.attempts.push(attempt)
-      localStorage.setItem(`WA_${sport_id}_${series_index}_${mn}`,JSON.stringify(match_obj))
+      localStorage.setItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`,JSON.stringify(match_obj))
       return match_obj.attempts.length-1  
    }
 }
