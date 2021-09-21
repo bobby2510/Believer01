@@ -7,7 +7,7 @@ let get_match_result_number = function(series_index,sport_id)
         mrnv = document.getElementById('match_result_number_value').value
         if(mrnv!=null)
         {
-            if(localStorage.getItem(`WA_${sport_id}_${series_index}_${mrnv}`)==null){raiseError('Match Number does not exist! kindly generate Match Number'); return}
+            if(localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mrnv}`)==null){raiseError('Match Number does not exist! kindly generate Match Number'); return}
             console.log('everything is fine')
             fetch_match(Number(mrnv),series_index,sport_id);
         }
@@ -26,7 +26,7 @@ let fetch_match = function(mn,series_index,sport_id)
     mrn.style.display="none"
     md=document.getElementById('match_detail')
     md.style.display="block"
-    match_obj = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${mn}`))
+    match_obj = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`))
     
     toh=document.querySelector('#team_one_vp_head')
     tth= document.querySelector('#team_two_vp_head')
@@ -140,7 +140,7 @@ let fetch_match = function(mn,series_index,sport_id)
 let calc_first_ten = function(mn,attempt_index,series_index,sport_id)
 {
    // console.log(attempt_id)
-    let temp = localStorage.getItem(`WA_${sport_id}_${series_index}_${mn}`)
+    let temp = localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`)
     rv= document.getElementById('results_vp')
     rv.style.display="block"
     vp_footer = document.querySelector('#footer_vp')
@@ -274,7 +274,7 @@ let get_team_score = function(obj,team,attempt,series_index,sport_id)
 }
 let result_helper = function(mn,series_index,sport_id)
 {
-    match_obj = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${mn}`))
+    match_obj = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`))
     ru = document.getElementById('result_update')
     if(ru==null) return
     ru.addEventListener('click',()=>
@@ -288,7 +288,7 @@ let get_player_points = function(mn,series_index,sport_id)
     let team_list=sd.req_data[series_index].teams_list
     md = document.getElementById('match_detail')
     md.style.display="none"
-    match_obj = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${mn}`))
+    match_obj = JSON.parse(localStorage.getItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`))
     match_obj.result=true
     pp=document.getElementById('player_points')
     pp.style.display="block"
@@ -394,7 +394,7 @@ let get_player_points = function(mn,series_index,sport_id)
         })
         match_obj.team_one_result = team_one_f_p
         match_obj.team_two_result = team_two_f_p
-        localStorage.setItem(`WA_${sport_id}_${series_index}_${mn}`,JSON.stringify(match_obj))
+        localStorage.setItem(`WA_${sport_id}_${series_index}_${sd.req_data[series_index].code}_${mn}`,JSON.stringify(match_obj))
         pp_temp = document.getElementById('player_points')
         pp_temp.style.display='none'
         location.reload()
