@@ -47,6 +47,7 @@ let authenticate = function()
         {
             mobile_number = document.querySelector('#mobile_number')
             mn=mobile_number.value
+
             if(mn==''){raiseError('mobile number cannot be empty!'); return}
             secret_code = document.querySelector('#secret_code')
             sc=Number(secret_code.value)
@@ -58,6 +59,7 @@ let authenticate = function()
                 localStorage.setItem('num1','13')
                 localStorage.setItem('num2','99')
                 localStorage.setItem('counter','1')
+                localStorage.setItem('mobile_number',mn)
                 fp = document.querySelector('#sport_panel')
                 fp.style.display="block"
                 ap = document.querySelector('#auth_panel')
