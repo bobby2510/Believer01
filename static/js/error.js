@@ -53,11 +53,12 @@ class Attempt
         this.team_one_index = toi
         this.team_two_index = tti
         this.selected_id=selected_id
+        
     }
 }
 class Match
 {
-    constructor(match_no,toi,tti)
+    constructor(match_no,toi,tti,series_code)
     {
         this.match_no = match_no
         this.team_one_index = toi
@@ -66,6 +67,7 @@ class Match
         this.result=false
         this.team_one_result=[]
         this.team_two_result=[]
+        this.series_code = series_code
     }
 }
 let displayDanger = function(msg)
