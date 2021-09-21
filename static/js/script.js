@@ -45,26 +45,30 @@ sb.forEach((ele,index)=>
         }
         else if(index==1)
         {
-            closeAll()
-            req = document.querySelector('#how_to_generate')
-            req.style.display="block"
-            closeNav()
+            location.href="https://team-generation.herokuapp.com/winning_result"
         }
         else if(index==2)
         {
             closeAll()
-            req = document.querySelector('#best_tips')
+            req = document.querySelector('#how_to_generate')
             req.style.display="block"
             closeNav()
         }
         else if(index==3)
         {
             closeAll()
-            req = document.querySelector('#contact_us')
+            req = document.querySelector('#best_tips')
             req.style.display="block"
             closeNav()
         }
         else if(index==4)
+        {
+            closeAll()
+            req = document.querySelector('#contact_us')
+            req.style.display="block"
+            closeNav()
+        }
+        else if(index==5)
         {
             location.href="https://www.youtube.com/channel/UCoXQDML17ann6UjNHxXYXQw"
         }
