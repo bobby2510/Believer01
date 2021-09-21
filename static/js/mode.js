@@ -44,9 +44,13 @@ let mode_method = function(team1,team2,mn,index_one,index_two,series_index,mode,
     selected_tsd=all_tsd[sport_id]
     if(mode==0)
     {
-        team_generator(index_one,index_two,team1,team2,mn,98,100,[],[],c_one_index,c_two_index,vc_one_index,vc_two_index,selected_tsd,series_index,mode,sport_id,fantasy)
+        handle_smart_section(index_one,index_two,team1,team2,mn,98,100,[],[],index_one,index_two,index_one,index_two,selected_tsd,series_index,mode,sport_id,fantasy)
+    }
+    else if(mode==1)
+    {
+        team_generator(index_one,index_two,team1,team2,mn,98,100,[],[],c_one_index,c_two_index,vc_one_index,vc_two_index,selected_tsd,series_index,mode,sport_id,fantasy,{})
     }
     else{
-        team_generator(index_one,index_two,team1,team2,mn,97,100,[],[],c_one_index,c_two_index,vc_one_index,vc_two_index,selected_tsd,series_index,mode,sport_id,fantasy)
+        team_generator(index_one,index_two,team1,team2,mn,97,100,[],[],c_one_index,c_two_index,vc_one_index,vc_two_index,selected_tsd,series_index,mode,sport_id,fantasy,{})
     }
 }
