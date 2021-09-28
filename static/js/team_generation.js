@@ -343,7 +343,7 @@ let custom_strategy = function(one_arr_cnt,selected_team_one,selected_team_two,t
       team_generator_helper_one(selected_team_one,selected_team_two,team_one_index,team_two_index,nt,mn,csv,cev,c_strategy,f1_players,f2_players,c1_players,c2_players,vc1_players,vc2_players,f_one_arr_cnt,selected_tsd,series_index,sport_id,fantasy)
       })
    }
-   else if(mode==1)
+   else if(mode==2)
    {
       number_panel = document.querySelector('#generate_panel')
       number_panel.style.display="block"
