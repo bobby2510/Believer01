@@ -30,7 +30,7 @@ json_data=
                  
          ]},
       
-      {"series_name": "T10 Crotia", "series_code": "OCT121", "number_teams": 5, "team_list": ["ZAS", "BEL","SIB", "SOS","LJU"],
+      {"series_name": "T10 Crotia", "series_code": "OCT093", "number_teams": 5, "team_list": ["ZAS", "BEL","SIB", "SOS","LJU"],
                      "teams": [
                          {"team_name": "ZAS", "players_name": ["M Mark-I", "V Bhammar", "N Gornall", "D Lazarides", "C Turkich", "P Amaan", "A Maheshwari", "S Shanmugam", "A Shukla", "S Ahmad-i", "M Shaikat", "U Ahammad", "C Osborne", "W Kamal", "J Thakur"], "players_role": [1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4], "players_credits": [9.0, 8.5, 9.5, 9.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 9.0, 8.5, 8.0, 8.0, 8.0], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [40400, 40401, 40402, 40403, 40404, 40405, 40406, 40407, 40408, 40409, 40410, 40411, 40412, 40413, 40414]},
                           {"team_name": "BEL", "players_name": ["A Dunbar", "S Tosic", "W Burton", "S Shinde", "A Dizija", "N Zimonjic", "R Vitas", "M Pavlovic", "A Mene-Ejegi", "N J Wickberg", "A Gajic", "V Zimonjic", "M Dorgan", "B Dugic"], "players_role": [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4], "players_credits": [9.0, 8.5, 8.5, 9.0, 8.5, 8.5, 8.0, 10.0, 9.5, 9.5, 8.5, 8.5, 8.5, 8.0], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [40450, 40451, 40452, 40453, 40454, 40455, 40456, 40457, 40458, 40459, 40460, 40461, 40462, 40463]},
