@@ -25,7 +25,7 @@ json_data=
       
       {
     "series_name": "ICC WORLD T20 CUP", 
-    "series_code": "OCT181", 
+    "series_code": "OCT182", 
     "number_teams": 16,
      "team_list": ["OMN", "NAM","SCO", "NED","BAN", "SL","PNG","AFG", "SA","PAK", "WI","NZ", "AUS","IND", "ENG","IRE"], 
      "teams": [
