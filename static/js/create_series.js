@@ -102,28 +102,28 @@ let secondary_create_series = function(sport_id,flag)
         if(sport_id==1)
         {
             data = JSON.parse(localStorage.getItem('football'))
-            data.req_data.push(new Series(c_series_code,c_series_name,[],[]))
+            data.req_data.push(new Series(c_series_code,c_series_name,[],[],0))
             localStorage.setItem('football',JSON.stringify(data))
             SuccessMsg('Series Created Successfully!')
         }
         else if(sport_id == 2)
         {
             data = JSON.parse(localStorage.getItem('basketball'))
-            data.req_data.push(new Series(c_series_code,c_series_name,[],[]))
+            data.req_data.push(new Series(c_series_code,c_series_name,[],[],0))
             localStorage.setItem('basketball',JSON.stringify(data))
             SuccessMsg('Series Created Successfully!')
         }
         else if(sport_id == 3)
         {
             data = JSON.parse(localStorage.getItem('mycricket'))
-            data.req_data.push(new Series(c_series_code,c_series_name,[],[]))
+            data.req_data.push(new Series(c_series_code,c_series_name,[],[],0))
             localStorage.setItem('mycricket',JSON.stringify(data))
             SuccessMsg('Series Created Successfully!')
         }
         else 
         {
             data = JSON.parse(localStorage.getItem('kabaddi'))
-            data.req_data.push(new Series(c_series_code,c_series_name,[],[]))
+            data.req_data.push(new Series(c_series_code,c_series_name,[],[],0))
             localStorage.setItem('kabaddi',JSON.stringify(data))
             SuccessMsg('Series Created Successfully!')
         }
@@ -197,6 +197,21 @@ let helper = function(sport_id,series_index)
             //console.log(data.req_data[series_index].teams_list)
             data.req_data[series_index].teams_list.forEach((team_name,index)=>
             {
+                if(data.req_data[series_index].data_type==1)
+                {
+                    img = document.createElement('img')
+                    img.src="dream11_images/"+team_name+".jpg"
+                    v_span = document.createElement('span')
+                    v_span.textContent = team_name
+                    img.classList.add('team-image')
+                        my_div = document.createElement('div')
+                  //  my_div.classList.add('d-flex','flex-column','justify-content-center','align-items-center')
+                        my_div.appendChild(img)
+                        my_div.appendChild(v_span)
+                        my_div.setAttribute('id','series_logo')
+                    etd_placer.appendChild(my_div)
+                }
+                else {
                 v_div = document.createElement('div')
                 h6 = document.createElement('h6')
                 h6.style.paddingTop="5px"
@@ -207,6 +222,7 @@ let helper = function(sport_id,series_index)
                 v_div.classList.add('team-image','d-flex','justify-content-center','align-items-center')
                 v_div.setAttribute('id','series_logo')
                 etd_placer.appendChild(v_div)
+                }
             })
             sl = etd_placer.querySelectorAll('#series_logo')
             sl.forEach((ele,index)=>
@@ -770,6 +786,15 @@ let secondary_edit_series = function(sport_id)
     jp.style.display="block"
     for(let i=0;i<data.req_data.length;i++)
     {
+        if(data.req_data[i].data_type==1)
+        {
+        img = document.createElement('img')
+        img.src="dream11_images/"+data.req_data[i].code+".jpg"
+        img.classList.add('team-image')
+        img.setAttribute('id','series_logo')
+        sesp.appendChild(img)
+        }
+        else {
         v_div = document.createElement('div')
         h6 = document.createElement('h6')
         h6.style.paddingTop="5px"
@@ -780,6 +805,7 @@ let secondary_edit_series = function(sport_id)
         v_div.classList.add('team-image','d-flex','justify-content-center','align-items-center')
         v_div.setAttribute('id','series_logo')
         sesp.appendChild(v_div)
+        }
     }
     sl = document.querySelectorAll('#series_logo')
     sl.forEach((ele,index)=>

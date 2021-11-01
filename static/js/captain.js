@@ -39,7 +39,7 @@ let team_list=sd.req_data[series_index].teams_list
     span_one.style.display="none"
     span_two.style.display="none"
 
-    if(sport_id==0)
+    if(sport_id==0 ||  sd.req_data[series_index].data_type==1)
     {
     team_one_img = document.createElement('img')
     team_two_img = document.createElement('img')

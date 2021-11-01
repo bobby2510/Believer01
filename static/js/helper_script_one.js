@@ -13,7 +13,7 @@ fi=document.querySelector('#first_image')
 si=document.querySelector('#second_image')
 fn=document.querySelector('#first_team_name')
 sn=document.querySelector('#second_team_name')
-if(sport_id==0)
+if(sport_id==0 ||  sd.req_data[series_index].data_type==1)
 {
     v_one_img = document.createElement('img')
     v_one_img.src=`dream11_images\\${team_list[team1]}.jpg`;

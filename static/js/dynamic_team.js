@@ -45,11 +45,12 @@ console.log(screen.height)
 
 let generate_random_series = function(sport_id,fantasy)
 {
+    
     cs = document.getElementById('choose_series')
     cs.style.display="block"
     sp = document.getElementById('series_placer')
     series_list = []
-    if(sport_id==0)
+    if(sport_id==0 )
     {
         for(let i=0;i<sd.req_data.length;i++)
         {
@@ -78,18 +79,28 @@ let generate_random_series = function(sport_id,fantasy)
             {
                 series_list.push(sd.req_data[i].code)
             }
-            series_list.forEach((data,index)=>
+            sd.req_data.forEach((series,index)=>
             {
-                v_div = document.createElement('div')
-                h6 = document.createElement('h6')
-                h6.style.paddingTop="5px"
-                h6.textContent=data
-                v_div.appendChild(h6)
-                v_div.style.border="1px solid black"
-                v_div.style.backgroundColor="#F5F5F5"
-                v_div.classList.add('team-image','d-flex','justify-content-center','align-items-center')
-                v_div.setAttribute('id','series_logo')
-                sp.appendChild(v_div)
+                if(series.data_type==1)
+                {
+                    img = document.createElement('img')
+                    img.src='dream11_images/'+series.code+'.jpg'
+                    img.classList.add('team-image')
+                    img.setAttribute('id','series_logo')
+                    sp.appendChild(img)
+                }
+                else{
+                    v_div = document.createElement('div')
+                    h6 = document.createElement('h6')
+                    h6.style.paddingTop="5px"
+                    h6.textContent=series.code
+                    v_div.appendChild(h6)
+                    v_div.style.border="1px solid black"
+                    v_div.style.backgroundColor="#F5F5F5"
+                    v_div.classList.add('team-image','d-flex','justify-content-center','align-items-center')
+                    v_div.setAttribute('id','series_logo')
+                    sp.appendChild(v_div)
+                }
             })
         }
     }
@@ -117,8 +128,15 @@ let generate_random_series = function(sport_id,fantasy)
         })
         if(series_index!=-1){
             cs.style.display="none"
+          
             mp = document.querySelector('#mode_panel')
             mp.style.display="block"
+            console.log(sport_id)
+            if(sport_id!=0){
+                s_g = document.querySelector('#s_g')
+                console.log(s_g)
+                s_g.style.display="none"
+                }
             mi_list = document.querySelectorAll('#mode_id')
             mi_list.forEach((mi,index)=>
             {
@@ -166,7 +184,7 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
     sn.textContent = sd.req_data[series_index].name
     sd.req_data[series_index].teams_list.forEach((data)=>
     {
-        if(sport_id==0)
+        if(sport_id==0 || sd.req_data[series_index].data_type==1)
         {
             img = document.createElement('img')
             img.src="dream11_images/"+data+".jpg"
@@ -196,7 +214,7 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
     })
     sd.req_data[series_index].teams_list.forEach((data)=>
     {
-        if(sport_id==0)
+        if(sport_id==0 || sd.req_data[series_index].data_type==1)
         {
         img = document.createElement('img')
         img.src="dream11_images/"+data+".jpg"
@@ -414,18 +432,27 @@ let generate_match_result_series = function(sport_id)
             {
                 series_list.push(sd.req_data[i].code)
             }
-            series_list.forEach((data,index)=>
+            sd.req_data.forEach((series,index)=>
             {
+                if(series.data_type==1){
+                img = document.createElement('img')
+                img.src="dream11_images/"+series.code+".jpg"
+                img.classList.add('team-image')
+                img.setAttribute('id','series_logo')
+                sp.appendChild(img)
+                }
+                else {
                 v_div = document.createElement('div')
                 h6 = document.createElement('h6')
                 h6.style.paddingTop="5px"
-                h6.textContent=data
+                h6.textContent=series.code
                 v_div.appendChild(h6)
                 v_div.style.border="1px solid black"
                 v_div.style.backgroundColor="#F5F5F5"
                 v_div.classList.add('team-image','d-flex','justify-content-center','align-items-center')
                 v_div.setAttribute('id','series_logo')
                 sp.appendChild(v_div)
+                }
             })
         }
     }

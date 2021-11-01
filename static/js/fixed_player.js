@@ -40,7 +40,7 @@ let get_fixed_players = function(team1,team2,index_one_list,index_two_list,serie
     span_one.style.display="none"
     span_two.style.display="none"
     //------------
-    if(sport_id==0)
+    if(sport_id==0 ||  sd.req_data[series_index].data_type==1)
     {
     team_one_img = document.createElement('img')
     team_two_img = document.createElement('img')

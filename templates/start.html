@@ -383,12 +383,14 @@
         <div class="card-body">
           <h5 class="card-title text-center">Choose Type of Generation</h5>
           <div class="container d-flex justify-content-around p-2 flex-wrap align-items-center" style="max-width:350px;">
-            <div class="d-flex flex-column justify-content-start border my-logo-card m-3 position-relative">
-              <img src="dream11_images/smart.jpg"  class="my-logo-image-big" alt="">
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger blink" style="color:white; box-shadow:0px 0px 5px red; right:0;">
-                New
-              </span>
-              <span class="btn btn-success" id="mode_id">continue</span>
+            <div id="s_g" style="display: block;">
+              <div  class="d-flex flex-column justify-content-start border my-logo-card m-3 position-relative">
+                <img src="dream11_images/smart.jpg"  class="my-logo-image-big" alt="">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger blink" style="color:white; box-shadow:0px 0px 5px red; right:0;">
+                  New
+                </span>
+                <span class="btn btn-success" id="mode_id">continue</span>
+              </div>
             </div>
             <div class="d-flex flex-column justify-content-start border my-logo-card m-3">
               <img src="dream11_images/sl.jpg"  class="my-logo-image-big" alt="">
@@ -802,7 +804,7 @@
             Dream 11 Team Generator
            </div>
           <div class="card-body">
-            <h5 class="card-title text-center">Choose atleast 6 players from each Team</h5>
+            <h5 class="card-title text-center">Choose atleast 7 players from each Team</h5>
            
             <div class="d-flex justify-content-around aligh-items-start">
               <div id="team_one_head">
@@ -838,7 +840,7 @@
             <p class="text-center" id="teams_range_msg">you can only generate teams of  1 - 3333 teams only!</p>
             <br><br>
             <div class="container d-flex justify-content-center" width="600px">
-              <input type="text" class="form-control" style="width: 160px;" placeholder="Number Of Teams" id="number_teams">
+              <input type="text" class="form-control" style="width: 120px;" placeholder="No.of Teams" id="number_teams">
               <span class="btn btn-primary" id="team_number">Generate Teams</span>
             </div>
             <br>

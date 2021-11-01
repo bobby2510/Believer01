@@ -12,18 +12,7 @@ json_data=
      {"team_name": "NFCC", "players_name": ["K Mahmud", "N Chowdhury", "A Chowdhury", "M Rahman", "K Ahmed", "S Hossain", "J Morol", "R Hossain", "M Sajib", "A Shukur", "M Chowdhury", "F Rodro", "A A Tasmin", "P Miah", "M Islam", "N Khan-I", "A Khayer", "S A Amin", "S Ahmed", "S Talukder", "S Chowdhury"], "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.5, 8.5, 9.5, 8.5, 8.5, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 10.0, 9.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0], "players_image": [32400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32414, 32415, 32416, 32417, 0, 0, 0], "players_id": [32400, 32401, 32402, 32403, 32404, 32405, 32406, 32407, 32408, 32409, 32410, 32411, 32412, 32413, 32414, 32415, 32416, 32417, 32418, 32419, 32420]},
 {"team_name": "AMD", "players_name": ["P Deol", "C Shah", "S Komiripalepu", "G Singh", "S Sharma", "V Sawant", "G Gupta", "V Chincholkar", "A Verma-I", "A Singh", "A srivastava", "V Naravula", "V Khanduri", "H Thadani", "S Panghal", "G Sagwan", "N Makarande", "S advani", "A Pasoriya", "P Rai", "P Parvesh", "R Shukla", "V Sharma", "R Toshniwal", "S Manda"], "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4], "players_credits": [9.0, 8.5, 8.5, 8.5, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 8.0, 10.5, 9.5, 8.5, 8.5, 8.0, 8.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0], "players_image": [32500, 0, 0, 0, 0, 32505, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32519, 0, 0, 0, 0, 0], "players_id": [32500, 32501, 32502, 32503, 32504, 32505, 32506, 32507, 32508, 32509, 32510, 32511, 32512, 32513, 32514, 32515, 32516, 32517, 32518, 32519, 32520, 32521, 32522, 32523, 32524]}, {"team_name": "SLL", "players_name": ["S Tharanga", "N Pathirana", "B Kumara", "R Siriwardana", "P Liyanage", "S Gedara", "N Gamage", "S Avishka", "K Shanaka", "M Akuranage", "C Sadun", "D Prarthana", "M Gunasekara", "B Mahesh", "K Hemantha", "K Sanjaya", "K Raiz", "R Jayakodi", "S Tennakoon", "S Kumara", "L Udayanga", "M Gamage", "S Mapalagama", "H Susantha", "D Priyantha"], "players_role": [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [9.0, 8.5, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 9.5, 9.0, 9.0, 8.5, 8.5, 8.0, 9.5, 9.0, 8.5, 8.5, 8.0, 8.0, 8.0, 8.0, 8.0], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [32550, 32551, 32552, 32553, 32554, 32555, 32556, 32557, 32558, 32559, 32560, 32561, 32562, 32563, 32564, 32565, 32566, 32567, 32568, 32569, 32570, 32571, 32572, 32573, 32574]},
       {"team_name": "CYM", "players_name": ["S Austin", "W Wellege", "Z Sarwar", "A Ali-II", "W Ali", "M Khan", "Z Ahmad", "M Hussain", "G Sharma", "Z Ali-I", "S Liaqat", "M Adil", "G Singh-I", "M Khan", "H Rehman", "G Singh", "K Singh", "W Ahmed-I", "K Arora", "M Yamin", "L Singh", "A Sufyan-I", "T Singh", "R Kajalwala", "G Murtaza-I", "G Singh-I", "S Akram", "M Singh"], "players_role": [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [9.0, 8.5, 8.5, 7.5, 9.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 10.0, 9.5, 9.0, 8.5, 8.5, 8.0, 8.0, 9.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 8.0], "players_image": [33600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 33612, 0, 0, 0, 0, 0, 0, 0, 0, 33621, 0, 0, 33624, 0, 0, 0], "players_id": [33600, 33601, 33602, 33603, 33604, 33605, 33606, 33607, 33608, 33609, 33610, 33611, 33612, 33613, 33614, 33615, 33616, 33617, 33618, 33619, 33620, 33621, 33622, 33623, 33624, 33625, 33626, 33627]}, {"team_name": "CES", "players_name": ["N Ahmed-I", "R Nerella", "U Shah", "T Alluri", "M Ranimekala", "H Singh-III", "A Singh-I", "T Sandireddy", "S Kumar-I", "C Gergiou", "A Khan-I", "J Ali-Shah", "R Poluri", "M Kyriacou", "S Mia-Mohammad", "S Angarekkala", "B Muhammad-I", "C Markides", "C Nalluri", "S Muttamsetti", "M Alanki", "J Islam"], "players_role": [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.5, 9.5, 9.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 10.0, 9.5, 9.0, 8.5, 8.5, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0], "players_image": [33650, 33651, 33652, 0, 0, 0, 33656, 0, 33658, 33659, 33660, 33661, 0, 33663, 0, 0, 33666, 33667, 33668, 0, 0, 33671], "players_id": [33650, 33651, 33652, 33653, 33654, 33655, 33656, 33657, 33658, 33659, 33660, 33661, 33662, 33663, 33664, 33665, 33666, 33667, 33668, 33669, 33670, 33671]}
-]},
-      
-{"series_name": "T10 Atlas",
-   "series_code": "OCT281", 
-   "number_teams": 3, "team_list": ["MAU", "SPA1","INT"], 
-   "teams": [
-     {"team_name": "MAU", "players_name": ["H Abdul", "K Ahmed", "S Singh", "K Iqbal-Sayed", "R Abbasi", "A K Azad", "R Tedder", "W Zafar-Mirza", "M Touseef-Arshad", "I Ahmed", "A Wajid", "T Iqbal", "S Hossain", "U Muhammad", "J Islam", "J Singh", "R Khan", "J Singh"], "players_role": [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.5, 8.5, 9.0, 8.5, 8.5, 8.0, 9.5, 9.5, 9.0, 8.5, 8.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0], "players_image": [0, 0, 44002, 0, 0, 0, 0, 0, 0, 44009, 44010, 0, 0, 0, 0, 0, 44016, 0], "players_id": [44000, 44001, 44002, 44003, 44004, 44005, 44006, 44007, 44008, 44009, 44010, 44011, 44012, 44013, 44014, 44015, 44016, 44017]},
-      {"team_name": "SPA1", "players_name": ["R Fowler", "I Byrne", "P Pennick", "T Hogan", "J Perman", "C Munoz-Mills", "S Anderson", "J Roper", "I Muhammad-III", "W Ashraf", "A Brown", "B Marriner", "J Sunderland", "D Walker", "P Quinlan", "J Ahmad"], "players_role": [1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4], "players_credits": [8.5, 8.5, 9.5, 9.0, 8.5, 8.5, 8.0, 8.0, 9.5, 9.5, 9.0, 8.5, 9.0, 9.0, 8.5, 8.5], "players_image": [0, 44051, 0, 0, 44054, 0, 0, 0, 0, 44059, 0, 0, 0, 0, 0, 44065], "players_id": [44050, 44051, 44052, 44053, 44054, 44055, 44056, 44057, 44058, 44059, 44060, 44061, 44062, 44063, 44064, 44065]},
-      {"team_name": "INT", "players_name": ["J Iqbal-I", "Z Ul-Qayam", "S S Hafiz", "F Zameer", "U Akram", "H Akram", "A Toseef", "M Nadeem", "N Ahmad", "R Abbas", "A Manan", "I Ahmad", "H Askari", "F Rehman", "M Kaleem"], "players_role": [1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4], "players_credits": [9.0, 8.5, 9.5, 8.5, 8.5, 8.5, 9.0, 9.0, 8.5, 8.5, 8.0, 9.0, 9.0, 8.5, 8.0], "players_image": [0, 0, 0, 0, 44154, 44155, 0, 0, 0, 0, 0, 0, 44162, 0, 0], "players_id": [44150, 44151, 44152, 44153, 44154, 44155, 44156, 44157, 44158, 44159, 44160, 44161, 44162, 44163, 44164]}
-      
-      ]},
-      
+]},      
       {
     "series_name": "ICC WORLD T20 CUP", 
     "series_code": "OCT182", 
@@ -51,10 +40,57 @@ json_data=
         {"team_name": "PS-W", "players_name": ["B Mooney", "C Atapattu", "A Edgar", "C Piparo", "A Day", "M Carmichael", "S Devine", "M Kapp", "A King", "H Graham", "L Griffith", "T Peschel", "P Cleary", "L Mills", "S Betts"], "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4], "players_credits": [10.5, 9.0, 8.5, 8.5, 8.0, 8.0, 10.0, 9.5, 9.0, 8.5, 8.0, 8.5, 8.5, 8.0, 8.0], "players_image": [41300, 41301, 0, 0, 0, 0, 41306, 41307, 0, 41309, 41310, 0, 0, 0, 41314], "players_id": [41300, 41301, 41302, 41303, 41304, 41305, 41306, 41307, 41308, 41309, 41310, 41311, 41312, 41313, 41314]}, {"team_name": "BH-W", "players_name": ["G Redmayne", "L Kimmince", "E Johnston", "G Voll", "C Knott", "M Hinkley", "J Jonassen", "G Harris", "A Bosch", "N d Klerk", "N Hancock", "G Prestwidge", "P Yadav", "Z Cooke", "C Sippel"], "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4], "players_credits": [9.5, 9.0, 8.5, 8.5, 8.5, 8.0, 10.0, 9.5, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0], "players_image": [41350, 0, 0, 0, 0, 41355, 41356, 41357, 0, 41359, 41360, 0, 41362, 41363, 0], "players_id": [41350, 41351, 41352, 41353, 41354, 41355, 41356, 41357, 41358, 41359, 41360, 41361, 41362, 41363, 41364]}                                                                                                        
                                                                                                                        
                                                                                                                                                                                                   
-       ]}
+       ]},
+       {"series_name": "ITALY T10",
+  "series_code": "NOV012", 
+  "number_teams": 4, 
+  "team_list": ["ROR", "KIN-XI","VEN", "FT"],
+   "teams": [
+     {"team_name": "ROR", "players_name": ["N Mohammod", "A Muhammad", "B Phanindra", "M Hossain", "D Kumar", "B Dev", "F Islam", "S Mahamood", "H Mubashar", "H Singh", "U Mubashar", "S Singh", "Z Ali", "R Singh-I", "S Awan", "K Ram", "M Munir", "M Niazi", "R Vajrala", "A Kumar-II", "A Karteek", "A Shahzad", "U Shahzad-I", "M Singh", "K Muhammad", "M Muhammad"],
+       "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4], 
+       "players_credits": [9.0, 8.5, 8.0, 9.5, 9.5, 9.0, 9.0, 8.5, 8.5, 8.0, 8.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0],
+        "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+        "players_id": [44500, 44501, 44502, 44503, 44504, 44505, 44506, 44507, 44508, 44509, 44510, 44511, 44512, 44513, 44514, 44515, 44516, 44517, 44518, 44519, 44520, 44521, 44522, 44523, 44524, 44525]}, 
+        {"team_name": "KIN-XI", "players_name": ["M Singh-II", "S Singh", "S Ali", "M Singh", "J Singh", "S Singh", "L Singh", "H Singh", "H Singh", "J Singh", "J Singh", "V Kumar-II", "J Nagra", "S Muhammad", "M Taran", "A Singh", "N Ali", "U Miakhil", "S Kumar-II"], "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4], "players_credits": [9.0, 8.5, 8.0, 9.5, 9.0, 9.0, 8.5, 8.5, 8.0, 9.5, 9.0, 8.5, 8.5, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0], "players_image": [44550, 0, 44552, 44553, 0, 0, 44556, 0, 44558, 0, 0, 0, 44562, 44563, 44564, 0, 0, 0, 0], "players_id": [44550, 44551, 44552, 44553, 44554, 44555, 44556, 44557, 44558, 44559, 44560, 44561, 44562, 44563, 44564, 44565, 44566, 44567, 44568]},
+        {"team_name": "VEN", "players_name": ["S Ahmmed", "S Islam", "N Haque-I", "H Ahmed", "N N D F D", "S Bolgan", "M Khan", "I Khan-I", "H Alamin", "M Alamin", "M Nitol", "M Sharif", "E Hosen", "M Ahammed", "R Miah", "R Miah", "E Abdul", "M Islam", "S Choquder", "M Asif-III", "S Mondal", "K Haque", "B Miah"], "players_role": [1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.5, 10.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0, 10.0, 9.5, 8.5, 8.5, 8.5, 8.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 8.0], "players_image": [0, 0, 0, 0, 0, 0, 0, 44607, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [44600, 44601, 44602, 44603, 44604, 44605, 44606, 44607, 44608, 44609, 44610, 44611, 44612, 44613, 44614, 44615, 44616, 44617, 44618, 44619, 44620, 44621, 44622]}, {"team_name": "FT", "players_name": ["S Hamayun", "F Muhammad", "Z Naqvi", "M Javed", "M Imran", "A Sharif", "S Abbas", "I Muhammad", "S Cheema", "S Ullah-I", "H Jamil", "A Usman", "H Bilal", "F Hussain", "Z Cheema", "A Haseeb-I", "H Cheema", "S Hussain", "B Mohammad-Nawaz", "S Hakimi"], "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.0, 8.0, 9.5, 9.0, 8.5, 8.5, 8.0, 8.0, 9.5, 9.5, 9.0, 8.5, 8.0, 9.0, 8.5, 8.5, 8.5, 8.0, 8.0], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 44664, 0, 0, 0, 0, 0], "players_id": [44650, 44651, 44652, 44653, 44654, 44655, 44656, 44657, 44658, 44659, 44660, 44661, 44662, 44663, 44664, 44665, 44666, 44667, 44668, 44669]}
+        ]}
+
       
      ]}
   
+
+// foot ball data 
+foot_ball_data =
+{
+  "req_data":[{"series_name": "EPL PREMIER LEAGUE", "series_code": "OCT301", "number_teams": 2,
+  "team_list": ["LEI1", "ARS1"], "teams": [{"team_name": "LEI1", "players_name": ["K Schmeichel", "D Ward-II", "E Jakupovic", "T Castagne", "C Soyuncu", "D Amartey", "R Pereira", "J Vestergaard", "R Bertrand", "J Evans", "L Thomas-II", "J Justin", "W Fofana", "F Benkovic", "Y Tielemans", "H Barnes", "J Maddison", "H Choudhury", "B Soumare", "W Ndidi", "M Albrighton", "N Mendy", "K Dewsbury-Hall", "J Vardy", "K Iheanacho", "P Daka", "A Perez", "A Lookman"], "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.0, 8.0, 8.5, 8.5, 8.5, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 8.0, 9.5, 9.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 7.5, 10.5, 9.5, 9.0, 9.0, 8.5], "players_image": [44300, 44301, 44302, 44303, 44304, 44305, 44306, 44307, 44308, 44309, 44310, 44311, 44312, 44313, 44314, 44315, 44316, 44317, 44318, 44319, 44320, 44321, 44322, 44323, 44324, 44325, 44326, 44327], "players_id": [44300, 44301, 44302, 44303, 44304, 44305, 44306, 44307, 44308, 44309, 44310, 44311, 44312, 44313, 44314, 44315, 44316, 44317, 44318, 44319, 44320, 44321, 44322, 44323, 44324, 44325, 44326, 44327]}, {"team_name": "ARS1", "players_name": ["A Ramsdale", "B Leno", "K Hein", "K Tierney", "P Mari", "G Magalhaes", "T Tomiyasu", "B White", "C Soares", "C Chambers", "N Tavares", "R Holding", "S Kolasinac", "B Saka", "E S Rowe", "N Pepe", "M Odegaard", "A S Lokonga", "T Partey", "A M Niles", "M Elneny", "G Xhaka", "P Aubameyang", "A Lacazette", "G Martinelli", "F Balogun", "E Nketiah"], "players_role": [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.5, 7.5, 9.0, 8.5, 8.5, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 9.5, 9.5, 9.0, 9.0, 8.5, 8.5, 8.5, 8.5, 8.5, 10.0, 9.5, 9.0, 8.5, 8.5], "players_image": [44350, 44351, 44352, 44353, 44354, 44355, 44356, 44357, 44358, 44359, 44360, 44361, 44362, 44363, 44364, 44365, 44366, 44367, 44368, 44369, 44370, 44371, 44372, 44373, 44374, 44375, 44376], "players_id": [44350, 44351, 44352, 44353, 44354, 44355, 44356, 44357, 44358, 44359, 44360, 44361, 44362, 44363, 44364, 44365, 44366, 44367, 44368, 44369, 44370, 44371, 44372, 44373, 44374, 44375, 44376]}]},]
+}
+
+
+
+// basket ball data
+basket_ball_data = 
+{
+  "req_data":[{"series_name": "basketball NBA",
+  "series_code": "NOV011",
+   "number_teams": 2, 
+   "team_list": ["CHI", "BOS"],
+    "teams": [
+       {"team_name": "CHI", 
+          "players_name": ["L Ball", "A Caruso", "A Dosunmu", "D Dotson", "Z LaVine", "C White", "M Thomas", "J Green", "D Jones", "T Brown", "D DeRozan", "P Williams", "M Simonovic", "N Vucevic", "T Bradley", "A Johnson", "T Cook"], 
+          "players_role": [1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5], 
+          "players_credits": [12.0, 10.0, 8.5, 6.0, 17.5, 8.5, 5.5, 7.5, 7.0, 6.5, 15.0, 9.5, 5.0, 16.5, 7.5, 7.0, 6.5], 
+          "players_image": [50000, 50001, 50002, 50003, 50004, 50005, 50006, 50007, 50008, 50009, 50010, 50011, 50012, 50013, 50014, 50015, 50016], 
+          "players_id": [50000, 50001, 50002, 50003, 50004, 50005, 50006, 50007, 50008, 50009, 50010, 50011, 50012, 50013, 50014, 50015, 50016]},
+           {"team_name": "BOS", 
+             "players_name": ["D Schroder", "B Thomas", "P Pritchard", "M Smart", "R Langford", "J Richardson", "J Brown", "G Williams", "S Hauser", "J Tatum", "J Parker", "A Nesmith", "J Hernangomez", "R Williams", "A Horford", "E Kanter", "B Fernando"], 
+             "players_role": [1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5],
+              "players_credits": [12.0, 6.0, 6.0, 11.5, 6.5, 6.5, 17.0, 9.5, 5.5, 18.0, 7.0, 5.5, 5.5, 14.0, 10.5, 6.0, 5.5], 
+              "players_image": [50050, 50051, 50052, 50053, 50054, 50055, 50056, 50057, 50058, 50059, 50060, 50061, 50062, 50063, 50064, 50065, 50066], 
+              "players_id": [50050, 50051, 50052, 50053, 50054, 50055, 50056, 50057, 50058, 50059, 50060, 50061, 50062, 50063, 50064, 50065, 50066]}
+              ]},]
+}
+
                    
 class Player
   {
@@ -78,15 +114,117 @@ class Team
     }
   }
 class Series
-{
-  constructor(series_code,series_name,teams_list,teams)
+{ // 0 for custom , 1 for added by coder_bobby
+  constructor(series_code,series_name,teams_list,teams,data_type)
   {
     this.code= series_code
     this.name = series_name
     this.teams_list = teams_list
     this.teams = teams
+    this.data_type = data_type
   }
 }
+
+let foot_ball_loader = function()
+{
+  let req_data=foot_ball_data.req_data
+  Series_Final_List=[]
+  for(let j=0;j<req_data.length;j++)
+  {
+    Team_Final_List=[]
+    data = req_data[j]
+    for(let i=0;i<data.number_teams;i++)
+    {
+        let obj =data.teams[i]
+        let player_list_obj=[]
+        for(let k=0;k<obj.players_name.length;k++)
+        {
+            player_list_obj.push(new Player(obj.players_name[k],obj.players_role[k],obj.players_credits[k],obj.players_image[k],k,i,obj.players_id[k]))
+        }
+        Team_Final_List.push(new Team(player_list_obj,obj.team_name))
+    }
+    Series_Final_List.push(new Series(data.series_code,data.series_name,data.team_list,Team_Final_List,1))
+  }
+  let kvp_flag = localStorage.getItem('football')
+    //console.log('job done')
+     ls_data = JSON.parse(kvp_flag).req_data
+     let existed_codes=[]
+     ls_data.forEach((series)=>
+     {
+       if(series.data_type==1)
+       existed_codes.push(series.code)
+     })
+     let present_codes=[]
+     Series_Final_List.forEach((series)=>
+     {
+       present_codes.push(series.code)
+       if(existed_codes.includes(series.code)==false)
+       {
+          ls_data.push(series)
+       }
+     })
+     let final_list=[]
+     ls_data.forEach((series)=>
+     {
+       if(series.data_type==0 || present_codes.includes(series.code)==true)
+       {
+         final_list.push(series)
+       }
+     })
+     localStorage.setItem('football',JSON.stringify({'req_data':final_list,}));
+  
+}
+
+let basket_ball_loader = function()
+{
+  let req_data=basket_ball_data.req_data
+  Series_Final_List=[]
+  for(let j=0;j<req_data.length;j++)
+  {
+    Team_Final_List=[]
+    data = req_data[j]
+    for(let i=0;i<data.number_teams;i++)
+    {
+        let obj =data.teams[i]
+        let player_list_obj=[]
+        for(let k=0;k<obj.players_name.length;k++)
+        {
+            player_list_obj.push(new Player(obj.players_name[k],obj.players_role[k],obj.players_credits[k],obj.players_image[k],k,i,obj.players_id[k]))
+        }
+        Team_Final_List.push(new Team(player_list_obj,obj.team_name))
+    }
+    Series_Final_List.push(new Series(data.series_code,data.series_name,data.team_list,Team_Final_List,1))
+  }
+  let kvp_flag = localStorage.getItem('basketball')
+    //console.log('job done')
+     ls_data = JSON.parse(kvp_flag).req_data
+     let existed_codes=[]
+     ls_data.forEach((series)=>
+     {
+       if(series.data_type==1)
+       existed_codes.push(series.code)
+     })
+     let present_codes=[]
+     Series_Final_List.forEach((series)=>
+     {
+       present_codes.push(series.code)
+       if(existed_codes.includes(series.code)==false)
+       {
+          ls_data.push(series)
+       }
+     })
+     let final_list=[]
+     ls_data.forEach((series)=>
+     {
+       if(series.data_type==0 || present_codes.includes(series.code)==true)
+       {
+         final_list.push(series)
+       }
+     })
+     localStorage.setItem('basketball',JSON.stringify({'req_data':final_list,}));
+}
+
+
 let store_teams = function(){
   //var req_data=null
  
@@ -106,7 +244,7 @@ let store_teams = function(){
               }
               Team_Final_List.push(new Team(player_list_obj,obj.team_name))
           }
-          Series_Final_List.push(new Series(data.series_code,data.series_name,data.team_list,Team_Final_List))
+          Series_Final_List.push(new Series(data.series_code,data.series_name,data.team_list,Team_Final_List,1))
         }
         let kvp_flag = localStorage.getItem('series_data')
         if(kvp_flag==null)
@@ -144,4 +282,10 @@ let store_teams = function(){
            localStorage.setItem('series_data',JSON.stringify({'req_data':final_list,}));
         }
         //console.log(Team_Final_List)
+
+      //foot ball stuff here 
+      foot_ball_loader()
+      //basket ball stuff here 
+      basket_ball_loader()
+
 }
