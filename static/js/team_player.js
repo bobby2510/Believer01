@@ -58,7 +58,7 @@ json_data=
       ]},
       {
         "series_name": "Barcelona T10",
-         "series_code": "NOV062", 
+         "series_code": "NOV063", 
          "number_teams": 7, 
          "team_list": ["FTH", "FAL","CAT","CTL", "HAW","MR","PUW"], 
          "teams": [
