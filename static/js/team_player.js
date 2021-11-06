@@ -59,7 +59,7 @@ json_data=
       {
         "series_name": "Barcelona T10",
          "series_code": "NOV062", 
-         "number_teams": 6, 
+         "number_teams": 7, 
          "team_list": ["FTH", "FAL","CAT","CTL", "HAW","MR","PUW"], 
          "teams": [
            {"team_name": "FTH", "players_name": ["L Singh-Vinty", "H Singh", "H Singh", "G Singh", "D Singh-II", "S Qaiser", "S S Sonu", "B Singh", "F Ali", "N Qaiser", "S Gulraiz-Hussain", "S Islam", "M Singh-Lovely", "W Iqbal", "J Miah", "K Singh-I", "S Muhammad", "D Singh", "R Singh", "N Hussain", "A S Sran", "M Rahman", "M Singh", "R Singh", "G Singh-I"], "players_role": [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4], "players_credits": [8.5, 8.5, 9.5, 9.0, 8.5, 8.5, 8.5, 8.5, 8.0, 8.0, 8.0, 9.5, 9.5, 9.0, 9.0, 9.0, 8.5, 8.0, 8.0, 8.5, 8.5, 8.0, 8.0, 8.0, 8.0], "players_image": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "players_id": [44800, 44801, 44802, 44803, 44804, 44805, 44806, 44807, 44808, 44809, 44810, 44811, 44812, 44813, 44814, 44815, 44816, 44817, 44818, 44819, 44820, 44821, 44822, 44823, 44824]}, 
