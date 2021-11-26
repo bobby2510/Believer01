@@ -7,7 +7,7 @@ json_data=
       "gender": 0, "team_list": ["PS-W", "AS-W"], 
       "teams": [{"team_name": "PS-W", "players_name": ["B Mooney", "A Edgar", "C Piparo", "A Day", "M Carmichael", "S Devine", "H Graham", "M Kapp", "A King", "L Mills", "T Peschel", "L Griffith", "P Cleary", "S Betts"], "players_role": [1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 4], "players_credits": [10.5, 8.5, 8.5, 8.0, 8.0, 10.5, 9.5, 9.0, 9.0, 8.5, 8.5, 8.0, 8.0, 8.0], "players_image": [48200, 0, 0, 0, 0, 48205, 48206, 48207, 0, 0, 0, 48211, 0, 48213], "players_id": [48200, 48201, 48202, 48203, 48204, 48205, 48206, 48207, 48208, 48209, 48210, 48211, 48212, 48213]}, 
       {"team_name": "AS-W", "players_name": ["T McPharlin", "K Mack", "L Wolvaardt", "A ONeil", "T Cooper", "B Patterson", "T McGrath", "D V Niekerk", "M Penna", "E Wilson", "A Wellington", "S Coyte", "D Brown", "M Schutt", "N Smith", "M Dixon", "J Barsby"], "players_role": [1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4], "players_credits": [8.0, 9.5, 9.0, 8.0, 8.0, 8.0, 10.0, 9.5, 8.5, 8.0, 9.5, 9.0, 8.5, 8.5, 8.0, 8.0, 8.0], "players_image": [48250, 48251, 48252, 48253, 0, 48255, 48256, 48257, 0, 0, 0, 48261, 0, 48263, 0, 0, 48266], "players_id": [48250, 48251, 48252, 48253, 48254, 48255, 48256, 48257, 48258, 48259, 48260, 48261, 48262, 48263, 48264, 48265, 48266]}
-      ]}
+      ]},
          
         {"series_name": "Abu Dhabi t10", "series_code": "NOV222", "number_teams": 6, 
         "gender":1,
