@@ -58,11 +58,24 @@ let generate_random_series = function(sport_id,fantasy)
         }
         series_list.forEach((data,index)=>
         {
+           
+            span_element = document.createElement('span')
+            span_element.classList.add('position-absolute','top-0','start-100','translate-middle','badge','rounded-pill','bg-success','blink')
+            span_element.style.color="white"
+            span_element.style.boxShadow="0px 0px 5px green"
+            span_element.style.right="0"
+            span_element.textContent="W"
             img = document.createElement('img')
             img.src='dream11_images/'+data+'.jpg'
             img.classList.add('team-image')
             img.setAttribute('id','series_logo')
-            sp.appendChild(img)
+            div = document.createElement('div')
+            //d-flex flex-column justify-content-start border my-logo-card m-3 position-relative
+            div.classList.add('position-relative')
+            div.appendChild(img)
+            if(sd.req_data[index].gender === 0)
+            div.appendChild(span_element)
+            sp.appendChild(div)
         })
     }
     else
