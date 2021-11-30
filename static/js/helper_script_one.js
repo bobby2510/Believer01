@@ -16,11 +16,23 @@ sn=document.querySelector('#second_team_name')
 if(sport_id==0 ||  sd.req_data[series_index].data_type==1)
 {
     v_one_img = document.createElement('img')
-    v_one_img.src=`dream11_images\\${team_list[team1]}.jpg`;
+   
     v_one_img.classList.add('my-team-image','my-team')
     v_two_img = document.createElement('img')
-    v_two_img.src=`dream11_images\\${team_list[team2]}.jpg`;
     v_two_img.classList.add('my-team-image','my-team')
+    
+    let new_flag = sd.req_data[series_index].image_present
+    if(new_flag !=undefined && new_flag == 1){
+        v_one_img.src = sd.req_data[series_index].team_image_list[team1]
+        v_two_img.src = sd.req_data[series_index].team_image_list[team2]
+    }
+    else{
+        v_one_img.src=`dream11_images\\${team_list[team1]}.jpg`;
+        v_two_img.src=`dream11_images\\${team_list[team2]}.jpg`;
+    }
+
+
+    
     fi.appendChild(v_one_img)
     si.appendChild(v_two_img)
 }

@@ -173,7 +173,12 @@ let final_team_creation = function(one_arr,captain,vice_captain,team_number,cred
                 p_sub_div.appendChild(span_ele)
             }
             p_img = document.createElement('img')
-            p_img.src='player_images/'+player.player_image+'.jpg';
+            //var image_flag = sd.req_data[series_index].image_present
+            var kp = ''+player.player_image
+            if(kp.length>8)
+            p_img.src = player.player_image;
+            else 
+            p_img.src = 'player_images/'+player.player_image+'.jpg';
             p_img.classList.add('player-image')
             p_sub_div.appendChild(p_img)
             p_p = document.createElement('span')

@@ -34,8 +34,17 @@ let fetch_match = function(mn,series_index,sport_id)
     {
     image_one = document.createElement('img')
     image_two = document.createElement('img')
-    image_one.src=`dream11_images/${team_list[match_obj.team_one_index]}.jpg`
-    image_two.src=`dream11_images/${team_list[match_obj.team_two_index]}.jpg`
+    let new_flag = sd.req_data[series_index].image_present
+    if(new_flag !=undefined && new_flag == 1){
+        image_one.src = sd.req_data[series_index].team_image_list[match_obj.team_one_index]
+        image_two.src = sd.req_data[series_index].team_image_list[match_obj.team_two_index]
+    }
+    else{
+        image_one.src=`dream11_images/${team_list[match_obj.team_one_index]}.jpg`
+        image_two.src=`dream11_images/${team_list[match_obj.team_two_index]}.jpg`
+
+    }
+    
     image_one.classList.add('team-image')
     image_two.classList.add('team-image')
     toh.appendChild(image_one)
@@ -299,8 +308,17 @@ let get_player_points = function(mn,series_index,sport_id)
     {
     image_one = document.createElement('img')
     image_two = document.createElement('img')
-    image_one.src=`dream11_images/${team_list[match_obj.team_one_index]}.jpg`
-    image_two.src=`dream11_images/${team_list[match_obj.team_two_index]}.jpg`
+    
+    let new_flag = sd.req_data[series_index].image_present
+    if(new_flag !=undefined && new_flag == 1){
+        image_one.src = sd.req_data[series_index].team_image_list[match_obj.team_one_index]
+        image_two.src = sd.req_data[series_index].team_image_list[match_obj.team_two_index]
+    }
+    else{
+        image_one.src=`dream11_images/${team_list[match_obj.team_one_index]}.jpg`
+        image_two.src=`dream11_images/${team_list[match_obj.team_two_index]}.jpg`
+
+    }
     image_one.classList.add('team-image')
     image_two.classList.add('team-image')
     toh.appendChild(image_one)
@@ -333,7 +351,11 @@ let get_player_points = function(mn,series_index,sport_id)
     team_one.players.forEach((player)=>
     {
         image = document.createElement('img')
-        image.src='player_images/'+player.player_image+'.jpg';
+        var image_flag = sd.req_data[series_index].image_present
+        if(image_flag !=undefined && image_flag == 1)
+        image.src = player.player_image;
+        else 
+        image.src = 'player_images/'+player.player_image+'.jpg';
         image.classList.add('selected-player-image')
         span_name = document.createElement('span')
         span_name.textContent=get_name(player.player_name)
@@ -357,7 +379,11 @@ let get_player_points = function(mn,series_index,sport_id)
     team_two.players.forEach((player)=>
     {
         image = document.createElement('img')
-        image.src='player_images/'+player.player_image+'.jpg';
+        var image_flag = sd.req_data[series_index].image_present
+        if(image_flag !=undefined && image_flag == 1)
+        image.src = player.player_image;
+        else 
+        image.src = 'player_images/'+player.player_image+'.jpg';
         image.classList.add('selected-player-image')
         span_name = document.createElement('span')
         span_name.textContent=get_name(player.player_name)

@@ -15,10 +15,22 @@ let handle_smart_section = function(team_one,team_two,team_one_index,team_two_in
     div3 = document.createElement('div')
     img1= document.createElement('img')
     img1.classList.add('kvp-icon')
-    img1.src=`dream11_images/${team_one_name}.jpg`
     img2= document.createElement('img')
     img2.classList.add('kvp-icon')
+
+    let new_flag = sd.req_data[series_index].image_present
+    if(new_flag !=undefined && new_flag == 1){
+        img1.src = sd.req_data[series_index].team_image_list[team_one_index]
+        img2.src = sd.req_data[series_index].team_image_list[team_two_index]
+    }
+    else{
+        img1.src=`dream11_images/${team_one_name}.jpg`
     img2.src=`dream11_images/${team_two_name}.jpg`
+
+    }
+
+
+   
     div1.appendChild(img1)
     div2.appendChild(img2)
     span1 = document.createElement('span')  
@@ -101,10 +113,20 @@ let handle_smart_section = function(team_one,team_two,team_one_index,team_two_in
                div2 = document.createElement('div')
                img1= document.createElement('img')
                img1.classList.add('kvp-icon')
-               img1.src=`dream11_images/${team_one_name}.jpg`
                img2= document.createElement('img')
                img2.classList.add('kvp-icon')
-               img2.src=`dream11_images/${team_two_name}.jpg`
+
+
+           let new_flag = sd.req_data[series_index].image_present
+    if(new_flag !=undefined && new_flag == 1){
+        img1.src = sd.req_data[series_index].team_image_list[team_one_index]
+        img2.src = sd.req_data[series_index].team_image_list[team_two_index]
+    }
+    else{
+        img1.src=`dream11_images/${team_one_name}.jpg`
+    img2.src=`dream11_images/${team_two_name}.jpg`
+
+    }
                div1.appendChild(img1)
                div2.appendChild(img2)
                span1 = document.createElement('span')  

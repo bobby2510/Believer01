@@ -114,7 +114,11 @@ let change_player_data = function(team_index,series_index)
         outer_div = document.createElement('div')
         outer_div.classList.add('d-flex','justify-content-around','flex-wrap','container','border-grey','m-2','align-items-center')
         img = document.createElement('img')
-        img.src='player_images/'+player.player_image+'.jpg';
+        var image_flag = sd.req_data[series_index].image_present
+        if(image_flag !=undefined && image_flag == 1)
+        img.src = player.player_image;
+        else 
+        img.src = 'player_images/'+player.player_image+'.jpg';
         img.classList.add('selected-player-image')
         h4 = document.createElement('h6')
         h4.textContent = player.player_name

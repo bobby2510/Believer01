@@ -195,12 +195,22 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
     rsp = document.querySelector('#right_side_placer')
     sn = document.querySelector('#series_name')
     sn.textContent = sd.req_data[series_index].name
-    sd.req_data[series_index].teams_list.forEach((data)=>
+    sd.req_data[series_index].teams_list.forEach((data,index)=>
     {
         if(sport_id==0 || sd.req_data[series_index].data_type==1)
         {
             img = document.createElement('img')
-            img.src="dream11_images/"+data+".jpg"
+            
+            let new_flag = sd.req_data[series_index].image_present
+            if(new_flag !=undefined && new_flag == 1){
+               img.src = sd.req_data[series_index].team_image_list[index]
+            }
+            else{
+                img.src="dream11_images/"+data+".jpg"
+
+            }
+
+
             v_span = document.createElement('span')
             v_span.textContent = data
             img.classList.add('team-left','team-image')
@@ -225,12 +235,19 @@ let generate_random_teams= function(series_index,mode,sport_id,fantasy)
         }
        
     })
-    sd.req_data[series_index].teams_list.forEach((data)=>
+    sd.req_data[series_index].teams_list.forEach((data,index)=>
     {
         if(sport_id==0 || sd.req_data[series_index].data_type==1)
         {
         img = document.createElement('img')
-        img.src="dream11_images/"+data+".jpg"
+        let new_flag = sd.req_data[series_index].image_present
+            if(new_flag !=undefined && new_flag == 1){
+               img.src = sd.req_data[series_index].team_image_list[index]
+            }
+            else{
+                img.src="dream11_images/"+data+".jpg"
+
+            }
         v_span = document.createElement('span')
         v_span.textContent = data
         img.classList.add('team-right','team-image')
@@ -311,10 +328,17 @@ let generate_random_teams_result = function(series_index)
     cpdp = document.querySelector('#change_player_data_placer')
     sn = document.querySelector('#series_name')
     sn.textContent = sd.req_data[series_index].name
-    sd.req_data[series_index].teams_list.forEach((data)=>
+    sd.req_data[series_index].teams_list.forEach((data,index)=>
     {
         img = document.createElement('img')
-        img.src="dream11_images/"+data+".jpg"
+        let new_flag = sd.req_data[series_index].image_present
+        if(new_flag !=undefined && new_flag == 1){
+           img.src = sd.req_data[series_index].team_image_list[index]
+        }
+        else{
+            img.src="dream11_images/"+data+".jpg"
+
+        }
         img.classList.add('team-change','team-image')
         cpdp.appendChild(img)
     })

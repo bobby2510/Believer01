@@ -42,8 +42,16 @@ let get_vice_captain_players = function(team1,team2,index_one_list,index_two_lis
     {
     team_one_img = document.createElement('img')
     team_two_img = document.createElement('img')
-    team_one_img.src = 'dream11_images/'+team_list[team1]+".jpg"
+    let new_flag = sd.req_data[series_index].image_present
+    if(new_flag !=undefined && new_flag == 1){
+        team_one_img.src = sd.req_data[series_index].team_image_list[team1]
+        team_two_img.src = sd.req_data[series_index].team_image_list[team2]
+    }
+    else{
+        team_one_img.src = 'dream11_images/'+team_list[team1]+".jpg"
     team_two_img.src = 'dream11_images/'+team_list[team2]+".jpg"
+
+    }
     team_one_img.classList.add('team-image')
     team_two_img.classList.add('team-image')
     team_one_head.appendChild(team_one_img)
@@ -98,6 +106,10 @@ let get_vice_captain_players = function(team1,team2,index_one_list,index_two_lis
         inner_div1.appendChild(inner_div2)
         inner_div1.classList.add('d-flex','selected-player-inner-div','flex-column','justify-content-center')
         var img = document.createElement('img');
+        var image_flag = sd.req_data[series_index].image_present
+        if(image_flag !=undefined && image_flag == 1)
+        img.src = player.player_image;
+        else 
         img.src = 'player_images/'+player.player_image+'.jpg';
         img.classList.add('selected-player-image')
         outer_div.appendChild(img)
@@ -129,6 +141,10 @@ let get_vice_captain_players = function(team1,team2,index_one_list,index_two_lis
         inner_div1.appendChild(inner_div2)
         inner_div1.classList.add('d-flex','selected-player-inner-div','flex-column','justify-content-center')
         var img = document.createElement('img');
+        var image_flag = sd.req_data[series_index].image_present
+        if(image_flag !=undefined && image_flag == 1)
+        img.src = player.player_image;
+        else 
         img.src = 'player_images/'+player.player_image+'.jpg';
         img.classList.add('selected-player-image')
         outer_div.appendChild(img)

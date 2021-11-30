@@ -200,7 +200,17 @@ let helper = function(sport_id,series_index)
                 if(data.req_data[series_index].data_type==1)
                 {
                     img = document.createElement('img')
-                    img.src="dream11_images/"+team_name+".jpg"
+                    
+                    let new_flag = sd.req_data[series_index].image_present
+                    if(new_flag !=undefined && new_flag == 1){
+                        img.src = sd.req_data[series_index].team_image_list[index]
+                       
+                    }
+                    else{
+                        img.src="dream11_images/"+team_name+".jpg"
+                    }
+
+                    
                     v_span = document.createElement('span')
                     v_span.textContent = team_name
                     img.classList.add('team-image')
@@ -576,6 +586,10 @@ let remove_player_data = function(sport_id,series_index,team_index)
         inner_div1.appendChild(inner_div2)
         inner_div1.classList.add('d-flex','selected-player-inner-div','flex-column','justify-content-center')
         var img = document.createElement('img');
+        var image_flag = data.req_data[series_index].image_present
+        if(image_flag !=undefined && image_flag == 1)
+        img.src = player.player_image;
+        else 
         img.src = 'player_images/'+player.player_image+'.jpg';
         img.classList.add('selected-player-image')
         outer_div.appendChild(img)
@@ -675,7 +689,11 @@ let edit_player_data = function(sport_id,series_index,team_index)
         outer_div = document.createElement('div')
         outer_div.classList.add('d-flex','justify-content-around','flex-wrap','container','border-grey','m-2','align-items-center')
         img = document.createElement('img')
-        img.src='player_images/'+player.player_image+'.jpg';
+        var image_flag = data.req_data[series_index].image_present
+        if(image_flag !=undefined && image_flag == 1)
+        img.src = player.player_image;
+        else 
+        img.src = 'player_images/'+player.player_image+'.jpg';
         img.classList.add('selected-player-image')
         h4 = document.createElement('h6')
         h4.textContent = player.player_name
@@ -789,6 +807,8 @@ let secondary_edit_series = function(sport_id)
         if(data.req_data[i].data_type==1)
         {
         img = document.createElement('img')
+
+        
         img.src="dream11_images/"+data.req_data[i].code+".jpg"
         img.classList.add('team-image')
         img.setAttribute('id','series_logo')
