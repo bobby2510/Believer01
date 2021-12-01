@@ -201,9 +201,9 @@ let helper = function(sport_id,series_index)
                 {
                     img = document.createElement('img')
                     
-                    let new_flag = sd.req_data[series_index].image_present
+                    let new_flag = data.req_data[series_index].image_present
                     if(new_flag !=undefined && new_flag == 1){
-                        img.src = sd.req_data[series_index].team_image_list[index]
+                        img.src = data.req_data[series_index].team_image_list[index]
                        
                     }
                     else{
