@@ -1,7 +1,11 @@
-{"team_name":"NK",
-"players_name":["Kane Williamson","Trent Boult","Mitchell Santner","Tim Seifert","Colin de Grandhomme","Tim Southee","Ish Sodhi","Scott Kuggeleijn","Neil Wagner","Peter Bocock","Jeet Raval","Katene Clarke","Henry Cooper","Joe Carter","Brett Hampton","Brett Randell","Zak Gibson","Anurag Verma","Joe Walker","Matthew Fisher","Frederick Walker","Bharat Popli","Kristian Clarke"],
-"players_credits":[10,9.5,9,9,9.5,9,9,9,9,8.5,9,8.5,8.5,9,8.5,9,8.5,8.5,9,8,8,8,8],
-"players_role":[2,4,3,1,3,4,4,4,4,1,2,2,2,2,3,4,4,4,3,4,4,2,3],
-"players_image":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-"players_id":[300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322]
-}
+
+
+{"series_name":"Bigbash League",
+    "series_code":"DEC052",
+    "image_present":1,
+    "number_teams":2,
+    "gender":1,
+    "team_list":["ST","BH"],
+    "team_image_list":[],
+    "teams":[
+       ]}
