@@ -221,13 +221,6 @@
       text-align:center;
       padding:0 4px;
 }
-#side_bar
-{
-    cursor: pointer;
-}
-#side_bar:hover{
-    background-color: #f1f1f1;
-}
 .captain
 {
     width: 20px;
@@ -241,6 +234,16 @@
     line-height: 13px;
     border-radius: 50%;
 }
+
+
+#side_bar
+{
+    cursor: pointer;
+}
+#side_bar:hover{
+    background-color: #f1f1f1;
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
